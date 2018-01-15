@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>Upload the Selected File</description>
-   <name>OR-UPLOAD Button</name>
+   <description>Upload the file to upload</description>
+   <name>OR-SELECTFiles</name>
    <tag></tag>
-   <elementGuidId>ad816ee3-b814-48bf-803d-7a012e473978</elementGuidId>
+   <elementGuidId>9cb4abcd-5bf6-4d52-88bd-5bef3987b46c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +16,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='upload-file-mpesa']</value>
+      <value>.//*[@id='files']</value>
    </webElementProperties>
 </WebElementEntity>

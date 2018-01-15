@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>Upload the file to upload</description>
-   <name>OR-SELECT files</name>
+   <description>Error Message thrown when no File is uploaded</description>
+   <name>OR-NoSELECTEDFile</name>
    <tag></tag>
-   <elementGuidId>9cb4abcd-5bf6-4d52-88bd-5bef3987b46c</elementGuidId>
+   <elementGuidId>5a21112a-2153-4316-ba38-edb015a2b584</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +16,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='files']</value>
+      <value>.//*[text()=&quot;Please enter the notes&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>Error message thrown when the tag field is not unique</description>
-   <name>OR-TAG not unique</name>
+   <description>The Comment Field on the Upload file Window</description>
+   <name>OR-CommentTextArea</name>
    <tag></tag>
-   <elementGuidId>49555c28-2cf3-4003-83e3-42311c90c31c</elementGuidId>
+   <elementGuidId>5dbecb52-d4bf-4dae-988f-24046e438d12</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +16,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[text()=&quot;The tag must be unique&quot;]</value>
+      <value>.//*[@id='Comment']</value>
    </webElementProperties>
 </WebElementEntity>

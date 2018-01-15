@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>Error Message thrown when no File is uploaded</description>
-   <name>OR-No SELECTED File</name>
+   <description>Error message thrown when the tag field is not unique</description>
+   <name>OR-TAGNotUnique</name>
    <tag></tag>
-   <elementGuidId>5a21112a-2153-4316-ba38-edb015a2b584</elementGuidId>
+   <elementGuidId>49555c28-2cf3-4003-83e3-42311c90c31c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +16,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[text()=&quot;Please enter the notes&quot;]</value>
+      <value>.//*[text()=&quot;The tag must be unique&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

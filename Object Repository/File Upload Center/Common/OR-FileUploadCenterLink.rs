@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description>The link on the dashboard</description>
-   <name>OR-File Upload Center Link</name>
+   <name>OR-FileUploadCenterLink</name>
    <tag></tag>
    <elementGuidId>88018d91-835c-4f85-b984-74adcdfe1c8d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
