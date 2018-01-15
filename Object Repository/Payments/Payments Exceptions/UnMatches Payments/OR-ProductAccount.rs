@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Payments Exceptions</name>
+   <name>OR-ProductAccount</name>
    <tag></tag>
-   <elementGuidId>43eb9b0f-85cf-4e2e-bb11-ac998892ba71</elementGuidId>
+   <elementGuidId>8adb433e-0809-4fcb-9d3d-387535bc00d7</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//span[contains(text(), 'Payment Exceptions')]</value>
+      <value>.//*[@id='customer-div']/form/div[4]/div/div/span[1]</value>
    </webElementProperties>
 </WebElementEntity>

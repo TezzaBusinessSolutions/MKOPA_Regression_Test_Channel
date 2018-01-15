@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>OR-UnMatched Payments</name>
+   <name>OR-CustomerReference</name>
    <tag></tag>
-   <elementGuidId>4c447ecb-15ab-487e-9d85-23506a925134</elementGuidId>
+   <elementGuidId>7daed5e0-a12d-4eae-bcf5-b2223f51dc20</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//a[contains(text(), &quot;UnMatched Payments&quot;)]</value>
+      <value>.//*[@id='PayerId-input']</value>
    </webElementProperties>
 </WebElementEntity>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>OR- Resolve button</name>
+   <name>OR-PaymentsExceptions</name>
    <tag></tag>
-   <elementGuidId>4c76388a-50b3-4b77-b9c8-93211288de84</elementGuidId>
+   <elementGuidId>43eb9b0f-85cf-4e2e-bb11-ac998892ba71</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='customer-div']/form/div[7]/input</value>
+      <value>.//span[contains(text(), 'Payment Exceptions')]</value>
    </webElementProperties>
 </WebElementEntity>

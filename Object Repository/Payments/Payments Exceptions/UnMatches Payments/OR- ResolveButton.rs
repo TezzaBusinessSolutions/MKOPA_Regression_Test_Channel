@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Customer Reference</name>
+   <name>OR- ResolveButton</name>
    <tag></tag>
-   <elementGuidId>7daed5e0-a12d-4eae-bcf5-b2223f51dc20</elementGuidId>
+   <elementGuidId>4c76388a-50b3-4b77-b9c8-93211288de84</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='PayerId-input']</value>
+      <value>.//*[@id='customer-div']/form/div[7]/input</value>
    </webElementProperties>
 </WebElementEntity>
