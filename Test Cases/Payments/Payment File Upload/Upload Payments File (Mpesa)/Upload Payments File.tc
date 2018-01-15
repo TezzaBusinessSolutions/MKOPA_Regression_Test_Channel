@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Upload Payment File(M-PESA)</description>
-   <name>Upload Payments File</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>d87ccd64-ddbc-4246-aabb-e529bc4ff08e</testCaseGuid>
-</TestCaseEntity>
