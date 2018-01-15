@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>OR-SubmitButton</name>
+   <name>OR-Payments</name>
    <tag></tag>
-   <elementGuidId>8b54783c-3bcc-4f41-a343-c5b1a2bd6323</elementGuidId>
+   <elementGuidId>985cb5e6-90e6-4150-adec-62a8adfc2259</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +16,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[contains(@type,'sub')]  </value>
+      <value>.//*[@id='Menu']/li[4]/span</value>
    </webElementProperties>
 </WebElementEntity>

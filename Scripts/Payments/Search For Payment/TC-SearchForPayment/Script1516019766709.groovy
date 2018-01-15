@@ -21,15 +21,15 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : '', ('Password') : ''], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Search For Payment/OR-Payments'))
+WebUI.click(findTestObject('Payments/Search For Payment/OR-Payments'))
 
-WebUI.click(findTestObject('Search For Payment/OR-SearchForPayment'))
+WebUI.click(findTestObject('Payments/Search For Payment/OR-SearchForPayment'))
 
-WebUI.setText(findTestObject('Search For Payment/OR-ReceiptNumber'), '23231213')
+WebUI.setText(findTestObject('Payments/Search For Payment/OR-ReceiptNumber'), '23231213')
 
-WebUI.setText(findTestObject('Search For Payment/OR-PaymentPhone'), '072636434')
+WebUI.setText(findTestObject('Payments/Search For Payment/OR-PaymentPhone'), '072636434')
 
-WebUI.setText(findTestObject('Search For Payment/OR-PaymentDate'), '2017-03-10')
+WebUI.setText(findTestObject('Payments/Search For Payment/OR-PaymentDate'), '2017-03-10')
 
-WebUI.click(findTestObject('Search For Payment/OR-SubmitButton'))
+WebUI.click(findTestObject('Payments/Search For Payment/OR-SubmitButton'))
 

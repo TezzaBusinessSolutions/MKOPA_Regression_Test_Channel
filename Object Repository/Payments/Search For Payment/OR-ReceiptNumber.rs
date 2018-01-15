@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>OR-PaymentPhone</name>
+   <name>OR-ReceiptNumber</name>
    <tag></tag>
-   <elementGuidId>a143ea32-acbb-46c7-8b4f-5ea6f3693637</elementGuidId>
+   <elementGuidId>3bedd594-05a8-4e63-b99a-5e6beca19579</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +16,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='PaymentPhone']</value>
+      <value>.//*[@id='ReceiptNumber']</value>
    </webElementProperties>
 </WebElementEntity>
