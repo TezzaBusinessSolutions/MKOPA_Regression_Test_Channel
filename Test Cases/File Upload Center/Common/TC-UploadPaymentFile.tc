@@ -20,10 +20,10 @@
       <name>comment</name>
    </variable>
    <variable>
-      <defaultValue>findTestData('File Upload Center/File Upload Payment').getValue(3, 1)</defaultValue>
+      <defaultValue>''</defaultValue>
       <description></description>
-      <id>563373d1-4cd6-44ce-a43a-b2ff4375111a</id>
+      <id>863f2d23-7dbd-49fe-8877-8295e129a9cd</id>
       <masked>false</masked>
-      <name>tag</name>
+      <name>tagged</name>
    </variable>
 </TestCaseEntity>
