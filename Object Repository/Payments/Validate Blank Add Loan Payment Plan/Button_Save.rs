@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Submenu_PaymentPlans</name>
+   <name>Button_Save</name>
    <tag></tag>
-   <elementGuidId>8023e0ae-a258-4dd1-8421-fe47e8b813f4</elementGuidId>
+   <elementGuidId>f08acf28-e741-4bf9-b05f-04170638275b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='Menu']/li/div/ul/li/span[text()='Payment Plans']</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='Menu']/li/div/ul/li/span[text()='Payment Plans']</value>
+      <value>.//*[@id='btnSave']</value>
    </webElementProperties>
 </WebElementEntity>
