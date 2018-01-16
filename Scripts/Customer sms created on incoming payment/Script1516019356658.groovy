@@ -21,5 +21,3 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : '', ('Password') : ''], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject(null))
-
