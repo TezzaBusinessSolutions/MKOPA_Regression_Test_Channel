@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>OR-WelcomeMsg</name>
+   <name>btnResolve</name>
    <tag></tag>
-   <elementGuidId>e84faf9d-1a7f-4b83-a182-fde11234aeeb</elementGuidId>
+   <elementGuidId>4c76388a-50b3-4b77-b9c8-93211288de84</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +16,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[contains(text(), 'The payment was successfully assigned to payer.')]</value>
+      <value>.//*[@id='customer-div']/form/div[7]/input</value>
    </webElementProperties>
 </WebElementEntity>

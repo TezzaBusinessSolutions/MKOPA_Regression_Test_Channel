@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>OR-Assign</name>
+   <name>txt_ProductAccount</name>
    <tag></tag>
-   <elementGuidId>86f3272c-b30f-48ad-ab98-cb920c67c238</elementGuidId>
+   <elementGuidId>8adb433e-0809-4fcb-9d3d-387535bc00d7</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +16,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/Payment/UnMatchedPayments/Assign/d5134ac0-d34b-11e7-836f-000d3ab1ec1b</value>
+      <value>.//*[@id='customer-div']/form/div[4]/div/div/span[1]</value>
    </webElementProperties>
 </WebElementEntity>

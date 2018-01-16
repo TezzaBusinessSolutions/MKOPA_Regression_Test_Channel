@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>OR- ResolveButton</name>
+   <name>aprrovalstatus</name>
    <tag></tag>
-   <elementGuidId>4c76388a-50b3-4b77-b9c8-93211288de84</elementGuidId>
+   <elementGuidId>a27f3fb0-d6a4-4abb-9db1-028ddf95dc15</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='customer-div']/form/div[7]/input</value>
+      <value>//li[contains(.,'Approved')]</value>
    </webElementProperties>
 </WebElementEntity>

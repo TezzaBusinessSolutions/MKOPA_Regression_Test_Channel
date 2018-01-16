@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>OR-CustomerReference</name>
+   <name>mnu_Refund</name>
    <tag></tag>
-   <elementGuidId>7daed5e0-a12d-4eae-bcf5-b2223f51dc20</elementGuidId>
+   <elementGuidId>08b47757-d2cc-41c0-8078-fbf716d111e6</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>//span[count(. | //*[text() = 'Refund']) = count(//*[text() = 'Refund'])][count(. | .//span[contains(text(), &quot;Refund&quot;)]) = count(.//span[contains(text(), &quot;Refund&quot;)])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='PayerId-input']</value>
+      <value>.//span[contains(text(), &quot;Refund&quot;)]</value>
    </webElementProperties>
 </WebElementEntity>

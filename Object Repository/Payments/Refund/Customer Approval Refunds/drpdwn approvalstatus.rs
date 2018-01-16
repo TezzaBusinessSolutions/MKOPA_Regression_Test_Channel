@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>OR- payer</name>
+   <name>drpdwn approvalstatus</name>
    <tag></tag>
-   <elementGuidId>98cb86b1-ed5f-4dc1-83ce-f7a8a30899f1</elementGuidId>
+   <elementGuidId>1f645a30-9337-46ca-aa2a-2e5f56497747</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[contains(@id, 'customer-input')]</value>
+      <value>.//*[@id='divBodyMain']/div/div[3]/fieldset/div/form/table/tbody/tr[1]/td[2]/div/div/span[2]/span</value>
    </webElementProperties>
 </WebElementEntity>
