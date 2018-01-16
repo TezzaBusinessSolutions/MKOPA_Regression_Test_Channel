@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>payment menu</name>
+   <name>close pop up</name>
    <tag></tag>
-   <elementGuidId>e7b673df-0267-4469-afb3-bb8d1bc6f0cd</elementGuidId>
+   <elementGuidId>9d17b2ef-0eff-4407-8d19-478723a85699</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='Menu']/li[7]/a</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='Menu']/li[7]/a</value>
+      <value>.//*[@id='file-upload-center-paymentfile-window']/div[1]/div/a/span</value>
    </webElementProperties>
 </WebElementEntity>

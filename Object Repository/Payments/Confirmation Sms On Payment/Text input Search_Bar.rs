@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>payment menu</name>
+   <name>Text input Search_Bar</name>
    <tag></tag>
-   <elementGuidId>e7b673df-0267-4469-afb3-bb8d1bc6f0cd</elementGuidId>
+   <elementGuidId>c142941e-3cf4-43da-960d-4664e8bd7296</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='Menu']/li[7]/a</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='Menu']/li[7]/a</value>
+      <value>.//*[@id='searchQuery']</value>
    </webElementProperties>
 </WebElementEntity>
