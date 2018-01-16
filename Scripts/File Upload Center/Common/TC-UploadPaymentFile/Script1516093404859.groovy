@@ -18,18 +18,30 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-
+tagged= generateRandom("abcdefghijklmnop123456789", 5)
 WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : '', ('Password') : ''], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('File Upload Center/Common/OR-FileUploadCenterLink'))
+WebUI.click(findTestObject('File Upload Center/Common/mnuFileUploadCenterLink'))
 
-WebUI.click(findTestObject('File Upload Center/File Upload Center Page/OR-MpesaButton'))
+WebUI.click(findTestObject('File Upload Center/File Upload Center Page/btnMpesaButton'))
 
-WebUI.uploadFile(findTestObject('File Upload Center/File Upload Center Page/OR-SELECTFiles'), mpesaPayment)
+WebUI.uploadFile(findTestObject('File Upload Center/File Upload Center Page/btnSELECTFiles'), mpesaPayment)
 
-WebUI.setText(findTestObject('File Upload Center/File Upload Center Page/OR-CommentTextArea'), comment)
+WebUI.setText(findTestObject('File Upload Center/File Upload Center Page/txtCommentTextArea'), comment)
 
-WebUI.setText(findTestObject('File Upload Center/File Upload Center Page/OR-Tag'), tag)
+WebUI.setText(findTestObject('File Upload Center/File Upload Center Page/txtTag'), tagged)
 
-WebUI.click(findTestObject('File Upload Center/File Upload Center Page/OR-UPLOADButton'))
+WebUI.click(findTestObject('File Upload Center/File Upload Center Page/btnUPLOADButton'))
+
+String generateRandom(String chars, Integer length) {
+    Random rand = new Random()
+
+    StringBuilder sb = new StringBuilder()
+
+    for (int i = 0; i < length; i++) {
+        sb.append(chars.charAt(rand.nextInt(chars.length())))
+    }
+    
+    return sb.toString()
+}
 

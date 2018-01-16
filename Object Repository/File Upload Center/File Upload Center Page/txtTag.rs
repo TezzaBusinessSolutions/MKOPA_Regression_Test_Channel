@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>The Comment Field on the Upload file Window</description>
-   <name>OR-CommentTextArea</name>
+   <description></description>
+   <name>txtTag</name>
    <tag></tag>
-   <elementGuidId>5dbecb52-d4bf-4dae-988f-24046e438d12</elementGuidId>
+   <elementGuidId>a52cfdd8-c599-4fa4-a386-a64e7908c463</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -16,6 +16,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='Comment']</value>
+      <value>.//*[@id='Tag']</value>
    </webElementProperties>
 </WebElementEntity>

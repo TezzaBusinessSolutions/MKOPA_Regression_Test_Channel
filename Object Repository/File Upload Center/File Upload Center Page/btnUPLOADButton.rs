@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>Error message when the Tag field is left Empty</description>
-   <name>OR-BlankTagField</name>
+   <description>Upload the Selected File</description>
+   <name>btnUPLOADButton</name>
    <tag></tag>
-   <elementGuidId>177d61c2-ccc9-4a45-9ae2-96b5b64efe47</elementGuidId>
+   <elementGuidId>ad816ee3-b814-48bf-803d-7a012e473978</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -16,6 +16,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[text()=&quot;Please enter tag&quot;]</value>
+      <value>.//*[@id='upload-file-mpesa']</value>
    </webElementProperties>
 </WebElementEntity>

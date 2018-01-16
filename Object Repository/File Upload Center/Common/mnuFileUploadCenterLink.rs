@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description>The link on the dashboard</description>
-   <name>OR-FileUploadCenterLink</name>
+   <name>mnuFileUploadCenterLink</name>
    <tag></tag>
    <elementGuidId>88018d91-835c-4f85-b984-74adcdfe1c8d</elementGuidId>
    <selectorCollection>

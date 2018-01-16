@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>Upload the Selected File</description>
-   <name>OR-UPLOADButton</name>
+   <description>The Comment Field on the Upload file Window</description>
+   <name>txtCommentTextArea</name>
    <tag></tag>
-   <elementGuidId>ad816ee3-b814-48bf-803d-7a012e473978</elementGuidId>
+   <elementGuidId>5dbecb52-d4bf-4dae-988f-24046e438d12</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -16,6 +16,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='upload-file-mpesa']</value>
+      <value>.//*[@id='Comment']</value>
    </webElementProperties>
 </WebElementEntity>

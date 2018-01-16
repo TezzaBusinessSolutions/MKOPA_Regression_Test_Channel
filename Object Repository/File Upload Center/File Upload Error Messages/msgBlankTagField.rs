@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>Error Message thrown when no File is uploaded</description>
-   <name>OR-NoSELECTEDFile</name>
+   <description>Error message when the Tag field is left Empty</description>
+   <name>msgBlankTagField</name>
    <tag></tag>
-   <elementGuidId>5a21112a-2153-4316-ba38-edb015a2b584</elementGuidId>
+   <elementGuidId>177d61c2-ccc9-4a45-9ae2-96b5b64efe47</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -16,6 +16,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[text()=&quot;Please enter the notes&quot;]</value>
+      <value>.//*[text()=&quot;Please enter tag&quot;]</value>
    </webElementProperties>
 </WebElementEntity>
