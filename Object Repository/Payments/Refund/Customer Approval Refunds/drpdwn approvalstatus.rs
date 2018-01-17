@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>Used for selecting a Specific payment from the list</description>
-   <name>Select Floating payment</name>
+   <description></description>
+   <name>drpdwn approvalstatus</name>
    <tag></tag>
-   <elementGuidId>0fc7a18b-f116-4191-92e9-a93376481600</elementGuidId>
+   <elementGuidId>1f645a30-9337-46ca-aa2a-2e5f56497747</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='PaymentsList']/table/tbody/tr[td[text()='25827702']]/td/a[text()='Assign']</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='PaymentsList']/table/tbody/tr[td[text()='25827702']]/td/a[text()='Assign']</value>
+      <value>.//*[@id='divBodyMain']/div/div[3]/fieldset/div/form/table/tbody/tr[1]/td[2]/div/div/span[2]/span</value>
    </webElementProperties>
 </WebElementEntity>

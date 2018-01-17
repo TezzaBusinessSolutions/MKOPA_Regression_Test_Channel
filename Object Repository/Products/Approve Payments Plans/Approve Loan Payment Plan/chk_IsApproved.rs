@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>Used for selecting a Specific payment from the list</description>
-   <name>Select Floating payment</name>
+   <description>Is approved Check box when approving loan payment Plan</description>
+   <name>chk_IsApproved</name>
    <tag></tag>
-   <elementGuidId>0fc7a18b-f116-4191-92e9-a93376481600</elementGuidId>
+   <elementGuidId>3f6a5ed8-3a45-4a61-9d7d-a0b383e5408a</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='PaymentsList']/table/tbody/tr[td[text()='25827702']]/td/a[text()='Assign']</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='PaymentsList']/table/tbody/tr[td[text()='25827702']]/td/a[text()='Assign']</value>
+      <value>.//*[@id='IsApproved']</value>
    </webElementProperties>
 </WebElementEntity>

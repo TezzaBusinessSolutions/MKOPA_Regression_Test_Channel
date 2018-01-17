@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>Used for selecting a Specific payment from the list</description>
-   <name>Select Floating payment</name>
+   <description>Error message diplayed without filling the required fields</description>
+   <name>Errmsg_approvalStatus</name>
    <tag></tag>
-   <elementGuidId>0fc7a18b-f116-4191-92e9-a93376481600</elementGuidId>
+   <elementGuidId>6a924e10-d9aa-4231-b97f-d14a268a0f5c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='PaymentsList']/table/tbody/tr[td[text()='25827702']]/td/a[text()='Assign']</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='PaymentsList']/table/tbody/tr[td[text()='25827702']]/td/a[text()='Assign']</value>
+      <value>.//*[contains(text(), 'Please select an approval status')]</value>
    </webElementProperties>
 </WebElementEntity>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>Used for selecting a Specific payment from the list</description>
-   <name>Select Floating payment</name>
+   <description></description>
+   <name>mnu_FloatingPaymentsMenu</name>
    <tag></tag>
-   <elementGuidId>0fc7a18b-f116-4191-92e9-a93376481600</elementGuidId>
+   <elementGuidId>fc6faad7-e998-4085-bf1e-1acbae01d60b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='PaymentsList']/table/tbody/tr[td[text()='25827702']]/td/a[text()='Assign']</value>
+         <value>.//*[@id='Menu']/li[4]/div/ul/li[6]/div/ul/li[1]/a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='PaymentsList']/table/tbody/tr[td[text()='25827702']]/td/a[text()='Assign']</value>
+      <value>.//*[@id='Menu']/li[4]/div/ul/li[6]/div/ul/li[1]/a</value>
    </webElementProperties>
 </WebElementEntity>

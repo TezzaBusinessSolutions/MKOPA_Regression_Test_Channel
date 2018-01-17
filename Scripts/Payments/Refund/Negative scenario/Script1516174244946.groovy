@@ -18,40 +18,26 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : '', ('Password') : ''], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/Menu-Payments'))
+WebUI.delay(2)
 
-WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/SubMenu-CustomerPaayments'))
-
-WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/Submenu-Menu-Floating Payments'))
-
-'change in the xpath and put anothe reference number after the test case is complete\r\n'
-WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/Select Floating payment'))
-
-WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/Button-Assign Button'))
-
-WebUI.verifyTextPresent('\'Comment\' should not be empty.', false)
-
-WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/SelectOnPayerReference'))
+WebUI.mouseOver(findTestObject('Payments/Common Payments Objects/OR-PaymentsDropdownMenu'))
 
 WebUI.delay(2)
 
-WebUI.setMaskedText(findTestObject('Payments/Assinging Floating Payer Payment/Inputbox-Payer Reference Number'), '10121874')
-
-WebUI.setText(findTestObject('Payments/Assinging Floating Payer Payment/InputBox For Comment'), 'Assigned due to lack of the owner')
+WebUI.mouseOver(findTestObject('Payments/Refund/mnu_Refund'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/Dropdown To Select Product account'))
+WebUI.click(findTestObject('Payments/Refund/Customer Approval Refunds/lnk_Approve Customer Refunds'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/Dropdown To Select Product account'))
+WebUI.click(findTestObject('Payments/Refund/Customer Approval Refunds/lnk_Approve'))
 
-WebUI.doubleClick(findTestObject('Payments/Assinging Floating Payer Payment/Selecting payer reference'))
+WebUI.click(findTestObject('Payments/Refund/Customer Approval Refunds/btn_save'))
 
-WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/Button-Assign Button'))
+WebUI.verifyElementText(findTestObject('Payments/Refund/Customer Approval Refunds/Errmsg_approvalStatus'), ErroMsg)
 

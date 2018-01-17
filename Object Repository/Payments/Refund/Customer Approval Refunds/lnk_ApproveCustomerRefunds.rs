@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>Used for selecting a Specific payment from the list</description>
-   <name>Select Floating payment</name>
+   <description>List of customers awaiting refunds</description>
+   <name>lnk_ApproveCustomerRefunds</name>
    <tag></tag>
-   <elementGuidId>0fc7a18b-f116-4191-92e9-a93376481600</elementGuidId>
+   <elementGuidId>8f642cd2-e7e2-41b0-ab7d-e04ed312dfd5</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='PaymentsList']/table/tbody/tr[td[text()='25827702']]/td/a[text()='Assign']</value>
+         <value>.//a[contains(text(), &quot;Approve Customer Refunds&quot;)]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='PaymentsList']/table/tbody/tr[td[text()='25827702']]/td/a[text()='Assign']</value>
+      <value>.//a[contains(text(), &quot;Approve Customer Refunds&quot;)]</value>
    </webElementProperties>
 </WebElementEntity>

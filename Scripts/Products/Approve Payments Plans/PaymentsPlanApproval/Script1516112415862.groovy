@@ -18,40 +18,22 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : '', ('Password') : ''], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/Menu-Payments'))
+WebUI.mouseOver(findTestObject('Products/Approve Payments Plans/mnu_ProductsDropdownMenu'))
 
-WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/SubMenu-CustomerPaayments'))
+WebUI.mouseOver(findTestObject('Products/Approve Payments Plans/mnu_PaymentPlansSubMenu'))
 
-WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/Submenu-Menu-Floating Payments'))
+WebUI.click(findTestObject('Products/Approve Payments Plans/mod_PaymentsPlanApprovalsModule'))
 
-'change in the xpath and put anothe reference number after the test case is complete\r\n'
-WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/Select Floating payment'))
+WebUI.waitForPageLoad(10)
 
-WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/Button-Assign Button'))
+WebUI.click(findTestObject('Products/Approve Payments Plans/lnk_PaymentPlanPendingApproval'))
 
-WebUI.verifyTextPresent('\'Comment\' should not be empty.', false)
+WebUI.comment('Loading Approve Loan Payment Plan Update Page')
 
-WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/SelectOnPayerReference'))
+WebUI.sendKeys(findTestObject('Products/Approve Payments Plans/Approve Loan Payment Plan/txtarea_ApproverNotes'), 'Testing')
 
-WebUI.delay(2)
-
-WebUI.setMaskedText(findTestObject('Payments/Assinging Floating Payer Payment/Inputbox-Payer Reference Number'), '10121874')
-
-WebUI.setText(findTestObject('Payments/Assinging Floating Payer Payment/InputBox For Comment'), 'Assigned due to lack of the owner')
-
-WebUI.delay(2)
-
-WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/Dropdown To Select Product account'))
-
-WebUI.delay(2)
-
-WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/Dropdown To Select Product account'))
-
-WebUI.doubleClick(findTestObject('Payments/Assinging Floating Payer Payment/Selecting payer reference'))
-
-WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/Button-Assign Button'))
+WebUI.check(findTestObject('Products/Approve Payments Plans/Approve Loan Payment Plan/chk_IsApproved'))
 

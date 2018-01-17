@@ -18,40 +18,30 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : '', ('Password') : ''], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/Menu-Payments'))
+WebUI.mouseOver(findTestObject('Payments/Common Payments Objects/mnu_PaymentsDropdownMenu'))
 
-WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/SubMenu-CustomerPaayments'))
+WebUI.mouseOver(findTestObject('Payments/Customer Payments/Floating Payments/mnu_CustomerPaymentsSubMenu'))
 
-WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/Submenu-Menu-Floating Payments'))
+WebUI.click(findTestObject('Payments/Customer Payments/Floating Payments/mnu_FloatingPaymentsMenu'))
 
-'change in the xpath and put anothe reference number after the test case is complete\r\n'
-WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/Select Floating payment'))
+WebUI.getText(findTestObject('Payments/Customer Payments/Floating Payments/lnk_FloatingPayerPayment'))
 
-WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/Button-Assign Button'))
+WebUI.verifyTextPresent('LKE4700S22', false)
 
-WebUI.verifyTextPresent('\'Comment\' should not be empty.', false)
+WebUI.mouseOver(findTestObject('Payments/Common Payments Objects/mnu_PaymentsDropdownMenu'))
 
-WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/SelectOnPayerReference'))
+WebUI.click(findTestObject('Payments/Search For Payment/mnu_SearchForPayment'))
 
-WebUI.delay(2)
+WebUI.setText(findTestObject('Payments/Search For Payment/txt_ReceiptNumber'), receiptNumber)
 
-WebUI.setMaskedText(findTestObject('Payments/Assinging Floating Payer Payment/Inputbox-Payer Reference Number'), '10121874')
+WebUI.setText(findTestObject('Payments/Search For Payment/txt_PaymentPhone'), phoneNumber)
 
-WebUI.setText(findTestObject('Payments/Assinging Floating Payer Payment/InputBox For Comment'), 'Assigned due to lack of the owner')
+WebUI.setText(findTestObject('Payments/Search For Payment/txt_PaymentDate'), paymentDate)
 
-WebUI.delay(2)
+WebUI.click(findTestObject('Payments/Search For Payment/btn_SubmitButton'))
 
-WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/Dropdown To Select Product account'))
-
-WebUI.delay(2)
-
-WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/Dropdown To Select Product account'))
-
-WebUI.doubleClick(findTestObject('Payments/Assinging Floating Payer Payment/Selecting payer reference'))
-
-WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/Button-Assign Button'))
+WebUI.callTestCase(findTestCase('Common/LogOut'), [:], FailureHandling.STOP_ON_FAILURE)
 
