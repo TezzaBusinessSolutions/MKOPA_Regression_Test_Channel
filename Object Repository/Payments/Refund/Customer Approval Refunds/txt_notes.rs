@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description></description>
-   <name>OR-ProductAccount</name>
+   <description>refund comments</description>
+   <name>txt_notes</name>
    <tag></tag>
-   <elementGuidId>8adb433e-0809-4fcb-9d3d-387535bc00d7</elementGuidId>
+   <elementGuidId>d737afa3-95ee-4a72-970b-e3d2b0f4e0a0</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='customer-div']/form/div[4]/div/div/span[1]</value>
+      <value>//textarea[contains(@id,'notes')]</value>
    </webElementProperties>
 </WebElementEntity>

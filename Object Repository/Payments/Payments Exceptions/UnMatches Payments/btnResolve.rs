@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>OR-Payments Transfers for Approval</name>
+   <name>btnResolve</name>
    <tag></tag>
-   <elementGuidId>ba0ded9d-e727-416b-92f2-1da1808fcf51</elementGuidId>
+   <elementGuidId>4c76388a-50b3-4b77-b9c8-93211288de84</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +16,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//a[contains(text(), &quot;Payment Transfers for Approval&quot;)]</value>
+      <value>.//*[@id='customer-div']/form/div[7]/input</value>
    </webElementProperties>
 </WebElementEntity>
