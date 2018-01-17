@@ -27,28 +27,25 @@ WebUI.delay(5)
 
 WebUI.mouseOver(findTestObject('Payment Plans/common/mnu_PaymentPlans'))
 
-WebUI.click(findTestObject('Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/mnu_PaymentPlansApprovals'))
+WebUI.click(findTestObject('Payment Plans/Cash Payment Plan/Addcashpaymentplan/mnu_AddcashPaymentPlan'))
 
-WebUI.verifyElementPresent(findTestObject('Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/grd_PaymentPlansApprovalsPage'), 
-    0)
+WebUI.verifyElementVisible(findTestObject('Payment Plans/Loan Payment Plan/Addloanpaymentplan/grd_addloanpaymentplanpage'))
 
-WebUI.click(findTestObject('Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/lnk_Approve'))
+WebUI.setText(findTestObject('Payment Plans/Loan Payment Plan/Addloanpaymentplan/txt_loanname'), findTestData('PaymentPlans/Paymentplannames').getValue(
+        1, 1))
 
-WebUI.click(findTestObject('Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/btn_ApprovalsSaveButton'))
+WebUI.setText(findTestObject('Payment Plans/Loan Payment Plan/Addloanpaymentplan/txt_displayname(marketing)'), findTestData(
+        'PaymentPlans/Paymentplannames').getValue(2, 1))
 
-WebUI.verifyElementVisible(findTestObject('Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/msg_blankloanapprovals'), 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementChecked(findTestObject('Payment Plans/Loan Payment Plan/Addloanpaymentplan/chk_checkcanbeprimary'), 0)
 
-WebUI.click(findTestObject('Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/cbo_ApprovalStatus'))
+WebUI.scrollToElement(findTestObject('Payment Plans/Loan Payment Plan/Addloanpaymentplan/loanproducttypestoselect'), 0)
+
+WebUI.click(findTestObject('Payment Plans/Loan Payment Plan/Addloanpaymentplan/loanproducttypestoselect'))
 
 WebUI.delay(2)
 
-WebUI.scrollToElement(findTestObject('Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/cbo_Disapproveloan'), 0)
+WebUI.click(findTestObject('Payment Plans/Loan Payment Plan/Addloanpaymentplan/btn_addloanproducttype'))
 
-WebUI.click(findTestObject('Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/cbo_Disapproveloan'))
-
-WebUI.setText(findTestObject('Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/txt_LoanApproverNotes'), findTestData(
-        'Approver Notes/Approver Notes').getValue(1, 1))
-
-WebUI.click(findTestObject('Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/btn_ApprovalsSaveButton'))
+WebUI.click(findTestObject('Payment Plans/Loan Payment Plan/Addloanpaymentplan/btn_loanpaymentplansavebutton'))
 

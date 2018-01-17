@@ -21,34 +21,27 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : '', ('Password') : ''], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Payment Plans/common/mnuProductMenu'))
+WebUI.setText(findTestObject('Customers/Customers List/txt_SearchCustomer'), Account)
 
-WebUI.delay(5)
+WebUI.click(findTestObject('Customers/Customers List/btn_search'))
 
-WebUI.mouseOver(findTestObject('Payment Plans/common/mnu_PaymentPlans'))
-
-WebUI.click(findTestObject('Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/mnu_PaymentPlansApprovals'))
-
-WebUI.verifyElementPresent(findTestObject('Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/grd_PaymentPlansApprovalsPage'), 
-    0)
-
-WebUI.click(findTestObject('Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/lnk_Approve'))
-
-WebUI.click(findTestObject('Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/btn_ApprovalsSaveButton'))
-
-WebUI.verifyElementVisible(findTestObject('Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/msg_blankloanapprovals'), 
-    FailureHandling.STOP_ON_FAILURE)
-
-WebUI.click(findTestObject('Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/cbo_ApprovalStatus'))
+WebUI.getText(findTestObject('Customers/Customers List/Credits'))
 
 WebUI.delay(2)
 
-WebUI.scrollToElement(findTestObject('Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/cbo_Disapproveloan'), 0)
+WebUI.comment('uploading payment to customer')
 
-WebUI.click(findTestObject('Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/cbo_Disapproveloan'))
+WebUI.callTestCase(findTestCase('File Upload Center/Common/TC-UploadPaymentFile'), [('mpesaPayment') : findTestData('File Upload Center/File Upload Payment').getValue(
+            1, 1), ('comment') : findTestData('File Upload Center/File Upload Payment').getValue(2, 1), ('tagged') : ''], 
+    FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/txt_LoanApproverNotes'), findTestData(
-        'Approver Notes/Approver Notes').getValue(1, 1))
+WebUI.click(findTestObject('Customers/Customers List/btn_Close'))
 
-WebUI.click(findTestObject('Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/btn_ApprovalsSaveButton'))
+WebUI.comment('verifying increment of sent credits')
+
+WebUI.setText(findTestObject('Customers/Customers List/txt_SearchCustomer'), Account)
+
+WebUI.click(findTestObject('Customers/Customers List/btn_search'))
+
+WebUI.verifyElementText(findTestObject('Customers/Customers List/Credits'), Credits)
 
