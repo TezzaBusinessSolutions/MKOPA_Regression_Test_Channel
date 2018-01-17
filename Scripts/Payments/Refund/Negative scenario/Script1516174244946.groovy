@@ -37,17 +37,7 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Payments/Refund/Customer Approval Refunds/lnk_Approve'))
 
-WebUI.comment('filling  in the refund form')
-
-WebUI.click(findTestObject('Payments/Refund/Customer Approval Refunds/drpdwn approvalstatus'))
-
-WebUI.delay(2)
-
-WebUI.click(findTestObject('Payments/Refund/Customer Approval Refunds/aprrovalstatus'), FailureHandling.STOP_ON_FAILURE)
-
-WebUI.setText(findTestObject('Payments/Refund/Customer Approval Refunds/txt_notes'), notes)
-
 WebUI.click(findTestObject('Payments/Refund/Customer Approval Refunds/btn_save'))
 
-WebUI.verifyElementPresent(findTestObject('Payments/Refund/Customer Approval Refunds/msg_ReundDetails'), 2)
+WebUI.verifyElementText(findTestObject('Payments/Refund/Customer Approval Refunds/Errmsg_approvalStatus'), ErroMsg)
 

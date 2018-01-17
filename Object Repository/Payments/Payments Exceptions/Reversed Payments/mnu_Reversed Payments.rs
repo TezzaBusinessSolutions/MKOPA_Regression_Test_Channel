@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>aprrovalstatus</name>
+   <name>mnu_Reversed Payments</name>
    <tag></tag>
-   <elementGuidId>a27f3fb0-d6a4-4abb-9db1-028ddf95dc15</elementGuidId>
+   <elementGuidId>aee4384d-a93a-46a7-bc26-57c084d33a6f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>html/body/div[5]/div/ul/li[contains(.,'Approved')]</value>
+         <value>.//a[contains(text(), &quot;Reversed Payments&quot;)]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>html/body/div[5]/div/ul/li[contains(.,'Approved')]</value>
+      <value>.//a[contains(text(), &quot;Reversed Payments&quot;)]</value>
    </webElementProperties>
 </WebElementEntity>

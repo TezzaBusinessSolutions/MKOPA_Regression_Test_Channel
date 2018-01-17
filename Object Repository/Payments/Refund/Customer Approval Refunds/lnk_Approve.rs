@@ -7,15 +7,13 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>.//*[@id='ApprovalRefundGrid']/table/tbody/tr[ td[text()=14597927]]/td/a[text()='Approve']</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>.//*[@id='ApprovalRefundGrid']/table/tbody/tr[ td[text()=23896967]]/td/a[text()='Approve']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -25,7 +23,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='ApprovalRefundGrid']/table/tbody/tr[ td[text()=14597927]]/td/a[text()='Approve']</value>
+      <value>.//*[@id='ApprovalRefundGrid']/table/tbody/tr[ td[text()=23896967]]/td/a[text()='Approve']</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>

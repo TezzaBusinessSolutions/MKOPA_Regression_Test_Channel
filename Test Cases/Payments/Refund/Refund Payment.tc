@@ -3,7 +3,7 @@
    <description>efunding payment of a customer</description>
    <name>Refund Payment</name>
    <tag></tag>
-   <comment></comment>
+   <comment>filling  in the refund form</comment>
    <testCaseGuid>76ad1cf2-3308-440e-9871-24282fc8ad63</testCaseGuid>
    <variable>
       <defaultValue>findTestData('Payyments/Refund/CustomerRefund').getValue(1, 1)</defaultValue>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description></description>
-   <name>OR-PaymentsExceptions</name>
+   <description>Error message diplayed without filling the required fields</description>
+   <name>Errmsg_approvalStatus</name>
    <tag></tag>
-   <elementGuidId>43eb9b0f-85cf-4e2e-bb11-ac998892ba71</elementGuidId>
+   <elementGuidId>6a924e10-d9aa-4231-b97f-d14a268a0f5c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//span[contains(text(), 'Payment Exceptions')]</value>
+      <value>.//*[contains(text(), 'Please select an approval status')]</value>
    </webElementProperties>
 </WebElementEntity>

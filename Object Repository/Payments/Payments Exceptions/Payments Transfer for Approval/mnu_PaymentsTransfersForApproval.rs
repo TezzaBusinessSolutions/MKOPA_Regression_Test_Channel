@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>OR-Payments Transfers for Approval</name>
+   <name>mnu_PaymentsTransfersForApproval</name>
    <tag></tag>
    <elementGuidId>ba0ded9d-e727-416b-92f2-1da1808fcf51</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
