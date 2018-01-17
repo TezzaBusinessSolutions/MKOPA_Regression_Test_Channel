@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description></description>
-   <name>OR-MpesaButton</name>
+   <description>Upload the Selected File</description>
+   <name>btnUPLOADButton</name>
    <tag></tag>
-   <elementGuidId>fa2da9a6-4994-48d7-87ad-fa9c623c00a3</elementGuidId>
+   <elementGuidId>ad816ee3-b814-48bf-803d-7a012e473978</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -16,6 +16,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[text()=&quot;Mpesa&quot;]</value>
+      <value>.//*[@id='upload-file-mpesa']</value>
    </webElementProperties>
 </WebElementEntity>

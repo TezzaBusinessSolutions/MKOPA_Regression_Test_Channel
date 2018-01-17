@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>The link on the dashboard</description>
-   <name>OR-FileUploadCenterLink</name>
+   <description>The Comment Field on the Upload file Window</description>
+   <name>txtCommentTextArea</name>
    <tag></tag>
-   <elementGuidId>88018d91-835c-4f85-b984-74adcdfe1c8d</elementGuidId>
+   <elementGuidId>5dbecb52-d4bf-4dae-988f-24046e438d12</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -16,6 +16,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@href=&quot;/Payment/FileUploadCenter/FileUploadCenter&quot;]</value>
+      <value>.//*[@id='Comment']</value>
    </webElementProperties>
 </WebElementEntity>

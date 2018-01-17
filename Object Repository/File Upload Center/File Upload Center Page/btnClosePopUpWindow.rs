@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>Error Message thrown when no File is uploaded</description>
-   <name>OR-NoSELECTEDFile</name>
+   <description>The button to close the window dialog propmpting success Message</description>
+   <name>btnClosePopUpWindow</name>
    <tag></tag>
-   <elementGuidId>5a21112a-2153-4316-ba38-edb015a2b584</elementGuidId>
+   <elementGuidId>b6719cc9-863d-459e-a569-1d07fcf9835d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -16,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[text()=&quot;Please enter the notes&quot;]</value>
+      <value>.//*[@id='file-upload-center-paymentfile-window']//span[text()=&quot;Close&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

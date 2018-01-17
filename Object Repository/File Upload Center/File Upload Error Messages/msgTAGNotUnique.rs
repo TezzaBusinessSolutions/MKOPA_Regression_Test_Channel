@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>Upload the Selected File</description>
-   <name>OR-UPLOADButton</name>
+   <description>Error message thrown when the tag field is not unique</description>
+   <name>msgTAGNotUnique</name>
    <tag></tag>
-   <elementGuidId>ad816ee3-b814-48bf-803d-7a012e473978</elementGuidId>
+   <elementGuidId>49555c28-2cf3-4003-83e3-42311c90c31c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -16,6 +16,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='upload-file-mpesa']</value>
+      <value>.//*[text()=&quot;The tag must be unique&quot;]</value>
    </webElementProperties>
 </WebElementEntity>
