@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>OR- payer</name>
+   <name>mnu_PaymentsExceptions</name>
    <tag></tag>
-   <elementGuidId>98cb86b1-ed5f-4dc1-83ce-f7a8a30899f1</elementGuidId>
+   <elementGuidId>43eb9b0f-85cf-4e2e-bb11-ac998892ba71</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +16,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[contains(@id, 'customer-input')]</value>
+      <value>.//span[contains(text(), 'Payment Exceptions')]</value>
    </webElementProperties>
 </WebElementEntity>

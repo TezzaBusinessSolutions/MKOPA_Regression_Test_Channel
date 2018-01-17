@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description></description>
-   <name>OR- ResolveButton</name>
+   <description>Error message diplayed without filling the required fields</description>
+   <name>Errmsg_approvalStatus</name>
    <tag></tag>
-   <elementGuidId>4c76388a-50b3-4b77-b9c8-93211288de84</elementGuidId>
+   <elementGuidId>6a924e10-d9aa-4231-b97f-d14a268a0f5c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='customer-div']/form/div[7]/input</value>
+      <value>.//*[contains(text(), 'Please select an approval status')]</value>
    </webElementProperties>
 </WebElementEntity>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description></description>
-   <name>OR-Comments</name>
+   <description>submit button</description>
+   <name>btn_save</name>
    <tag></tag>
-   <elementGuidId>08db3e3b-3c5b-4eb5-bf86-659a71ee9e6b</elementGuidId>
+   <elementGuidId>2c9d569f-af27-4a96-9d9c-de5cb3d5961c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='PayerModel_Comment']</value>
+      <value>//input[contains(@type,'submit')]</value>
    </webElementProperties>
 </WebElementEntity>
