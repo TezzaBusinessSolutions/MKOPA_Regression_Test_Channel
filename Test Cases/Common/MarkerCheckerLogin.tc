@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MarkerCheckerLogin</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>91aa07bf-acc1-4605-ab71-e29140b282cd</testCaseGuid>
+   <variable>
+      <defaultValue>findTestData('MarkerCheckerLogin/CheckerLogin').getValue(1, 1)</defaultValue>
+      <description></description>
+      <id>b104bfbd-f8b4-4860-8615-059169e5b16d</id>
+      <masked>false</masked>
+      <name>Email</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('MarkerCheckerLogin/CheckerLogin').getValue(2, 1)</defaultValue>
+      <description></description>
+      <id>83643f1c-1ce1-485d-b0c6-b34996b428a3</id>
+      <masked>false</masked>
+      <name>Password</name>
+   </variable>
+</TestCaseEntity>

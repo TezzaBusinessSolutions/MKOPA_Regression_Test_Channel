@@ -19,23 +19,17 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-//This step calls the loadind application class
-WebUI.callTestCase(findTestCase('Common/Loading Application'), [('MKOPA_URL') : findTestData('Test Environments/Test Environment').getValue(
-            1, 1)], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : '', ('Password') : ''], FailureHandling.STOP_ON_FAILURE)
 
-//Loads the data repository
-def data = WebUI.callTestCase(findTestCase('Common/DataRepository'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Payments/Search For Payment/Payments'))
 
-def email = data.Email
+WebUI.click(findTestObject('Payments/Search For Payment/mnu_SearchForPayment'))
 
-def password = data.password
+WebUI.setText(findTestObject('Payments/Search For Payment/txt_ReceiptNumber'), receiptNumber)
 
-//Fills in the user Email
-WebUI.setText(findTestObject('Login Objects Repo/txt_UserNameOrEmail'), email)
+WebUI.setText(findTestObject('Payments/Search For Payment/txt_PaymentPhone'), phoneNumber)
 
-//Fills in the User Password
-WebUI.setText(findTestObject('Login Objects Repo/txt_Password'), password)
+WebUI.setText(findTestObject('Payments/Search For Payment/txt_PaymentDate'), '2017-03-10')
 
-//Clicks Sign In Button
-WebUI.click(findTestObject('Login Objects Repo/btn_Sign_In_Button'))
+WebUI.click(findTestObject('Payments/Search For Payment/btn_SubmitButton'))
 
