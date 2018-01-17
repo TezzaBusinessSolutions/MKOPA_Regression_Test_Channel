@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>mod_PaymentsPlanApprovalsModule</name>
+   <tag></tag>
+   <elementGuidId>04b8914a-adef-46eb-a553-45dae3fc8222</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>.//*[@id='Menu']/li[6]/div/ul/li[1]/div/ul/li[10]/a</value>
+   </webElementProperties>
+</WebElementEntity>

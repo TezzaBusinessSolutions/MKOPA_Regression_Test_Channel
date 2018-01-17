@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description>Holds Login Credentials for Marker Checker</description>
+   <name>CheckerLogin</name>
+   <tag></tag>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator></csvSeperator>
+   <dataFileGUID>071ccbbd-5e2b-4d04-8fea-40547a77a63c</dataFileGUID>
+   <dataSourceUrl>C:\Users\charles.chweyaa\git\MKOPA_Regression_Test_Channel\Data Files\MarkerCheckerLogin\Checker.xlsx</dataSourceUrl>
+   <driver>ExcelFile</driver>
+   <isInternalPath>false</isInternalPath>
+   <query></query>
+   <secureUserAccount>false</secureUserAccount>
+   <sheetName>Sheet1</sheetName>
+   <usingGlobalDBSetting>false</usingGlobalDBSetting>
+</DataFileEntity>

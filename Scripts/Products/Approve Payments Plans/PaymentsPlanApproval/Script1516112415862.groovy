@@ -19,23 +19,21 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-//This step calls the loadind application class
-WebUI.callTestCase(findTestCase('Common/Loading Application'), [('MKOPA_URL') : findTestData('Test Environments/Test Environment').getValue(
-            1, 1)], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : '', ('Password') : ''], FailureHandling.STOP_ON_FAILURE)
 
-//Loads the data repository
-def data = WebUI.callTestCase(findTestCase('Common/DataRepository'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.mouseOver(findTestObject('Products/Approve Payments Plans/mnu_ProductsDropdownMenu'))
 
-def email = data.Email
+WebUI.mouseOver(findTestObject('Products/Approve Payments Plans/mnu_PaymentPlansSubMenu'))
 
-def password = data.password
+WebUI.click(findTestObject('Products/Approve Payments Plans/mod_PaymentsPlanApprovalsModule'))
 
-//Fills in the user Email
-WebUI.setText(findTestObject('Login Objects Repo/txt_UserNameOrEmail'), email)
+WebUI.waitForPageLoad(10)
 
-//Fills in the User Password
-WebUI.setText(findTestObject('Login Objects Repo/txt_Password'), password)
+WebUI.click(findTestObject('Products/Approve Payments Plans/lnk_PaymentPlanPendingApproval'))
 
-//Clicks Sign In Button
-WebUI.click(findTestObject('Login Objects Repo/btn_Sign_In_Button'))
+WebUI.comment('Loading Approve Loan Payment Plan Update Page')
+
+WebUI.sendKeys(findTestObject('Products/Approve Payments Plans/Approve Loan Payment Plan/txtarea_ApproverNotes'), 'Testing')
+
+WebUI.check(findTestObject('Products/Approve Payments Plans/Approve Loan Payment Plan/chk_IsApproved'))
 
