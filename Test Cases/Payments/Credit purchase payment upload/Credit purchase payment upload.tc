@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>credit sent should oincrement upon payment</description>
+   <name>Credit purchase payment upload</name>
+   <tag></tag>
+   <comment>uploading payment to customer
+verifying increment of sent credits</comment>
+   <testCaseGuid>b64776b1-f3a6-4254-a554-c586db931386</testCaseGuid>
+   <variable>
+      <defaultValue>'4866974'</defaultValue>
+      <description></description>
+      <id>1d4fb8e9-ba21-4b09-8809-fb11e3567313</id>
+      <masked>false</masked>
+      <name>Account</name>
+   </variable>
+   <variable>
+      <defaultValue>'15'</defaultValue>
+      <description></description>
+      <id>4fe554fe-6140-49f9-af97-8344800e18b2</id>
+      <masked>false</masked>
+      <name>Credits</name>
+   </variable>
+</TestCaseEntity>
