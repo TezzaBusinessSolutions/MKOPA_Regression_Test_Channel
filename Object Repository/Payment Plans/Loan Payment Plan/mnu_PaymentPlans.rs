@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>ApprovalsSaveButton</name>
+   <name>mnu_PaymentPlans</name>
    <tag></tag>
-   <elementGuidId>1efba546-e421-4c67-93c3-968cea6639e3</elementGuidId>
+   <elementGuidId>35c1eeb4-3277-45e4-8033-34b306e5d664</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +16,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='divBodyMain']/form/fieldset[2]/table/tbody/tr[4]/td/input</value>
+      <value>.//*[@id='Menu']/li[6]/div/ul/li[1]/span</value>
    </webElementProperties>
 </WebElementEntity>

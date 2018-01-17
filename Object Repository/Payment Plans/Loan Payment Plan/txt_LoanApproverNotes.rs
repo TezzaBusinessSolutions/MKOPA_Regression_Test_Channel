@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>msg_blankloanapprovals</name>
+   <name>txt_LoanApproverNotes</name>
    <tag></tag>
-   <elementGuidId>7ec72c0d-8ed2-4d41-a7b9-5f34ef24346e</elementGuidId>
+   <elementGuidId>77feb7c8-e44c-4bbd-b547-583c8826a28d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -16,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='divBodyMain']/form/fieldset[2]/div/ul</value>
+      <value>.//*[@id='ApproverNotes']</value>
    </webElementProperties>
 </WebElementEntity>

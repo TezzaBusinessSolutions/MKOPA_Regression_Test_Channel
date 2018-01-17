@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>ApprovalStatus</name>
+   <name>cbo_ApprovalStatus</name>
    <tag></tag>
    <elementGuidId>461b8e78-62b1-4170-8174-27cabaf41d3f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>

@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>ProductMenu</name>
+   <name>mnuProductMenu</name>
    <tag></tag>
    <elementGuidId>20f49bc4-52be-41db-9f79-dba1d6c34816</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>

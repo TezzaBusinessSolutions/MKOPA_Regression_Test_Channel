@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>PaymentPlansApprovals</name>
+   <name>grd_PaymentPlansApprovalsPage</name>
    <tag></tag>
-   <elementGuidId>1755eccf-04cd-4d5e-a52f-87390e6e7685</elementGuidId>
+   <elementGuidId>cf0d586f-cdc2-4faf-8537-795358acdc3d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +16,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='Menu']/li[6]/div/ul/li[1]/div/ul/li[10]/a</value>
+      <value>.//*[@id='divBodyMain']</value>
    </webElementProperties>
 </WebElementEntity>

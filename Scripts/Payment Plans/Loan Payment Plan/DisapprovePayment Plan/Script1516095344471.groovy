@@ -21,21 +21,32 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : '', ('Password') : ''], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Payment Plans/Loan Payment Plan/ProductMenu'))
+WebUI.mouseOver(findTestObject('Payment Plans/Loan Payment Plan/mnuProductMenu'))
 
 WebUI.delay(5)
 
-WebUI.mouseOver(findTestObject('Payment Plans/Loan Payment Plan/PaymentPlans'))
+WebUI.mouseOver(findTestObject('Payment Plans/Loan Payment Plan/mnu_PaymentPlans'))
 
-WebUI.click(findTestObject('Payment Plans/Loan Payment Plan/PaymentPlansApprovals'))
+WebUI.click(findTestObject('Payment Plans/Loan Payment Plan/mnu_PaymentPlansApprovals'))
 
-WebUI.verifyElementPresent(findTestObject('Payment Plans/Loan Payment Plan/PaymentPlansApprovalsPage'), 0)
+WebUI.verifyElementPresent(findTestObject('Payment Plans/Loan Payment Plan/grd_PaymentPlansApprovalsPage'), 0)
 
-WebUI.click(findTestObject('Payment Plans/Loan Payment Plan/lnkApprove'))
+WebUI.click(findTestObject('Payment Plans/Loan Payment Plan/lnk_Approve'))
 
-WebUI.click(findTestObject('Payment Plans/Loan Payment Plan/ApprovalsSaveButton'))
+WebUI.click(findTestObject('Payment Plans/Loan Payment Plan/btn_ApprovalsSaveButton'))
 
-WebUI.verifyElementText(findTestObject('Payment Plans/Loan Payment Plan/msg_blankloanapprovals'), '')
+WebUI.verifyElementVisible(findTestObject('Payment Plans/Loan Payment Plan/msg_blankloanapprovals'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Payment Plans/Loan Payment Plan/ApprovalStatus'))
+WebUI.click(findTestObject('Payment Plans/Loan Payment Plan/cbo_ApprovalStatus'))
+
+WebUI.delay(2)
+
+WebUI.scrollToElement(findTestObject('Payment Plans/Loan Payment Plan/cbo_Disapproveloan'), 0)
+
+WebUI.click(findTestObject('Payment Plans/Loan Payment Plan/cbo_Disapproveloan'))
+
+WebUI.setText(findTestObject('Payment Plans/Loan Payment Plan/txt_LoanApproverNotes'), findTestData('Approver Notes/Approver Notes').getValue(
+        1, 1))
+
+WebUI.click(findTestObject('Payment Plans/Loan Payment Plan/btn_ApprovalsSaveButton'))
 

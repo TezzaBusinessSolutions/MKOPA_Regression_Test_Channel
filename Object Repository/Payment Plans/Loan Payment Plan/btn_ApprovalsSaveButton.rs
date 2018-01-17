@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>AddLoanPaymentPlan</name>
+   <name>btn_ApprovalsSaveButton</name>
    <tag></tag>
-   <elementGuidId>5e5138af-f2b9-41d2-9468-9e4efe8cb031</elementGuidId>
+   <elementGuidId>1efba546-e421-4c67-93c3-968cea6639e3</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +16,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='Menu']/li[6]/div/ul/li[1]/div/ul/li[7]/a</value>
+      <value>.//*[@id='divBodyMain']/form/fieldset[2]/table/tbody/tr[4]/td/input</value>
    </webElementProperties>
 </WebElementEntity>

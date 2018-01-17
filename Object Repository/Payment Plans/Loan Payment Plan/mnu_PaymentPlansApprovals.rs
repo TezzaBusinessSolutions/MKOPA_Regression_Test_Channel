@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>PaymentPlans</name>
+   <name>mnu_PaymentPlansApprovals</name>
    <tag></tag>
-   <elementGuidId>35c1eeb4-3277-45e4-8033-34b306e5d664</elementGuidId>
+   <elementGuidId>1755eccf-04cd-4d5e-a52f-87390e6e7685</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>.//*[@id='Menu']/li[6]/div/ul/li[1]/div/ul/li[10]/a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='Menu']/li[6]/div/ul/li[1]/span</value>
+      <value>.//*[@id='Menu']/li[6]/div/ul/li[1]/div/ul/li[10]/a</value>
    </webElementProperties>
 </WebElementEntity>
