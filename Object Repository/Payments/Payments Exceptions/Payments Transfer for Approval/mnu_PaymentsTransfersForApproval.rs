@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>OR-WelcomeMsg</name>
+   <name>mnu_PaymentsTransfersForApproval</name>
    <tag></tag>
-   <elementGuidId>e84faf9d-1a7f-4b83-a182-fde11234aeeb</elementGuidId>
+   <elementGuidId>ba0ded9d-e727-416b-92f2-1da1808fcf51</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +16,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[contains(text(), 'The payment was successfully assigned to payer.')]</value>
+      <value>.//a[contains(text(), &quot;Payment Transfers for Approval&quot;)]</value>
    </webElementProperties>
 </WebElementEntity>

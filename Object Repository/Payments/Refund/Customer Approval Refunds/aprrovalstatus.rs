@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>aprrovalstatus</name>
+   <tag></tag>
+   <elementGuidId>a27f3fb0-d6a4-4abb-9db1-028ddf95dc15</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>html/body/div[5]/div/ul/li[contains(.,'Approved')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>html/body/div[5]/div/ul/li[contains(.,'Approved')]</value>
+   </webElementProperties>
+</WebElementEntity>

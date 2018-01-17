@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>OR-Reversed Payments</name>
+   <name>txt_ProductAccount</name>
    <tag></tag>
-   <elementGuidId>aee4384d-a93a-46a7-bc26-57c084d33a6f</elementGuidId>
+   <elementGuidId>8adb433e-0809-4fcb-9d3d-387535bc00d7</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//a[contains(text(), &quot;Reversed Payments&quot;)]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +16,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//a[contains(text(), &quot;Reversed Payments&quot;)]</value>
+      <value>.//*[@id='customer-div']/form/div[4]/div/div/span[1]</value>
    </webElementProperties>
 </WebElementEntity>
