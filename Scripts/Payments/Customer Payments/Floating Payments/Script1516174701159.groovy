@@ -19,23 +19,29 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-//This step calls the loadind application class
-WebUI.callTestCase(findTestCase('Common/Loading Application'), [('MKOPA_URL') : findTestData('Test Environments/Test Environment').getValue(
-            1, 1)], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : '', ('Password') : ''], FailureHandling.STOP_ON_FAILURE)
 
-//Loads the data repository
-def data = WebUI.callTestCase(findTestCase('Common/DataRepository'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.mouseOver(findTestObject('Payments/Common Payments Objects/mnu_PaymentsDropdownMenu'))
 
-def email = data.Email
+WebUI.mouseOver(findTestObject('Payments/Customer Payments/Floating Payments/mnu_CustomerPaymentsSubMenu'))
 
-def password = data.password
+WebUI.click(findTestObject('Payments/Customer Payments/Floating Payments/mnu_FloatingPaymentsMenu'))
 
-//Fills in the user Email
-WebUI.setText(findTestObject('Login Objects Repo/txt_UserNameOrEmail'), email)
+WebUI.getText(findTestObject('Payments/Customer Payments/Floating Payments/lnk_FloatingPayerPayment'))
 
-//Fills in the User Password
-WebUI.setText(findTestObject('Login Objects Repo/txt_Password'), password)
+WebUI.verifyTextPresent('LKE4700S22', false)
 
-//Clicks Sign In Button
-WebUI.click(findTestObject('Login Objects Repo/btn_Sign_In_Button'))
+WebUI.mouseOver(findTestObject('Payments/Common Payments Objects/mnu_PaymentsDropdownMenu'))
+
+WebUI.click(findTestObject('Payments/Search For Payment/mnu_SearchForPayment'))
+
+WebUI.setText(findTestObject('Payments/Search For Payment/txt_ReceiptNumber'), receiptNumber)
+
+WebUI.setText(findTestObject('Payments/Search For Payment/txt_PaymentPhone'), phoneNumber)
+
+WebUI.setText(findTestObject('Payments/Search For Payment/txt_PaymentDate'), paymentDate)
+
+WebUI.click(findTestObject('Payments/Search For Payment/btn_SubmitButton'))
+
+WebUI.callTestCase(findTestCase('Common/LogOut'), [:], FailureHandling.STOP_ON_FAILURE)
 

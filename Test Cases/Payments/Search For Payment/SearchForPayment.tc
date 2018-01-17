@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SearchForPayment</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>08770292-74f2-42a5-9da4-64a8da532a32</testCaseGuid>
+   <variable>
+      <defaultValue>findTestData('Payments/PaymentsModule').getValue(3, 1)</defaultValue>
+      <description></description>
+      <id>83569900-a8dd-4637-9138-2725b68c009c</id>
+      <masked>false</masked>
+      <name>receiptNumber</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('Payments/PaymentsModule').getValue(4, 1)</defaultValue>
+      <description></description>
+      <id>011b0c4e-55c1-401a-bb8a-944cd7a8c790</id>
+      <masked>false</masked>
+      <name>phoneNumber</name>
+   </variable>
+</TestCaseEntity>
