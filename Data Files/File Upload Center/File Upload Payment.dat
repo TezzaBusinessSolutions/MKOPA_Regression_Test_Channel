@@ -6,7 +6,7 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>2f1f769a-845c-4141-99fb-8697884d33e8</dataFileGUID>
-   <dataSourceUrl>C:\Users\lewis.mocha\git\MKOPA_Regression_Test_Channel\Data Files\File Upload Center\File Upload Center.xlsx</dataSourceUrl>
+   <dataSourceUrl>Data Files/File Upload Center/File Upload Center.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>false</isInternalPath>
    <query></query>
