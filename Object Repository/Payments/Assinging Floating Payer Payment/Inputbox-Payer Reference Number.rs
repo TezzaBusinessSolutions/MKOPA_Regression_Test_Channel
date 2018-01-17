@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>OR-Payments</name>
+   <name>Inputbox-Payer Reference Number</name>
    <tag></tag>
-   <elementGuidId>985cb5e6-90e6-4150-adec-62a8adfc2259</elementGuidId>
+   <elementGuidId>a27bc5f5-3cfe-4b82-a73f-f46a4470deac</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='Menu']/li/span[text()='Payments']</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='Menu']/li/span[text()='Payments']</value>
+      <value>.//*[@id='PayerId-input']</value>
    </webElementProperties>
 </WebElementEntity>

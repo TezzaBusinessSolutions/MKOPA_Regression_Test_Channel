@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>OR-Payments</name>
+   <name>Menu-Payments</name>
    <tag></tag>
-   <elementGuidId>985cb5e6-90e6-4150-adec-62a8adfc2259</elementGuidId>
+   <elementGuidId>7ee38ba8-4d91-4ad4-892b-cdbd5916b338</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='Menu']/li/span[text()='Payments']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +16,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='Menu']/li/span[text()='Payments']</value>
+      <value>.//*[@id='Menu']/li[4]/span</value>
    </webElementProperties>
 </WebElementEntity>
