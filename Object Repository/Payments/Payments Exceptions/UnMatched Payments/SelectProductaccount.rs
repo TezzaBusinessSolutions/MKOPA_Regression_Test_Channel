@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lnk_Assign</name>
+   <name>SelectProductaccount</name>
    <tag></tag>
-   <elementGuidId>86f3272c-b30f-48ad-ab98-cb920c67c238</elementGuidId>
+   <elementGuidId>1429dcb3-73be-431e-b810-9abfff5dfdaa</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='Payments']/table/tbody/tr[td[text()='0705572353']]/td/a[text()='Assign']</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='Payments']/table/tbody/tr[td[text()='0705572353']]/td/a[text()='Assign']</value>
+      <value>html/body/div[6]/div/ul/li</value>
    </webElementProperties>
 </WebElementEntity>

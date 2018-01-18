@@ -19,23 +19,29 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : '', ('Password') : ''], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Payments/Payments Exceptions/View UnMatched Payments'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('Payments/Payments Exceptions/UnMatched Payments/lnk_Assign'))
 
 WebUI.delay(1)
 
-WebUI.mouseOver(findTestObject('Payments/Common Payments Objects/Payments Dropdown/PaymentsDropdown'), FailureHandling.STOP_ON_FAILURE)
+WebUI.sendKeys(findTestObject('Payments/Payments Exceptions/UnMatched Payments/txt_CustomerReference'), '4866974')
+
+WebUI.delay(1)
+
+WebUI.scrollToElement(findTestObject('Payments/Payments Exceptions/UnMatched Payments/txt_CustomerReference'), 4866974)
 
 WebUI.delay(2)
 
-WebUI.mouseOver(findTestObject('Payments/Payments Exceptions/mnu_PaymentsExceptions'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Payments/Payments Exceptions/UnMatched Payments/txt_ProductAccount'))
 
 WebUI.delay(2)
 
-WebUI.mouseOver(findTestObject('Payments/Payments Exceptions/UnMatched Payments/UnMatched_Payments_Sub_Menu/UnMatchedPaymentsSubMenu'), 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Payments/Payments Exceptions/UnMatched Payments/txt_ProductAccount'))
 
-WebUI.click(findTestObject('Payments/Payments Exceptions/UnMatched Payments/UnMatched_Payments_Sub_Menu/UnMatchedPaymentsSubMenu'))
+WebUI.delay(2)
 
-WebUI.verifyElementPresent(findTestObject('Payments/Payments Exceptions/UnMatched Payments/UnMatched Payments Page Grid/UnMatchedPaymentsGrid'), 
-    1)
+WebUI.click(findTestObject('Payments/Payments Exceptions/UnMatched Payments/SelectProductaccount'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('Payments/Payments Exceptions/UnMatched Payments/btnResolve'))
 
