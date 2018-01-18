@@ -42,17 +42,15 @@ String errorEnternotes = WebUI.getText(findTestObject('File Upload Center/File U
 String errorTagUnique = WebUI.getText(findTestObject('File Upload Center/File Upload Error Messages/msgTAGMustBeUnique'))
 
 if (errorEnternotes == true) {
-	WebUI.click(findTestObject('File Upload Center/File Upload Center Page/btnClosePopUpWindow'))
+    WebUI.click(findTestObject('File Upload Center/File Upload Center Page/btnClosePopUpWindow'))
 } else if (errorEntertag == true) {
-	WebUI.click(findTestObject('File Upload Center/File Upload Center Page/btnClosePopUpWindow'))
+    WebUI.click(findTestObject('File Upload Center/File Upload Center Page/btnClosePopUpWindow'))
 } else if (errorEnternotes == true) {
-	WebUI.click(findTestObject('File Upload Center/File Upload Center Page/btnClosePopUpWindow'))
-} else if (errorTagUnique== true)
-{
-	WebUI.click(findTestObject('File Upload Center/File Upload Center Page/btnClosePopUpWindow'))
-}
-else {
-	WebUI.callTestCase(findTestCase('File Upload Center/Common/UploadPaymentFile'), [('mpesaPayment') : findTestData('null').getValue(
-		1, 1), ('comment') : findTestData('null').getValue(2, 1), ('tagged') : ''])
+    WebUI.click(findTestObject('File Upload Center/File Upload Center Page/btnClosePopUpWindow'))
+} else if (errorTagUnique == true) {
+    WebUI.click(findTestObject('File Upload Center/File Upload Center Page/btnClosePopUpWindow'))
+} else {
+    WebUI.callTestCase(findTestCase('File Upload Center/Common/TC-UploadPaymentFile'), [('mpesaPayment') : findTestData('File Upload Center/File Upload Payment').getValue(1, 1)
+            , ('comment') : findTestData('File Upload Center/File Upload Payment').getValue(2, 1), ('tagged') : ''])
 }
 
