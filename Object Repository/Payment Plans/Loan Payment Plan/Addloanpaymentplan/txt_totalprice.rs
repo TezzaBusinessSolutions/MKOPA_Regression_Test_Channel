@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>VerifyPaymentCash</name>
+   <name>txt_totalprice</name>
    <tag></tag>
-   <elementGuidId>0dd28618-7b51-48a5-a528-5fdad973e986</elementGuidId>
+   <elementGuidId>7b92be19-f01a-4984-a82b-ecee2a2f849c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='PaymentPlansForApprovalGrid']/table/tbody/tr[26]/td[text()='M-kopa  test 10']</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='PaymentPlansForApprovalGrid']/table/tbody/tr[26]/td[text()='M-kopa  test 10']</value>
+      <value>.//*[@id='TotalPrice']</value>
    </webElementProperties>
 </WebElementEntity>

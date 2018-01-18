@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>VerifyPaymentCash</name>
+   <name>cbo_approveloan</name>
    <tag></tag>
-   <elementGuidId>0dd28618-7b51-48a5-a528-5fdad973e986</elementGuidId>
+   <elementGuidId>38bd41a5-19ae-422f-903e-28588fd8ef87</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='PaymentPlansForApprovalGrid']/table/tbody/tr[26]/td[text()='M-kopa  test 10']</value>
+         <value>html/body/div[5]/div/ul/li[text()='Approved']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='PaymentPlansForApprovalGrid']/table/tbody/tr[26]/td[text()='M-kopa  test 10']</value>
+      <value>html/body/div[5]/div/ul/li[text()='Approved']</value>
    </webElementProperties>
 </WebElementEntity>
