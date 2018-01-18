@@ -19,8 +19,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('File Upload Center/Common/UploadPaymentFile'), [('mpesaPayment') : dealersPaymentFile, ('comment') : dealersComment
-        , ('tagged') : ''], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('File Upload Center/Common/TC-UploadPaymentFile'), [('mpesaPayment') : dealersPaymentFile
+        , ('comment') : dealersComment, ('tagged') : ''], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.mouseOver(findTestObject('Dealers/Common Dealers Objects/mnu-Dealers DropDown'))
 

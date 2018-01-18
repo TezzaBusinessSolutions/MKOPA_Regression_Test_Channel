@@ -19,35 +19,19 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-tagged = generateRandom('abcdefghijklmnop123456789', 5)
+WebUI.callTestCase(findTestCase('File Upload Center/Common/TC-UploadPaymentFile'), [('mpesaPayment') : findTestData('File Upload Center/File Upload Payment').getValue(
+            1, 1), ('comment') : findTestData('File Upload Center/File Upload Payment').getValue(2, 1), ('tagged') : ''], 
+    FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : '', ('Password') : ''], FailureHandling.STOP_ON_FAILURE)
+WebUI.mouseOver(findTestObject('Payments/Common Payments Objects/mnu_PaymentsDropdownMenu'))
 
-WebUI.click(findTestObject('File Upload Center/Common/mnuFileUploadCenterLink'))
+WebUI.click(findTestObject('Payments/Search For Payment/mnu_SearchForPayment'))
 
-WebUI.click(findTestObject('File Upload Center/File Upload Center Page/btnMpesaButton'))
+WebUI.setText(findTestObject('Payments/Search For Payment/txt_ReceiptNumber'), receiptNumber)
 
-WebUI.uploadFile(findTestObject('File Upload Center/File Upload Center Page/btnSELECTFiles'), mpesaPayment)
+WebUI.click(findTestObject('Dealers/Search for Dealer Objects/btn_Submit Button'))
 
-WebUI.setText(findTestObject('File Upload Center/File Upload Center Page/txtCommentTextArea'), comment)
+WebUI.click(findTestObject('Dealers/Search for Dealer Objects/lnk_To Account'))
 
-WebUI.setText(findTestObject('File Upload Center/File Upload Center Page/txtTag'), tagged)
-
-WebUI.click(findTestObject('File Upload Center/File Upload Center Page/btnUPLOADButton'))
-
-WebUI.delay(5)
-
-WebUI.click(findTestObject('File Upload Center/File Upload Center Page/btnClosePopUpWindow'))
-
-String generateRandom(String chars, Integer length) {
-    Random rand = new Random()
-
-    StringBuilder sb = new StringBuilder()
-
-    for (int i = 0; i < length; i++) {
-        sb.append(chars.charAt(rand.nextInt(chars.length())))
-    }
-    
-    return sb.toString()
-}
+WebUI.closeBrowser()
 
