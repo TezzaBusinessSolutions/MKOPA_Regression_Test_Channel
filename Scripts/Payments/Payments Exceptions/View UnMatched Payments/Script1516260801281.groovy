@@ -19,3 +19,22 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : '', ('Password') : ''], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(1)
+
+WebUI.mouseOver(findTestObject('Payments/Common Payments Objects/Payments Dropdown/PaymentsDropdown'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(2)
+
+WebUI.mouseOver(findTestObject('Payments/Payments Exceptions/mnu_PaymentsExceptions'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(2)
+
+WebUI.mouseOver(findTestObject('Payments/Payments Exceptions/UnMatched Payments/OR-UnMatchedPayments'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('Payments/Payments Exceptions/UnMatched Payments/OR-UnMatchedPayments'))
+
+WebUI.verifyElementPresent(findTestObject('Payments/Payments Exceptions/UnMatched Payments/UnMatched Payments Page Grid/UnMatchedPaymentsGrid'), 
+    1)
+

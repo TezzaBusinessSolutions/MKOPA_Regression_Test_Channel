@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC-View UnMatched Payments</name>
+   <name>View UnMatched Payments</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>407b4d3c-9bc9-4f6e-9f6f-e27e165800ed</testCaseGuid>
