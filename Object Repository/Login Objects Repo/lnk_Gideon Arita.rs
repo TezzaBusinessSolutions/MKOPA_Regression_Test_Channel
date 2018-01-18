@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lnk_Pascal Kipkemoi</name>
+   <name>lnk_Gideon Arita</name>
    <tag></tag>
    <elementGuidId>a894fc39-4acb-47b3-812f-349fdc3bcae0</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//a[count(. | //*[@href = '/AccountManagement/Index']) = count(//*[@href = '/AccountManagement/Index'])][count(. | //*[text() = 'Gideon Arita']) = count(//*[text() = 'Gideon Arita'])][count(. | id(&quot;topUserDetails&quot;)/div[2]/a[1]) = count(id(&quot;topUserDetails&quot;)/div[2]/a[1])]</value>
+      </entry>
+   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -25,7 +31,7 @@
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Pascal Kipkemoi</value>
+      <value>Gideon Arita</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
