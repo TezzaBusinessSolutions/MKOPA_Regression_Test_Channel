@@ -24,7 +24,7 @@ WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : '', ('Password') :
 
 WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/Menu-Payments'))
 
-WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/SubMenu-CustomerPaayments'))
+WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/SubMenu-CustomerPayments'))
 
 WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/Submenu-Menu-Floating Payments'))
 
@@ -51,7 +51,7 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/Dropdown To Select Product account'))
 
-WebUI.doubleClick(findTestObject('Payments/Assinging Floating Payer Payment/Selecting payer reference'))
+WebUI.doubleClick(findTestObject('Payments/Assinging Floating Payer Payment/SelectingProductAccount'))
 
 WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/Button-Assign Button'))
 

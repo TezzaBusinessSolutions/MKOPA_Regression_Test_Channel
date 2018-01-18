@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description></description>
-   <name>Selecting payer reference</name>
+   <description>To Resolve a payment for the unmatched</description>
+   <name>Button-Resolve Button</name>
    <tag></tag>
-   <elementGuidId>dbe47b62-0b08-4e36-8af9-354808ddb7b7</elementGuidId>
+   <elementGuidId>4bfa04a2-fd3a-472c-a1d5-882261c1ae03</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>html/body/div[6]/div/ul/li </value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +16,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>html/body/div[6]/div/ul/li </value>
+      <value>//*[contains(@type,'sub')]</value>
    </webElementProperties>
 </WebElementEntity>
