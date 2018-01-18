@@ -19,13 +19,21 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('File Upload Center/Common/TC-UploadPaymentFile'), [('mpesaPayment') : findTestData('File Upload Center/File Upload Payment').getValue(1, 1)
-        , ('comment') : findTestData('File Upload Center/File Upload Payment').getValue(2, 1), ('tag') : findTestData('File Upload Center/File Upload Payment').getValue(3, 1)], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('File Upload Center/Common/TC-UploadPaymentFile'), [('mpesaPayment') : findTestData('File Upload Center/File Upload Payment').getValue(
+            1, 1), ('comment') : findTestData('File Upload Center/File Upload Payment').getValue(2, 1), ('tag') : findTestData(
+            'File Upload Center/File Upload Payment').getValue(3, 1)], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Payments/Confirmation Sms On Payment/close pop up'))
 
-WebUI.setText(findTestObject('Payments/Confirmation Sms On Payment/Text input Search_Bar'), '23226324')
+WebUI.setText(findTestObject('Payments/Confirmation Sms On Payment/Text input Search_Bar'), '20114119')
 
-WebUI.delay(120)
+WebUI.click(findTestObject('Payments/Confirmation Sms On Payment/Click Search bar'))
+
+WebUI.delay(20)
+
+WebUI.click(findTestObject('Payments/Confirmation Sms On Payment/Click Radio button'))
+
+WebUI.delay(10)
+
+WebUI.click(findTestObject('Payments/Confirmation Sms On Payment/Click SMS grid'))
 
