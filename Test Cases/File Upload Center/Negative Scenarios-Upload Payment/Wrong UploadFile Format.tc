@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Test case to test file formats. The system should only pick .csv extension</description>
+   <name>Wrong UploadFile Format</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>48392391-ee8d-4d76-b522-a914783bded1</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>aa34d973-28bd-4780-a4ef-a2a4016e08da</id>
+      <masked>false</masked>
+      <name>mpesaPayment</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>e1ba8654-8e40-4684-b1d6-34a63085fde1</id>
+      <masked>false</masked>
+      <name>comment</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>558b021e-c532-4549-a78f-eaf9e768fae0</id>
+      <masked>false</masked>
+      <name>tag</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('File Upload Center/File Upload Error Messages/msgFileUploadedShouldBeInCSVFormat')</defaultValue>
+      <description></description>
+      <id>a3ec234d-b8b8-4b1a-a69d-1421d2bb1f34</id>
+      <masked>false</masked>
+      <name>wrongFileFormatMsg</name>
+   </variable>
+</TestCaseEntity>

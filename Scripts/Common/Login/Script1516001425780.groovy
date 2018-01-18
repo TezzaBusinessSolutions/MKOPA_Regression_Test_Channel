@@ -31,11 +31,11 @@ def email = data.Email
 def password = data.password
 
 //Fills in the user Email
-WebUI.setText(findTestObject('Login Objects Repo/UserNameOrEmail'), email)
+WebUI.setText(findTestObject('Login Objects Repo/txt_UserNameOrEmail'), email)
 
 //Fills in the User Password
-WebUI.setText(findTestObject('Login Objects Repo/Password'), password)
+WebUI.setText(findTestObject('Login Objects Repo/txt_Password'), password)
 
 //Clicks Sign In Button
-WebUI.click(findTestObject('Login Objects Repo/Sign_In_Button'))
+WebUI.click(findTestObject('Login Objects Repo/btn_Sign_In_Button'))
 

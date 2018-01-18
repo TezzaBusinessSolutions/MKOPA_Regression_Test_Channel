@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>This test case searches the customer from the Floating Payment List of Customers</description>
+   <name>Floating Payments</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3b8866da-bd6d-4396-b81d-06e769e1e18a</testCaseGuid>
+   <variable>
+      <defaultValue>findTestData('Payments/PaymentsModule').getValue(3, 1)</defaultValue>
+      <description></description>
+      <id>04a831c5-75c8-4bb1-82d0-a2a09f6ea434</id>
+      <masked>false</masked>
+      <name>receiptNumber</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('Payments/PaymentsModule').getValue(4, 1)</defaultValue>
+      <description></description>
+      <id>1c850394-cce3-484f-8231-2427652e82bc</id>
+      <masked>false</masked>
+      <name>phoneNumber</name>
+   </variable>
+   <variable>
+      <defaultValue>'2018-01-08 18:50:00'</defaultValue>
+      <description></description>
+      <id>8df7b649-119b-43ce-8640-75ec20affb74</id>
+      <masked>false</masked>
+      <name>paymentDate</name>
+   </variable>
+</TestCaseEntity>
