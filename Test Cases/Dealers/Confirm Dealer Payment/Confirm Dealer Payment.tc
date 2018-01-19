@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Confirming Dealer Payment</description>
+   <name>Confirm Dealer Payment</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>14e60c25-532a-44fa-841b-747d67e69e4c</testCaseGuid>
+   <variable>
+      <defaultValue>findTestData('Dealers/Search Dealer/Search Dealer Data').getValue(1, 1)</defaultValue>
+      <description></description>
+      <id>ba651528-8161-4feb-9040-22cbfc264ff1</id>
+      <masked>false</masked>
+      <name>accountNumber</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('File Upload Center/File Upload Center').getValue(2, 4)</defaultValue>
+      <description></description>
+      <id>4b78891b-2cec-4ee2-ba8f-b36ce3b89b87</id>
+      <masked>false</masked>
+      <name>dealersComment</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('File Upload Center/File Upload Center').getValue(1, 4)</defaultValue>
+      <description></description>
+      <id>07a1ca47-3a2b-491b-8a2c-71bbc4cad49f</id>
+      <masked>false</masked>
+      <name>dealersPaymentFile</name>
+   </variable>
+</TestCaseEntity>

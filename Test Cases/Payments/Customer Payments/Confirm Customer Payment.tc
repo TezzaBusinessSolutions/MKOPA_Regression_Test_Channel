@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Confirming a particular Customer Payment</description>
+   <name>Confirm Customer Payment</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e533f667-1048-4659-83b1-58fc7cb03219</testCaseGuid>
+   <variable>
+      <defaultValue>findTestData('Payments/SearchCustomer Data').getValue(1, 1)</defaultValue>
+      <description></description>
+      <id>f6960df3-339e-4c97-bcd4-29bc5eab428e</id>
+      <masked>false</masked>
+      <name>receiptNumber</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('Payments/SearchCustomer Data').getValue(2, 1)</defaultValue>
+      <description></description>
+      <id>a47303ea-5742-4b7a-bbb9-6a3622765435</id>
+      <masked>false</masked>
+      <name>phoneNumber</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('Payments/SearchCustomer Data').getValue(3, 1)</defaultValue>
+      <description></description>
+      <id>82354e1d-7ae5-4965-a2d8-0b9c0431b531</id>
+      <masked>false</masked>
+      <name>paymentDate</name>
+   </variable>
+</TestCaseEntity>
