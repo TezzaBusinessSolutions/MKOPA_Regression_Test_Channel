@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>mnu_AddcashPaymentPlan</name>
+   <tag></tag>
+   <elementGuidId>d9eaa571-d31b-4275-b8a7-57c5e594d599</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>.//*[@id='Menu']/li[6]/div/ul/li[1]/div/ul/li[8]/a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>.//*[@id='Menu']/li[6]/div/ul/li[1]/div/ul/li[8]/a</value>
+   </webElementProperties>
+</WebElementEntity>

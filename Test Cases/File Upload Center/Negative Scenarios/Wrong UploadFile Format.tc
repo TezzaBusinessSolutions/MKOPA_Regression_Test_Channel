@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Test case to test file formats. The system should only pick .csv extension</description>
-   <name>Wrong UploadFile Format</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>48392391-ee8d-4d76-b522-a914783bded1</testCaseGuid>
-</TestCaseEntity>
