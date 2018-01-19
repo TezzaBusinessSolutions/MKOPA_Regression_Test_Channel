@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Add duplicate  Loan Payment Plan</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ae50d7b7-6e3a-4cd7-9055-681a1934e90d</testCaseGuid>
+   <variable>
+      <defaultValue>findTestData('PaymentPlans/Paymentplannames').getValue(1, 1)</defaultValue>
+      <description></description>
+      <id>13368eb0-fe2a-4fb3-9631-f2dc459f60d2</id>
+      <masked>false</masked>
+      <name>variable</name>
+   </variable>
+</TestCaseEntity>
