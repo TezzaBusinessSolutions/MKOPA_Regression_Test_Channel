@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DataFileEntity>
-   <description>Test data for File Upload Center</description>
+   <description>payment upload</description>
    <name>File Upload Payment</name>
    <tag></tag>
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
-   <dataFileGUID>2f1f769a-845c-4141-99fb-8697884d33e8</dataFileGUID>
-   <dataSourceUrl>Data Files/File Upload Center/File Upload Center.xlsx</dataSourceUrl>
+   <dataFileGUID>c9363521-6bd4-4a4b-9c20-da0f8e035350</dataFileGUID>
+   <dataSourceUrl>C:\Users\Admin\git\MKOPA_Regression_Test_Channel\Data Files\File Upload Center\File Upload Center.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
-   <isInternalPath>true</isInternalPath>
+   <isInternalPath>false</isInternalPath>
    <query></query>
    <secureUserAccount>false</secureUserAccount>
    <sheetName>Sheet1</sheetName>
