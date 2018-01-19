@@ -100,8 +100,8 @@ WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaym
 
 WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/cbo_credit'))
 
-WebUI.setText(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/txt_notes'), findTestData('Common/Approver Notes/Approver Notes').getValue(
-        1, 1))
+WebUI.setText(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/txt_notes'), findTestData('Payments/PaymentsModule').getValue(
+        9, 1))
 
 WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/btn_loanpaymentplansavebutton'))
 

@@ -34,17 +34,18 @@ WebUI.verifyElementVisible(findTestObject('Products/Payment Plans/Cash Payment P
 WebUI.setText(findTestObject('Products/Payment Plans/Cash Payment Plan/Addcashpaymentplan/txt_cashname'), findTestData('Payments/PaymentsModule').getValue(
         1, 2))
 
-WebUI.setText(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/txt_displayname(marketing)'), findTestData(
-        'Payments/PaymentsModule').getValue(2, 1))
+WebUI.setText(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/txt_displayname(marketing)'), 
+    findTestData('Payments/PaymentsModule').getValue(2, 1))
 
 WebUI.click(findTestObject('Products/Payment Plans/Cash Payment Plan/Addcashpaymentplan/cashproducttypestoselect'))
 
 WebUI.click(findTestObject('Products/Payment Plans/Cash Payment Plan/Addcashpaymentplan/btn_addcashproducttype'))
 
-WebUI.setText(findTestObject('Products/Payment Plans/Cash Payment Plan/Addcashpaymentplan/txt_cashprice'), '20000')
+WebUI.setText(findTestObject('Products/Payment Plans/Cash Payment Plan/Addcashpaymentplan/txt_cashprice'), findTestData(
+        'Payments/PaymentsModule').getValue(3, 1))
 
-WebUI.setText(findTestObject('Products/Payment Plans/Cash Payment Plan/Addcashpaymentplan/txt_approvernotes'), findTestData('Common/Approver Notes/Approver Notes').getValue(
-        1, 1))
+WebUI.setText(findTestObject('Products/Payment Plans/Cash Payment Plan/Addcashpaymentplan/txt_approvernotes'), findTestData(
+        'Payments/PaymentsModule').getValue(9, 1))
 
 WebUI.click(findTestObject('Products/Payment Plans/Cash Payment Plan/Addcashpaymentplan/btn_cashpaymentplansavebutton'))
 
