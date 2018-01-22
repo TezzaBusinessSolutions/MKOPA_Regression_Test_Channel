@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description></description>
-   <name>lnk_Approve</name>
+   <description>link containg the reciept number</description>
+   <name>lk_ReccieptNumber</name>
    <tag></tag>
-   <elementGuidId>44e48088-ad0e-448f-8447-fa19a4302b0a</elementGuidId>
+   <elementGuidId>f1b15bca-aac6-482e-aa04-48cbe83ddac9</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>.//*[@id='ApprovalRefundGrid']/table/tbody/tr[ td[text()=${phoneNo}]]/td/a[text()='Approve']</value>
-      </entry>
-      <entry>
-         <key>CSS</key>
+         <value>.//*[@id='CustomerDepositTransfers']/table/tbody/tr/td/a[text()='${recieptNo}']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -23,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='ApprovalRefundGrid']/table/tbody/tr[ td[text()=${phoneNo}]]/td/a[text()='Approve']</value>
+      <value>.//*[@id='CustomerDepositTransfers']/table/tbody/tr/td/a[text()='${recieptNo}']</value>
    </webElementProperties>
 </WebElementEntity>
