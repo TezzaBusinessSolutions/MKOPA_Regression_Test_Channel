@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Select Customer On List Of Customers</name>
+   <name>SmsRadioBotton</name>
    <tag></tag>
-   <elementGuidId>73ffaa58-61f6-488a-a67a-b9c9e74ab404</elementGuidId>
+   <elementGuidId>350dab3a-3cc0-4dda-a0d5-71df3c28206d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='Customers']/table/tbody/tr[td[text()='${Refno}']]/td/a[text()='To Account>>']</value>
+         <value>.//*[@value='2']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='Customers']/table/tbody/tr[td[text()='${Refno}']]/td/a[text()='To Account>>']</value>
+      <value>.//*[@value='2']</value>
    </webElementProperties>
 </WebElementEntity>

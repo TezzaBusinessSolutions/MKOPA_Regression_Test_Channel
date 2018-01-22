@@ -18,40 +18,35 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : '', ('Password') : ''], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/Menu-Payments'))
+WebUI.click(findTestObject('Payments/Dealer Commission Generated/Menu-CustomerMenuBar'))
 
-WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/SubMenu-CustomerPayments'))
+WebUI.click(findTestObject('Payments/Dealer Commission Generated/SubMenu-ListOfCustomer'))
 
-WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/Submenu-Menu-Floating Payments'))
+WebUI.delay(10)
 
-'change in the xpath and put anothe reference number after the test case is complete\r\n'
-WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/Select Floating payment', [('ReferenceNo') : ReferenceNo]))
+'Select a customer on the {In Payment } status and change the value in the variables\r\n'
+WebUI.click(findTestObject('Payments/Upload payment to complete customer outstanding amount/Select Customer On List Of Customers', 
+        [('Refno') : CustomerNo]))
 
-WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/Button-Assign Button'))
+WebUI.delay(5)
 
-WebUI.verifyTextPresent('\'Comment\' should not be empty.', false)
+WebUI.callTestCase(findTestCase('File Upload Center/Common/TC-UploadPaymentFile'), [('mpesaPayment') : findTestData('File Upload Center/File Upload Payment').getValue(1, 1)
+        , ('comment') : findTestData('File Upload Center/File Upload Payment').getValue(2, 1), ('tagged') : ''], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/SelectOnPayerReference'))
+WebUI.click(findTestObject('Payments/Dealer Commission Generated/Menu-CustomerMenuBar'))
 
-WebUI.delay(2)
+WebUI.click(findTestObject('Payments/Dealer Commission Generated/SubMenu-ListOfCustomer'))
 
-WebUI.setMaskedText(findTestObject('Payments/Assinging Floating Payer Payment/Inputbox-Payer Reference Number'), '10121874')
+WebUI.delay(10)
 
-WebUI.setText(findTestObject('Payments/Assinging Floating Payer Payment/InputBox For Comment'), 'Assigned due to lack of the owner')
+'Select a customer on the {In Payment } status'
+WebUI.click(findTestObject('Payments/Upload payment to complete customer outstanding amount/Select Customer On List Of Customers', 
+        [('Refno') : CustomerNo]))
 
-WebUI.delay(2)
+WebUI.verifyTextPresent('Finished Payment', false)
 
-WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/Dropdown To Select Product account'))
-
-WebUI.delay(2)
-
-WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/Dropdown To Select Product account'))
-
-WebUI.doubleClick(findTestObject('Payments/Assinging Floating Payer Payment/SelectingProductAccount'))
-
-WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/Button-Assign Button'))
+WebUI.click(findTestObject('Payments/Upload payment to complete customer outstanding amount/SmsRadioBotton'))
 

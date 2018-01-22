@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Test case 16633: Upload payment to complete customers outstanding amount and confirm sms sent</description>
+   <name>Upload payment to complete customers outstanding amount</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b2db2ff8-8404-4743-9c5d-fd44de5dabec</testCaseGuid>
+   <variable>
+      <defaultValue>'20504323'</defaultValue>
+      <description></description>
+      <id>bce57c8e-5884-4cf2-9d77-0c7d8dd43969</id>
+      <masked>false</masked>
+      <name>CustomerNo</name>
+   </variable>
+</TestCaseEntity>

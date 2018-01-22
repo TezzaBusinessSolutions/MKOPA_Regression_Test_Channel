@@ -3,7 +3,7 @@
    <description></description>
    <name>Select Customer On List Of Customers</name>
    <tag></tag>
-   <elementGuidId>73ffaa58-61f6-488a-a67a-b9c9e74ab404</elementGuidId>
+   <elementGuidId>be0d6db9-e547-45f2-afdd-c147412185ff</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>

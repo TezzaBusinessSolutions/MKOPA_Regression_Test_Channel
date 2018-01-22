@@ -28,7 +28,8 @@ WebUI.click(findTestObject('Payments/Dealer Commission Generated/SubMenu-ListOfC
 WebUI.delay(10)
 
 'Select a customer on the {In Payment } status'
-WebUI.click(findTestObject('Payments/Validate Submit Button Is Working On Request Refund/Select Customer On List Of Customers'))
+WebUI.click(findTestObject('Payments/Validate Submit Button Is Working On Request Refund/Select Customer On List Of Customers', 
+        [('Refno') : CustomerRef]))
 
 WebUI.click(findTestObject('Payments/Validate Submit Button Is Working On Request Refund/Button More Payment Info'))
 
