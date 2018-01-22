@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description></description>
-   <name>lnk_Approve</name>
+   <description>sussecc message upon transer of ayments</description>
+   <name>msg_transferSuccessful</name>
    <tag></tag>
-   <elementGuidId>44e48088-ad0e-448f-8447-fa19a4302b0a</elementGuidId>
+   <elementGuidId>619f48e8-125e-44c0-9cdd-c0bbe1efe832</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>.//*[@id='ApprovalRefundGrid']/table/tbody/tr[ td[text()=${phoneNo}]]/td/a[text()='Approve']</value>
-      </entry>
-      <entry>
-         <key>CSS</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -23,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='ApprovalRefundGrid']/table/tbody/tr[ td[text()=${phoneNo}]]/td/a[text()='Approve']</value>
+      <value>.//*[@id='wdw-payment-details']</value>
    </webElementProperties>
 </WebElementEntity>
