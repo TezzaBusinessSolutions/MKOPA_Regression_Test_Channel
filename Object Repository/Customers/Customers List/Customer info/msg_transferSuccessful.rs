@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description></description>
-   <name>refNumber</name>
+   <description>sussecc message upon transer of ayments</description>
+   <name>msg_transferSuccessful</name>
    <tag></tag>
-   <elementGuidId>a8532c4d-c25b-40d6-a36e-1bb867ffdf05</elementGuidId>
+   <elementGuidId>619f48e8-125e-44c0-9cdd-c0bbe1efe832</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>html/body/div[18]/div/ul/li[1]</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>html/body/div[18]/div/ul/li[1]</value>
+      <value>.//*[@id='wdw-payment-details']</value>
    </webElementProperties>
 </WebElementEntity>

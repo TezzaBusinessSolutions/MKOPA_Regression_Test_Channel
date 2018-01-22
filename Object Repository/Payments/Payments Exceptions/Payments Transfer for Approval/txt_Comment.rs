@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description></description>
-   <name>refNumber</name>
+   <description>transfer comments</description>
+   <name>txt_Comment</name>
    <tag></tag>
-   <elementGuidId>a8532c4d-c25b-40d6-a36e-1bb867ffdf05</elementGuidId>
+   <elementGuidId>9ba39870-2cef-4f8b-bc1e-b4c23776af57</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>html/body/div[18]/div/ul/li[1]</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>html/body/div[18]/div/ul/li[1]</value>
+      <value>.//*[@id='Comment']</value>
    </webElementProperties>
 </WebElementEntity>

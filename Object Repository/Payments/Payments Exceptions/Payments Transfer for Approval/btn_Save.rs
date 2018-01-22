@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description></description>
-   <name>refNumber</name>
+   <description>transfer approval save button</description>
+   <name>btn_Save</name>
    <tag></tag>
-   <elementGuidId>a8532c4d-c25b-40d6-a36e-1bb867ffdf05</elementGuidId>
+   <elementGuidId>4bcbf11e-10ed-4682-b264-3f2f55b2649d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>html/body/div[18]/div/ul/li[1]</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>html/body/div[18]/div/ul/li[1]</value>
+      <value>.//*[@id='btnApproveTransfer']</value>
    </webElementProperties>
 </WebElementEntity>

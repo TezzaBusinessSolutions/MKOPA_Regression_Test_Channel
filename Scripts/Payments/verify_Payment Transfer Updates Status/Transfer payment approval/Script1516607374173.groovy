@@ -19,18 +19,24 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-not_run: WebUI.callTestCase(findTestCase('File Upload Center/Common/TC-UploadPaymentFile'), [('mpesaPayment') : findTestData(
-            'File Upload Center/File Upload Payment').getValue(1, 1), ('comment') : findTestData('File Upload Center/File Upload Payment').getValue(
-            2, 1), ('tagged') : ''], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common/MarkerCheckerLogin'), [('Email') : findTestData('MarkerCheckerLogin/CheckerLogin').getValue(
+            1, 1), ('Password') : findTestData('MarkerCheckerLogin/CheckerLogin').getValue(2, 1)], FailureHandling.STOP_ON_FAILURE)
 
-not_run: WebUI.click(findTestObject('Customers/Customers List/btn_Close'))
+WebUI.mouseOver(findTestObject('Payments/Common Payments Objects/mnu_PaymentsDropdownMenu'))
 
-WebUI.callTestCase(findTestCase('Payments/verify_Payment Transfer Updates Status/Transfer Customer payment'), [('customer_Account') : '27360571'
-        , ('payer_Account') : '3651240', ('recieptNo') : 'QWRTE67T12189hdfff', ('comments') : 'Payment Transfered'], FailureHandling.STOP_ON_FAILURE)
+WebUI.delay(2)
 
-WebUI.callTestCase(findTestCase('Common/LogOut'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.mouseOver(findTestObject('Payments/Payments Exceptions/mnu_PaymentsExceptions'))
 
-WebUI.comment('Approving payment transfer')
+WebUI.delay(2)
 
-WebUI.callTestCase(findTestCase('Payments/verify_Payment Transfer Updates Status/Transfer payment approval'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Payments/Payments Exceptions/Payments Transfer for Approval/mnu_PaymentsTransfersForApproval'))
+
+WebUI.click(findTestObject('Payments/Payments Exceptions/Payments Transfer for Approval/lnk_ApproveTransfer', [('requestorNotes') : requestorNotes]))
+
+WebUI.setText(findTestObject('Payments/Payments Exceptions/Payments Transfer for Approval/txt_Comment'), comments)
+
+WebUI.click(findTestObject('Payments/Payments Exceptions/Payments Transfer for Approval/btn_Save'))
+
+WebUI.verifyAlertPresent(20)
 

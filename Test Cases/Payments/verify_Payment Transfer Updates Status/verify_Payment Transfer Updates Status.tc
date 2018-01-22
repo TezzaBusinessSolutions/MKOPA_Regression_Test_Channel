@@ -3,35 +3,6 @@
    <description></description>
    <name>verify_Payment Transfer Updates Status</name>
    <tag></tag>
-   <comment>Making a payment transfar request
-Approving payment transfer</comment>
+   <comment>Approving payment transfer</comment>
    <testCaseGuid>4077e0ec-4167-4c43-9932-5c1aaff41812</testCaseGuid>
-   <variable>
-      <defaultValue>'27360571'</defaultValue>
-      <description></description>
-      <id>e83ac089-c855-4718-8dfd-cee9009b1a5b</id>
-      <masked>false</masked>
-      <name>Account</name>
-   </variable>
-   <variable>
-      <defaultValue>'Finished Payment'</defaultValue>
-      <description></description>
-      <id>7164e3a5-5272-41fc-b556-3e6657aec00c</id>
-      <masked>false</masked>
-      <name>status</name>
-   </variable>
-   <variable>
-      <defaultValue>'3656982'</defaultValue>
-      <description></description>
-      <id>a8372e07-314a-41e1-9664-c682445dfd7b</id>
-      <masked>false</masked>
-      <name>payer_Account</name>
-   </variable>
-   <variable>
-      <defaultValue>'QWRTE67T12189hdfff'</defaultValue>
-      <description></description>
-      <id>14fb11d0-2897-4189-8d27-82ff76d46761</id>
-      <masked>false</masked>
-      <name>recieptNo</name>
-   </variable>
 </TestCaseEntity>

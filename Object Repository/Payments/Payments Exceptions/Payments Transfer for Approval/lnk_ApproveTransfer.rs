@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description></description>
-   <name>refNumber</name>
+   <description>Transfe aprroval link</description>
+   <name>lnk_ApproveTransfer</name>
    <tag></tag>
-   <elementGuidId>a8532c4d-c25b-40d6-a36e-1bb867ffdf05</elementGuidId>
+   <elementGuidId>d90ebeb5-8f9f-4335-9442-6a4eedf152b3</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>html/body/div[18]/div/ul/li[1]</value>
+         <value>.//*[@id='PaymentsForTransfers']/table/tbody/tr[ td[text()=&quot;${requestorNotes}&quot;]]/td/a[text()='Approve Transfer']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>html/body/div[18]/div/ul/li[1]</value>
+      <value>.//*[@id='PaymentsForTransfers']/table/tbody/tr[ td[text()=&quot;${requestorNotes}&quot;]]/td/a[text()='Approve Transfer']</value>
    </webElementProperties>
 </WebElementEntity>
