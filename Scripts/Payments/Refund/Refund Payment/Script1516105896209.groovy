@@ -21,32 +21,33 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : '', ('Password') : ''], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Payments/Dealer Commission Generated/Menu-CustomerMenuBar'))
+WebUI.delay(2)
 
-WebUI.click(findTestObject('Payments/Dealer Commission Generated/SubMenu-ListOfCustomer'))
+WebUI.mouseOver(findTestObject('Payments/Common Payments Objects/OR-PaymentsDropdownMenu'))
 
-WebUI.delay(10)
+WebUI.delay(2)
 
-'Select a customer on the {In Payment } status and change the value in the variables\r\n'
-WebUI.click(findTestObject('Payments/Upload payment to complete customer outstanding amount/Select Customer On List Of Customers', 
-        [('Refno') : CustomerNo]))
+WebUI.mouseOver(findTestObject('Payments/Refund/mnu_Refund'))
 
-WebUI.delay(5)
+WebUI.delay(2)
 
-WebUI.callTestCase(findTestCase('File Upload Center/Common/TC-UploadPaymentFile'), [('mpesaPayment') : findTestData('File Upload Center/File Upload Payment').getValue(1, 1)
-        , ('comment') : findTestData('File Upload Center/File Upload Payment').getValue(2, 1), ('tagged') : ''], FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Payments/Refund/Customer Approval Refunds/lnk_Approve Customer Refunds'))
 
-WebUI.click(findTestObject('Payments/Dealer Commission Generated/Menu-CustomerMenuBar'))
+WebUI.delay(2)
 
-WebUI.click(findTestObject('Payments/Dealer Commission Generated/SubMenu-ListOfCustomer'))
+WebUI.click(findTestObject('Payments/Refund/Customer Approval Refunds/lnk_Approve'))
 
-WebUI.delay(10)
+WebUI.comment('filling  in the refund form')
 
-'Select a customer on the {In Payment } status'
-WebUI.click(findTestObject('Payments/Upload payment to complete customer outstanding amount/Select Customer On List Of Customers', 
-        [('Refno') : CustomerNo]))
+WebUI.click(findTestObject('Payments/Refund/Customer Approval Refunds/drpdwn approvalstatus'))
 
-WebUI.verifyTextPresent('Finished Payment', false)
+WebUI.delay(2)
 
-WebUI.click(findTestObject('Payments/Upload payment to complete customer outstanding amount/SmsRadioBotton'))
+WebUI.click(findTestObject('Payments/Refund/Customer Approval Refunds/aprrovalstatus'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.setText(findTestObject('Payments/Refund/Customer Approval Refunds/txt_notes'), notes)
+
+WebUI.click(findTestObject('Payments/Refund/Customer Approval Refunds/btn_save'))
+
+WebUI.verifyElementPresent(findTestObject('Payments/Refund/Customer Approval Refunds/msg_ReundDetails'), 2)
 

@@ -19,12 +19,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common/MarkerCheckerLogin'), [('Email') : findTestData('MarkerCheckerLogin/CheckerLogin').getValue(
-            1, 1), ('Password') : findTestData('MarkerCheckerLogin/CheckerLogin').getValue(2, 1)], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : '', ('Password') : ''], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(2)
 
-WebUI.mouseOver(findTestObject('Payments/Common Payments Objects/mnu_PaymentsDropdownMenu'))
+WebUI.mouseOver(findTestObject('Payments/Common Payments Objects/OR-PaymentsDropdownMenu'))
 
 WebUI.delay(2)
 
@@ -36,26 +35,9 @@ WebUI.click(findTestObject('Payments/Refund/Customer Approval Refunds/lnk_Approv
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Payments/Refund/Customer Approval Refunds/lnk_Approve', [('phoneNo') : phoneNo]))
-
-WebUI.comment('filling  in the refund form')
-
-if (approvalStatus == '') {
-    WebUI.click(findTestObject('Payments/Refund/Customer Approval Refunds/btn_save'))
-
-    WebUI.verifyElementPresent(findTestObject('Payments/Refund/Customer Approval Refunds/Errmsg_approvalStatus'), 0)
-} else {
-}
-
-WebUI.click(findTestObject('Payments/Refund/Customer Approval Refunds/drpdwn approvalstatus'))
-
-WebUI.delay(2)
-
-WebUI.click(findTestObject('Payments/Refund/Customer Approval Refunds/aprrovalstatus'), FailureHandling.STOP_ON_FAILURE)
-
-WebUI.sendKeys(findTestObject('Payments/Refund/Customer Approval Refunds/txt_notes'), notes)
+WebUI.click(findTestObject('Payments/Refund/Customer Approval Refunds/lnk_Approve'))
 
 WebUI.click(findTestObject('Payments/Refund/Customer Approval Refunds/btn_save'))
 
-WebUI.verifyElementPresent(findTestObject('Payments/Refund/Customer Approval Refunds/msg_ReundDetails'), 2)
+WebUI.verifyElementText(findTestObject('Payments/Refund/Customer Approval Refunds/Errmsg_approvalStatus'), ErroMsg)
 
