@@ -29,6 +29,22 @@ WebUI.click(findTestObject('Payments/Assigned Customer Payments appering in the 
 
 WebUI.delay(5)
 
+-not_run: WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/Menu-Payments'))		
+ -		
+ -not_run: WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/SubMenu-CustomerPayments'))		
+ -		
+ -not_run: WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/Submenu-Menu-Floating Payments'))		
+ -		
+ -not_run: WebUI.delay(5)		
+ -		
+ -not_run: WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/Menu-Payments'))		
+ -		
+ -not_run: WebUI.click(findTestObject('Payments/Assigned Customer Payments appering in the floating list/Submenu_Payment Exceptions'))		
+ -		
+ -not_run: WebUI.click(findTestObject('Payments/Assigned Customer Payments appering in the floating list/SubMenu_Menu_Unmatched Payments'))		
+ -		
+ -not_run: WebUI.delay(5)		
+ -
 'After the test case has run change the customer ID for the next customer\r\n'
 WebUI.click(findTestObject('Payments/Assigned Customer Payments appering in the floating list/Select_Customer_From_List_Of_Unmatched', 
         [('Refno') : refvar]))
