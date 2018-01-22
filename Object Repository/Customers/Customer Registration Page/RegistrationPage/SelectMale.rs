@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lnk_Assign</name>
+   <name>SelectMale</name>
    <tag></tag>
-   <elementGuidId>86f3272c-b30f-48ad-ab98-cb920c67c238</elementGuidId>
+   <elementGuidId>fed3d50d-bc4e-45a3-9fb8-fa855c9f6728</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -16,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/Payment/UnMatchedPayments/Assign/d5134ac0-d34b-11e7-836f-000d3ab1ec1b</value>
+      <value>html/body/div[6]/div/ul/li[3]</value>
    </webElementProperties>
 </WebElementEntity>

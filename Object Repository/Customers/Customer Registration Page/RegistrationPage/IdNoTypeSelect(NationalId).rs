@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>This object selects a given Payer from the floating payment list</description>
-   <name>lnk_FloatingPayerPayment</name>
+   <description></description>
+   <name>IdNoTypeSelect(NationalId)</name>
    <tag></tag>
-   <elementGuidId>45874e67-3bcd-4a64-881e-348329817ba2</elementGuidId>
+   <elementGuidId>7799cdbf-33df-4f52-b710-19f468a69879</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='Menu']/li[4]/div/ul/li[6]/div/ul/li[1]/a</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='Menu']/li[4]/div/ul/li[6]/div/ul/li[1]/a</value>
+      <value>html/body/div[7]/div/ul/li[2]</value>
    </webElementProperties>
 </WebElementEntity>

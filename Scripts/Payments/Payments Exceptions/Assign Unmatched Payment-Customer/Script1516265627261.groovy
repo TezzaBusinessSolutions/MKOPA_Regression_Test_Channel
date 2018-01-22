@@ -19,3 +19,29 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.callTestCase(findTestCase('Payments/Payments Exceptions/View UnMatched Payments'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('Payments/Payments Exceptions/UnMatched Payments/lnk_Assign'))
+
+WebUI.delay(1)
+
+WebUI.sendKeys(findTestObject('Payments/Payments Exceptions/UnMatched Payments/txt_CustomerReference'), '4866974')
+
+WebUI.delay(1)
+
+WebUI.scrollToElement(findTestObject('Payments/Payments Exceptions/UnMatched Payments/txt_CustomerReference'), 4866974)
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Payments/Payments Exceptions/UnMatched Payments/txt_ProductAccount'))
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Payments/Payments Exceptions/UnMatched Payments/txt_ProductAccount'))
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Payments/Payments Exceptions/UnMatched Payments/SelectProductaccount'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('Payments/Payments Exceptions/UnMatched Payments/btnResolve'))
+
