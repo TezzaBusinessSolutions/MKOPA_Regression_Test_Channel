@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>This test case searches the customer from the Floating Payment List of Customers</description>
+   <name>Search For Floating Payments</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3b8866da-bd6d-4396-b81d-06e769e1e18a</testCaseGuid>
+   <variable>
+      <defaultValue>'MDAqaNFE9I0DF'</defaultValue>
+      <description></description>
+      <id>01e36074-e2c8-470d-8eeb-9c7b2fe6602e</id>
+      <masked>false</masked>
+      <name>floatingPayer</name>
+   </variable>
+</TestCaseEntity>
