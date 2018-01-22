@@ -29,7 +29,7 @@ WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/SubMenu-Cu
 WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/Submenu-Menu-Floating Payments'))
 
 'change in the xpath and put anothe reference number after the test case is complete\r\n'
-WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/Select Floating payment', [('ReferenceNo') : ReferenceNo]))
+-WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/Select Floating payment'))
 
 WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/Button-Assign Button'))
 
