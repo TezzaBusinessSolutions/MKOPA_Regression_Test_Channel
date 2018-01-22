@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Testing validation messages.</description>
-   <name>Upload Payments With Blank Fields</name>
-   <tag>Payment Uploads</tag>
-   <comment></comment>
-   <testCaseGuid>b2b7adce-5cf3-4441-a531-69b03fd6b1ed</testCaseGuid>
-</TestCaseEntity>

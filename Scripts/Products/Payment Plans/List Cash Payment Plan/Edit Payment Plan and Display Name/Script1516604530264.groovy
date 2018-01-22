@@ -45,7 +45,7 @@ WebUI.click(findTestObject('Products/Payments Plan/List Cash Payment Plan/btn_Sa
 
 WebUI.closeBrowser()
 
-WebUI.callTestCase(findTestCase('Products/Payment Plans/List Cash Payment Plan/Approve Cash Payment Plan (Update Name and Display Name)'), 
+WebUI.callTestCase(findTestCase('Products/Payment Plans/List Cash Payment Plan/Approve Cash Payment Plan/Approve Cash Payment Plan (Update Name and Display Name)'), 
     [('paymentPlan') : 'Moran'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.mouseOver(findTestObject('Products/Common/mnu_ProductsDropdownMenu'))
