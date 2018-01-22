@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='Customers']/table/tbody/tr[td[text()='9956512']]/td/a[text()='To Account>>']</value>
+         <value>.//*[@id='Customers']/table/tbody/tr[td[text()='']]/td/a[text()='To Account>>']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
