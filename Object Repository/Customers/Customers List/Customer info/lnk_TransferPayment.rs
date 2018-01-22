@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lnk_Approve</name>
+   <name>lnk_TransferPayment</name>
    <tag></tag>
-   <elementGuidId>44e48088-ad0e-448f-8447-fa19a4302b0a</elementGuidId>
+   <elementGuidId>29a63856-4a46-40ab-9c68-e9d2cb124afb</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>.//*[@id='ApprovalRefundGrid']/table/tbody/tr[ td[text()=${phoneNo}]]/td/a[text()='Approve']</value>
-      </entry>
-      <entry>
-         <key>CSS</key>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -23,6 +16,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='ApprovalRefundGrid']/table/tbody/tr[ td[text()=${phoneNo}]]/td/a[text()='Approve']</value>
+      <value>//a[contains(@id,'btn-transfer-payment')]</value>
    </webElementProperties>
 </WebElementEntity>

@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lnk_Approve</name>
+   <name>drpdwn_productsAccount</name>
    <tag></tag>
-   <elementGuidId>44e48088-ad0e-448f-8447-fa19a4302b0a</elementGuidId>
+   <elementGuidId>028359df-e193-489c-9668-a101661b7ccf</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>.//*[@id='ApprovalRefundGrid']/table/tbody/tr[ td[text()=${phoneNo}]]/td/a[text()='Approve']</value>
-      </entry>
-      <entry>
-         <key>CSS</key>
+         <value>.//*[@id='payerForm']/div[4]/div/div/span[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -23,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='ApprovalRefundGrid']/table/tbody/tr[ td[text()=${phoneNo}]]/td/a[text()='Approve']</value>
+      <value>.//*[@id='payerForm']/div[4]/div/div/span[1]</value>
    </webElementProperties>
 </WebElementEntity>
