@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description>Search dealer Data using Account No, Manager Phone and Business Name</description>
+   <name>Search Dealer Data</name>
+   <tag></tag>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator></csvSeperator>
+   <dataFileGUID>9aaf8f40-4535-4447-a9ca-38d991087a30</dataFileGUID>
+   <dataSourceUrl>C:\Users\dennis.gituto\git\MKOPA_Regression_Test_Channel\Data Files\Dealers\searchDealer.xlsx</dataSourceUrl>
+   <driver>ExcelFile</driver>
+   <isInternalPath>false</isInternalPath>
+   <query></query>
+   <secureUserAccount>false</secureUserAccount>
+   <sheetName>Sheet1</sheetName>
+   <usingGlobalDBSetting>false</usingGlobalDBSetting>
+</DataFileEntity>
