@@ -13,14 +13,14 @@
       <name>displayNameGenerator</name>
    </variable>
    <variable>
-      <defaultValue>'Moran'</defaultValue>
+      <defaultValue>findTestData('Edit Cash Payment Plan/edit Cash Payment Plan').getValue(1, 1)</defaultValue>
       <description></description>
       <id>fd5392ae-c257-4d0e-8dd3-0b89eb89c13c</id>
       <masked>false</masked>
       <name>editCashPaymentPlan</name>
    </variable>
    <variable>
-      <defaultValue>'Moran'</defaultValue>
+      <defaultValue>findTestData('Edit Cash Payment Plan/edit Cash Payment Plan').getValue(2, 1)</defaultValue>
       <description></description>
       <id>86860796-3cc4-41de-ba53-13bc381db03e</id>
       <masked>false</masked>

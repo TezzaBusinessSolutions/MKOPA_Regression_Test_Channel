@@ -6,7 +6,7 @@
    <comment></comment>
    <testCaseGuid>420954ae-c71e-470c-b3ba-94ff97dce579</testCaseGuid>
    <variable>
-      <defaultValue>'Moran'</defaultValue>
+      <defaultValue>findTestData('Edit Cash Payment Plan/edit Cash Payment Plan').getValue(2, 1)</defaultValue>
       <description></description>
       <id>8bbd402b-2444-43fd-9cf8-e92146a2c1ac</id>
       <masked>false</masked>
