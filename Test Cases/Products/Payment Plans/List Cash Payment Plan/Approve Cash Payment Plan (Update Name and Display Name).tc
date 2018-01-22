@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>A test Case to Approve the Cash Payment plan Name and Display Name Update</description>
+   <name>Approve Cash Payment Plan (Update Name and Display Name)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>420954ae-c71e-470c-b3ba-94ff97dce579</testCaseGuid>
+   <variable>
+      <defaultValue>'Moran'</defaultValue>
+      <description></description>
+      <id>8bbd402b-2444-43fd-9cf8-e92146a2c1ac</id>
+      <masked>false</masked>
+      <name>paymentPlan</name>
+   </variable>
+</TestCaseEntity>

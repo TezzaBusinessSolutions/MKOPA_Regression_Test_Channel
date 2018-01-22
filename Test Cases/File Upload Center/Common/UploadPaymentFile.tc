@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description>Uploading Payments Mpesa Payments File</description>
-   <name>TC-UploadPaymentFile</name>
+   <name>UploadPaymentFile</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>25b5b74c-dc55-4b1d-a5c5-204056035f03</testCaseGuid>

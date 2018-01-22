@@ -19,5 +19,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.click(findTestObject('Products/Approve Payments Plans/Trial/mnu_ProductsMenuDropdown', [('menuDrop') : menuDrop]))
-
+File f = new File("C:/DELETEME.csv")
+def valueA = "testA"
+f.append(valueA+"\r\n")

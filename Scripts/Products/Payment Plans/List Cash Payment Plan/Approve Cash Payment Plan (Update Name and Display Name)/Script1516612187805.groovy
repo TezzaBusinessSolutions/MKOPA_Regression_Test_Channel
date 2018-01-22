@@ -19,21 +19,24 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : '', ('Password') : ''], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common/MarkerCheckerLogin'), [('Email') : findTestData('MarkerCheckerLogin/CheckerLogin').getValue(
+            1, 1), ('Password') : findTestData('MarkerCheckerLogin/CheckerLogin').getValue(2, 1)], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.mouseOver(findTestObject('Products/Common/mnu_ProductsDropdownMenu'))
 
-WebUI.mouseOver(findTestObject('Products/Approve Payments Plans/mnu_PaymentPlansSubMenu'))
+WebUI.delay(2)
 
-WebUI.click(findTestObject('Products/Approve Payments Plans/mod_PaymentsPlanApprovalsModule'))
+WebUI.mouseOver(findTestObject('Products/Common/sbm-Payments Plan'))
 
-WebUI.waitForPageLoad(10)
+WebUI.delay(2)
 
-WebUI.click(findTestObject('Products/Approve Payments Plans/lnk_PaymentPlanPendingApproval'))
+WebUI.click(findTestObject('Products/Payments Plan/Payments Plan Approval/lnk_Payment Plan Approvals'))
 
-WebUI.comment('Loading Approve Loan Payment Plan Update Page')
+WebUI.click(findTestObject('Products/Payments Plan/Payments Plan Approval/lnk_Approve', [('paymentPlan') : paymentPlan]))
 
-WebUI.sendKeys(findTestObject('Products/Approve Payments Plans/Approve Loan Payment Plan/txtarea_ApproverNotes'), 'Testing')
+WebUI.setText(findTestObject('Products/Approve Payments Plans/Approve Loan Payment Plan/txtarea_ApproverNotes'), 'Accepted and Approved')
 
 WebUI.check(findTestObject('Products/Approve Payments Plans/Approve Loan Payment Plan/chk_IsApproved'))
+
+WebUI.click(findTestObject('Products/Approve Payments Plans/Approve Loan Payment Plan/btn_Save'))
 

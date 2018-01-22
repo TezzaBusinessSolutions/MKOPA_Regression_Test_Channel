@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Editing the Payment Plan names and Display names in Cash Payment Plan. In Products Module</description>
+   <name>Edit Payment Plan and Display Name</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>60ec4fea-a8fa-452a-a5e9-8e49dfc1a8f3</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>d6132e65-5060-4b73-a1ee-afa69a0064c9</id>
+      <masked>false</masked>
+      <name>displayNameGenerator</name>
+   </variable>
+   <variable>
+      <defaultValue>'Moran'</defaultValue>
+      <description></description>
+      <id>fd5392ae-c257-4d0e-8dd3-0b89eb89c13c</id>
+      <masked>false</masked>
+      <name>editCashPaymentPlan</name>
+   </variable>
+   <variable>
+      <defaultValue>'Moran'</defaultValue>
+      <description></description>
+      <id>86860796-3cc4-41de-ba53-13bc381db03e</id>
+      <masked>false</masked>
+      <name>paymentPlan</name>
+   </variable>
+</TestCaseEntity>
