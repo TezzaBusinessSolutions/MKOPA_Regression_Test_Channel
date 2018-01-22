@@ -19,11 +19,23 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.callTestCase(findTestCase('Products/Payment Plans/Cash Payment Plan/Add Cash Payment Plan'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Common/LogOut'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Common/MarkerCheckerLogin'), [('Email') : findTestData('MarkerCheckerLogin/CheckerLogin').getValue(
+            1, 1), ('Password') : findTestData('MarkerCheckerLogin/CheckerLogin').getValue(2, 1)], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Products/Payment Plans/Cash Payment Plan/Approve Cash Payment Plan'), [('variable') : findTestData(
+            'Payments/PaymentsModule').getValue(9, 1)], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Common/LogOut'), [:], FailureHandling.STOP_ON_FAILURE)
+
 WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : '', ('Password') : ''], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.mouseOver(findTestObject('Products/Payment Plans/common/mnuProductMenu'))
 
-WebUI.delay(5)
+WebUI.delay(2)
 
 WebUI.mouseOver(findTestObject('Products/Payment Plans/common/mnu_PaymentPlans'))
 
@@ -35,7 +47,7 @@ WebUI.setText(findTestObject('Products/Payment Plans/Cash Payment Plan/Addcashpa
         1, 2))
 
 WebUI.setText(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/txt_displayname(marketing)'), 
-    findTestData('Payments/PaymentsModule').getValue(2, 1))
+    findTestData('Payments/PaymentsModule').getValue(2, 2))
 
 WebUI.click(findTestObject('Products/Payment Plans/Cash Payment Plan/Addcashpaymentplan/cashproducttypestoselect'))
 
@@ -49,16 +61,12 @@ WebUI.setText(findTestObject('Products/Payment Plans/Cash Payment Plan/Addcashpa
 
 WebUI.click(findTestObject('Products/Payment Plans/Cash Payment Plan/Addcashpaymentplan/btn_cashpaymentplansavebutton'))
 
-WebUI.verifyElementVisible(findTestObject('Products/Payment Plans/Cash Payment Plan/Addcashpaymentplan/grd_cashpaymentplan'))
+String errduplicate = WebUI.getText(findTestObject('Products/Payment Plans/Cash Payment Plan/Addcashpaymentplan/msg_dupliacatepaymentplanname'))
 
-WebUI.callTestCase(findTestCase('Common/LogOut'), [:], FailureHandling.STOP_ON_FAILURE)
+System.out.println(errduplicate)
 
-WebUI.callTestCase(findTestCase('Common/MarkerCheckerLogin'), [('Email') : findTestData('MarkerCheckerLogin/CheckerLogin').getValue(
-            1, 1), ('Password') : findTestData('MarkerCheckerLogin/CheckerLogin').getValue(2, 1)], FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Products/Payment Plans/Cash Payment Plan/Addcashpaymentplan/msg_dupliacatepaymentplanname'), 
+    errduplicate)
 
-WebUI.mouseOver(findTestObject('Products/Payment Plans/common/mnuProductMenu'))
-
-WebUI.mouseOver(findTestObject('Products/Payment Plans/common/mnu_PaymentPlans'))
-
-WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/mnu_PaymentPlansApprovals'))
+WebUI.closeBrowser()
 

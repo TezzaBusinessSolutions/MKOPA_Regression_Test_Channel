@@ -23,7 +23,7 @@ WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : '', ('Password') :
 
 WebUI.mouseOver(findTestObject('Products/Payment Plans/common/mnuProductMenu'))
 
-WebUI.delay(5)
+WebUI.delay(2)
 
 WebUI.mouseOver(findTestObject('Products/Payment Plans/common/mnu_PaymentPlans'))
 
@@ -34,22 +34,23 @@ WebUI.verifyElementPresent(findTestObject('Products/Payment Plans/Loan Payment P
 
 WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/lnk_Approveloanpaymentplan'))
 
-WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/btn_ApprovalsSaveButton'))
-
-WebUI.verifyElementVisible(findTestObject('Products/Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/msg_blankloanapprovals'), 
-    FailureHandling.STOP_ON_FAILURE)
-
 WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/cbo_ApprovalStatus'))
 
 WebUI.delay(2)
 
-WebUI.scrollToElement(findTestObject('Products/Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/cbo_Disapproveloan'), 
-    0)
-
-WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/cbo_Disapproveloan'))
+WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/cbo_approveloan'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.setText(findTestObject('Products/Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/txt_LoanApproverNotes'), 
     findTestData('Payments/PaymentsModule').getValue(9, 1))
 
 WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/btn_ApprovalsSaveButton'))
+
+WebUI.verifyElementPresent(findTestObject('Products/Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/grd_loanpaymentplanslist'), 
+    0)
+
+String verify = WebUI.getText(findTestObject('Products/Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/Verifyloanpaymentlist'))
+
+System.out.println(verify)
+
+WebUI.closeBrowser()
 

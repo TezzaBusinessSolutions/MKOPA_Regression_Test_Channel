@@ -23,7 +23,7 @@ WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : '', ('Password') :
 
 WebUI.mouseOver(findTestObject('Products/Payment Plans/common/mnuProductMenu'))
 
-WebUI.delay(5)
+WebUI.delay(2)
 
 WebUI.mouseOver(findTestObject('Products/Payment Plans/common/mnu_PaymentPlans'))
 
@@ -56,7 +56,7 @@ WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : '', ('Password') :
 
 WebUI.mouseOver(findTestObject('Products/Payment Plans/common/mnuProductMenu'))
 
-WebUI.delay(5)
+WebUI.delay(2)
 
 WebUI.mouseOver(findTestObject('Products/Payment Plans/common/mnu_PaymentPlans'))
 
@@ -124,4 +124,6 @@ WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Disapprovel
 String verify = WebUI.getText(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/VerifyPaymentloan'))
 
 System.out.println(verify)
+
+WebUI.closeBrowser()
 

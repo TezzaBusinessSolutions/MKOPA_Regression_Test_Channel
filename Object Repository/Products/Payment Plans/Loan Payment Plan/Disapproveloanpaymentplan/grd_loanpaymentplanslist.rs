@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>VerifyPaymentCash</name>
+   <name>grd_loanpaymentplanslist</name>
    <tag></tag>
-   <elementGuidId>0dd28618-7b51-48a5-a528-5fdad973e986</elementGuidId>
+   <elementGuidId>1365b780-d1c6-4c04-9ea8-9ea19b0cf670</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='PaymentPlansForApprovalGrid']/table/tbody/tr[26]/td[text()='M-kopa  test bb']</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='PaymentPlansForApprovalGrid']/table/tbody/tr[26]/td[text()='M-kopa  test bb']</value>
+      <value>.//*[@id='divBodyMain']</value>
    </webElementProperties>
 </WebElementEntity>

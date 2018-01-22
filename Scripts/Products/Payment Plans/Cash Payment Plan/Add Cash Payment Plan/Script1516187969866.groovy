@@ -23,7 +23,7 @@ WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : '', ('Password') :
 
 WebUI.mouseOver(findTestObject('Products/Payment Plans/common/mnuProductMenu'))
 
-WebUI.delay(5)
+WebUI.delay(2)
 
 WebUI.mouseOver(findTestObject('Products/Payment Plans/common/mnu_PaymentPlans'))
 
@@ -56,7 +56,7 @@ WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : '', ('Password') :
 
 WebUI.mouseOver(findTestObject('Products/Payment Plans/common/mnuProductMenu'))
 
-WebUI.delay(5)
+WebUI.delay(2)
 
 WebUI.mouseOver(findTestObject('Products/Payment Plans/common/mnu_PaymentPlans'))
 
@@ -65,10 +65,10 @@ WebUI.click(findTestObject('Products/Payment Plans/Cash Payment Plan/Addcashpaym
 WebUI.verifyElementVisible(findTestObject('Products/Payment Plans/Cash Payment Plan/Addcashpaymentplan/grd_addcashpaymentplanpage'))
 
 WebUI.setText(findTestObject('Products/Payment Plans/Cash Payment Plan/Addcashpaymentplan/txt_cashname'), findTestData('Payments/PaymentsModule').getValue(
-        1, 1))
+        1, 2))
 
 WebUI.setText(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/txt_displayname(marketing)'), 
-    findTestData('Payments/PaymentsModule').getValue(2, 1))
+    findTestData('Payments/PaymentsModule').getValue(2, 2))
 
 WebUI.click(findTestObject('Products/Payment Plans/Cash Payment Plan/Addcashpaymentplan/cashproducttypestoselect'))
 
@@ -97,7 +97,7 @@ WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Disapprovel
 
 WebUI.click(findTestObject('Products/Payment Plans/Cash Payment Plan/Addcashpaymentplan/lnk_approvecashpaymentplan'))
 
-WebUI.scrollToElement(findTestObject('Products/Payment Plans/Cash Payment Plan/Addcashpaymentplan/cbo_approvecash'), 0)
+WebUI.click(findTestObject('Products/Payment Plans/Cash Payment Plan/Addcashpaymentplan/cbo_ApprovalStatus'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Products/Payment Plans/Cash Payment Plan/Addcashpaymentplan/cbo_approvecash'))
 
@@ -109,4 +109,6 @@ WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Disapprovel
 String verify = WebUI.getText(findTestObject('Products/Payment Plans/Cash Payment Plan/Addcashpaymentplan/VerifyPaymentCash'))
 
 System.out.println(verify)
+
+WebUI.closeBrowser()
 

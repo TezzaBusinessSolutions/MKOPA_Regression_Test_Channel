@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>DisapprovePayment Plan</name>
+   <name>Approve loan Payment Plan</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>5248085d-6d65-4fe8-b8cb-745c80b78113</testCaseGuid>
+   <testCaseGuid>b8b6e45d-ed40-4185-b5b9-dec298ff638d</testCaseGuid>
    <variable>
       <defaultValue>findTestData('Approver Notes/Approver Notes').getValue(1, 1)</defaultValue>
       <description></description>
-      <id>1f6ad774-c031-4f12-8d66-5dbf0b628608</id>
+      <id>43cc3c7b-4c7b-4ea3-a154-9892c490833c</id>
       <masked>false</masked>
       <name>variable</name>
    </variable>
