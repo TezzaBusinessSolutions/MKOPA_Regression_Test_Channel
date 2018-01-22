@@ -5,11 +5,4 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>fa7868e1-4802-45df-b9c6-c700361a39c5</testCaseGuid>
-   <variable>
-      <defaultValue>'25827702'</defaultValue>
-      <description></description>
-      <id>d2a39b56-1b72-487e-a3ba-b9f853177692</id>
-      <masked>false</masked>
-      <name>ReferenceNo</name>
-   </variable>
 </TestCaseEntity>
