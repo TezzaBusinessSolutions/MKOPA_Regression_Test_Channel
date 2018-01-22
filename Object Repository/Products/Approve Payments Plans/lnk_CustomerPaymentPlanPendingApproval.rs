@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description></description>
-   <name>lnk_Approve</name>
+   <description>Approval Link under Payment Plan Pending Approval</description>
+   <name>lnk_CustomerPaymentPlanPendingApproval</name>
    <tag></tag>
-   <elementGuidId>44e48088-ad0e-448f-8447-fa19a4302b0a</elementGuidId>
+   <elementGuidId>3fdaf45a-d4d2-43c7-bff4-9aaaffd984aa</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>.//*[@id='ApprovalRefundGrid']/table/tbody/tr[ td[text()=${receiptNo}]]/td/a[text()='Approve']</value>
+         <value>.//*[@id='PaymentPlansForApprovalGrid']/table/tbody/tr[td[text()='${customerName}']]/td/a[text()='Approve']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -23,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='ApprovalRefundGrid']/table/tbody/tr[ td[text()=${receiptNo}]]/td/a[text()='Approve']</value>
+      <value>.//*[@id='PaymentPlansForApprovalGrid']/table/tbody/tr[td[text()='${customerName}']]/td/a[text()='Approve']</value>
    </webElementProperties>
 </WebElementEntity>

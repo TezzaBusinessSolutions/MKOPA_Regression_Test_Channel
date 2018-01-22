@@ -4,39 +4,39 @@
    <name>Refund Customer Payment</name>
    <tag></tag>
    <comment>Clicking on the Customer Account we want to refund</comment>
-   <testCaseGuid>b3c86292-70d5-4d64-90d8-b205abb5d109</testCaseGuid>
+   <testCaseGuid>e795a58f-2a45-4f8e-a849-c37821f98429</testCaseGuid>
    <variable>
       <defaultValue>10</defaultValue>
       <description></description>
-      <id>90c11e6d-650f-41d1-a8b1-d8c7283fc6a5</id>
+      <id>83c80416-dfe2-4a42-bfca-54e00317b718</id>
       <masked>false</masked>
       <name>pageLoad</name>
    </variable>
    <variable>
       <defaultValue>findTestData('Payments/PaymentsModule').getValue(5, 1)</defaultValue>
       <description></description>
-      <id>30ed0f0b-6ccf-4099-9eb7-755808460f36</id>
+      <id>bf6c47d6-96c1-41b7-ab06-e14a7095b4c4</id>
       <masked>false</masked>
       <name>refundAmount</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>7bc738f7-0dd4-4f52-9fed-5e2be5356f1d</id>
+      <id>8591cd0a-23c5-43f9-b84e-0d6c09b53e6f</id>
       <masked>false</masked>
       <name>refundNotes</name>
    </variable>
    <variable>
       <defaultValue>'0717557035'</defaultValue>
       <description></description>
-      <id>8e4b25e1-e6b0-4d22-824a-33c9195c135d</id>
+      <id>689abbe2-94fb-4a21-8954-0f106b09eb9a</id>
       <masked>false</masked>
       <name>customerToRefund</name>
    </variable>
    <variable>
       <defaultValue>'LI724NCA0S'</defaultValue>
       <description></description>
-      <id>d623e63e-5352-49cd-b50d-af64d946be54</id>
+      <id>78d2b2c2-fb59-4e86-8a58-d205b8c3bdd5</id>
       <masked>false</masked>
       <name>receiptNumber</name>
    </variable>

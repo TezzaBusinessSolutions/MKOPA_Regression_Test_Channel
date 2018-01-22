@@ -27,21 +27,17 @@ WebUI.mouseOver(findTestObject('Payments/Customer Payments/Floating Payments/mnu
 
 WebUI.click(findTestObject('Payments/Customer Payments/Floating Payments/mnu_FloatingPaymentsMenu'))
 
-WebUI.getText(findTestObject('Payments/Customer Payments/Floating Payments/lnk_FloatingPayerPayment'))
+WebUI.getText(findTestObject('Payments/Customer Payments/Floating Payments/lnk_FloatingPayerAccount', [('floatingPayer') : floatingPayer]))
 
-WebUI.verifyTextPresent('LKE4700S22', false)
+WebUI.verifyTextPresent(floatingPayer, true)
 
 WebUI.mouseOver(findTestObject('Payments/Common Payments Objects/mnu_PaymentsDropdownMenu'))
 
 WebUI.click(findTestObject('Payments/Search For Payment/mnu_SearchForPayment'))
 
-WebUI.setText(findTestObject('Payments/Search For Payment/txt_ReceiptNumber'), receiptNumber)
+WebUI.setText(findTestObject('Payments/Search For Payment/txt_ReceiptNumber'), floatingPayer)
 
-WebUI.setText(findTestObject('Payments/Search For Payment/txt_PaymentPhone'), phoneNumber)
-
-WebUI.setText(findTestObject('Payments/Search For Payment/txt_PaymentDate'), paymentDate)
-
-WebUI.click(findTestObject('Payments/Search For Payment/btn_SubmitButton'))
+not_run: WebUI.click(findTestObject('Payments/Search For Payment/btn_SubmitButton'))
 
 WebUI.callTestCase(findTestCase('Common/LogOut'), [:], FailureHandling.STOP_ON_FAILURE)
 

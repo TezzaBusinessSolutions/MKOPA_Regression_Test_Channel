@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>This test case verifies an declined loan payment plan shouldnt appear in the loan payment plan list</description>
-   <name>PaymentsPlanApproval</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>9f6b24d5-e2b1-4725-9d6e-a99fc1fe3b09</testCaseGuid>
-</TestCaseEntity>

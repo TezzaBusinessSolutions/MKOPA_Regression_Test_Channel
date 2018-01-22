@@ -26,4 +26,11 @@
       <masked>false</masked>
       <name>phoneNo</name>
    </variable>
+   <variable>
+      <defaultValue>'22521729'</defaultValue>
+      <description></description>
+      <id>68eac2d0-8fae-4ca4-98cc-39cabcabd475</id>
+      <masked>false</masked>
+      <name>receiptNo</name>
+   </variable>
 </TestCaseEntity>

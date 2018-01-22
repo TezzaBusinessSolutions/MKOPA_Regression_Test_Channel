@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description></description>
-   <name>txt_RefundNotes</name>
+   <description>This object selects a given Payer from the floating payment list</description>
+   <name>lnk_FloatingPayerAccount</name>
    <tag></tag>
-   <elementGuidId>82f3205b-b369-4ece-9ba6-b3949261541f</elementGuidId>
+   <elementGuidId>45874e67-3bcd-4a64-881e-348329817ba2</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>.//*[@id='PaymentsList']/table/tbody/tr[td[text()='${floatingPayer}']]/td[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,8 +15,8 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>id</name>
+      <name>xpath</name>
       <type>Main</type>
-      <value>Notes</value>
+      <value>.//*[@id='PaymentsList']/table/tbody/tr[td[text()='${floatingPayer}']]/td[1]</value>
    </webElementProperties>
 </WebElementEntity>

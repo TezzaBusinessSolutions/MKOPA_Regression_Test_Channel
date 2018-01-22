@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>txt_RefundNotes</name>
+   <name>msg_RefundQuedForApproval</name>
    <tag></tag>
-   <elementGuidId>82f3205b-b369-4ece-9ba6-b3949261541f</elementGuidId>
+   <elementGuidId>b8eba5fd-0136-4bd2-a816-1473669db6db</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -15,8 +15,8 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>id</name>
+      <name>xpath</name>
       <type>Main</type>
-      <value>Notes</value>
+      <value>.//*[@id='addRefundDiv']/div/div</value>
    </webElementProperties>
 </WebElementEntity>

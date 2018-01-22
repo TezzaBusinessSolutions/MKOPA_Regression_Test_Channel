@@ -19,5 +19,17 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.click(findTestObject('Products/Approve Payments Plans/Trial/mnu_ProductsMenuDropdown', [('menuDrop') : menuDrop]))
+WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : '', ('Password') : ''], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.mouseOver(findTestObject('Products/Approve Payments Plans/mnu_ProductsDropdownMenu'))
+
+WebUI.mouseOver(findTestObject('Products/Approve Payments Plans/mnu_PaymentPlansSubMenu'))
+
+WebUI.click(findTestObject('Products/Approve Payments Plans/mod_PaymentsPlanApprovalsModule'))
+
+WebUI.click(findTestObject('Products/Approve Payments Plans/lnk_CustomerPaymentPlanPendingApproval', [('customerName') : customerName]))
+
+WebUI.setText(findTestObject('Products/Approve Payments Plans/Approve Loan Payment Plan/txtarea_ApproverNotes'), approverNotes)
+
+WebUI.check(findTestObject('Products/Approve Payments Plans/Approve Loan Payment Plan/chk_IsApproved'), FailureHandling.STOP_ON_FAILURE)
 

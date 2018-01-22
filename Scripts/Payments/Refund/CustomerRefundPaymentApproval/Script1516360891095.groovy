@@ -36,7 +36,7 @@ WebUI.click(findTestObject('Payments/Refund/Customer Approval Refunds/lnk_Approv
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Payments/Refund/Customer Approval Refunds/lnk_Approve', [('phoneNo') : phoneNo]))
+WebUI.click(findTestObject('Payments/Refund/Customer Approval Refunds/lnk_Approve', [('receiptNo') : receiptNo]))
 
 WebUI.comment('filling  in the refund form')
 
@@ -55,7 +55,7 @@ WebUI.click(findTestObject('Payments/Refund/Customer Approval Refunds/aprrovalst
 
 WebUI.sendKeys(findTestObject('Payments/Refund/Customer Approval Refunds/txt_notes'), notes)
 
-WebUI.click(findTestObject('Payments/Refund/Customer Approval Refunds/btn_save'))
+not_run: WebUI.click(findTestObject('Payments/Refund/Customer Approval Refunds/btn_save'))
 
 WebUI.verifyElementPresent(findTestObject('Payments/Refund/Customer Approval Refunds/msg_ReundDetails'), 2)
 

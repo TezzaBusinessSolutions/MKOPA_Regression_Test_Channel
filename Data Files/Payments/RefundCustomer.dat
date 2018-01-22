@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DataFileEntity>
-   <description>Holds Login Credentials for Marker Checker</description>
-   <name>CheckerLogin</name>
+   <description></description>
+   <name>RefundCustomer</name>
    <tag></tag>
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
-   <dataFileGUID>071ccbbd-5e2b-4d04-8fea-40547a77a63c</dataFileGUID>
-   <dataSourceUrl>C:\Users\charles.chweyaa\git\MKOPA_Regression_Test_Channel\Data Files\MarkerCheckerLogin\Checker.xlsx</dataSourceUrl>
+   <dataFileGUID>7d809032-e556-4a5f-b008-19b0fe8421e0</dataFileGUID>
+   <dataSourceUrl>C:\Users\charles.chweyaa\git\MKOPA_Regression_Test_Channel\Data Files\Customer\RefundCustomerData.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>false</isInternalPath>
    <query></query>
    <secureUserAccount>false</secureUserAccount>
-   <sheetName>Sheet1</sheetName>
+   <sheetName>Refund Customer</sheetName>
    <usingGlobalDBSetting>false</usingGlobalDBSetting>
 </DataFileEntity>
