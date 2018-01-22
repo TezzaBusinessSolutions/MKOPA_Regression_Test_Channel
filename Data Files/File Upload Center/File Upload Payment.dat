@@ -8,9 +8,9 @@
    <dataFileGUID>2f1f769a-845c-4141-99fb-8697884d33e8</dataFileGUID>
    <dataSourceUrl>Data Files/File Upload Center/File Upload Center.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
-   <isInternalPath>true</isInternalPath>
+   <isInternalPath>false</isInternalPath>
    <query></query>
    <secureUserAccount>false</secureUserAccount>
-   <sheetName>Sheet1</sheetName>
+   <sheetName></sheetName>
    <usingGlobalDBSetting>false</usingGlobalDBSetting>
 </DataFileEntity>
