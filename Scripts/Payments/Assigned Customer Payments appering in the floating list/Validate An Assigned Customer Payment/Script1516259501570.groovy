@@ -29,7 +29,7 @@ WebUI.click(findTestObject('Payments/Assigned Customer Payments appering in the 
 
 WebUI.delay(5)
 
-not_run: WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/Menu-Payments'))		
+ -not_run: WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/Menu-Payments'))		
  		
 not_run: WebUI.click(findTestObject('Payments/Assinging Floating Payer Payment/SubMenu-CustomerPayments'))		
 		
