@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>IdNumberTypeDropdown</name>
+   <tag></tag>
+   <elementGuidId>ee7f653e-f57a-4084-9f58-1dad0196f554</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>.//*[@id='divBodyMain']/form/div/div[2]/fieldset[1]/table/tbody/tr[5]/td[2]/div/div/span[1]</value>
+   </webElementProperties>
+</WebElementEntity>
