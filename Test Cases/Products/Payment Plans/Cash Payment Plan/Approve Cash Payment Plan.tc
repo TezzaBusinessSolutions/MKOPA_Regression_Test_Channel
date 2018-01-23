@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Approve Cash Payment Plan</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>815703ea-63e0-4e92-bc4f-0e2ee6aa2d49</testCaseGuid>
+   <variable>
+      <defaultValue>findTestData('Payments/PaymentsModule').getValue(9, 1)</defaultValue>
+      <description></description>
+      <id>18961b26-2ec6-4940-b6aa-a0b3b9a632d0</id>
+      <masked>false</masked>
+      <name>variable</name>
+   </variable>
+</TestCaseEntity>

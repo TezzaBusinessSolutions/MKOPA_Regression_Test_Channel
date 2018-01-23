@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Approve loan Payment Plan</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b8b6e45d-ed40-4185-b5b9-dec298ff638d</testCaseGuid>
+   <variable>
+      <defaultValue>findTestData('Approver Notes/Approver Notes').getValue(1, 1)</defaultValue>
+      <description></description>
+      <id>43cc3c7b-4c7b-4ea3-a154-9892c490833c</id>
+      <masked>false</masked>
+      <name>variable</name>
+   </variable>
+</TestCaseEntity>
