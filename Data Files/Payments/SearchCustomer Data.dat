@@ -6,7 +6,7 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>aa11d813-eaf7-4faa-882b-025b489e3442</dataFileGUID>
-   <dataSourceUrl>C:\Users\dennis.gituto\git\MKOPA_Regression_Test_Channel\Data Files\Customer Payment\searchCustomerPayment.xlsx</dataSourceUrl>
+   <dataSourceUrl>C:\Users\Admin\git\MKOPA_Regression_Test_Channel\Data Files\Customer Payment\searchCustomerPayment.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>false</isInternalPath>
    <query></query>

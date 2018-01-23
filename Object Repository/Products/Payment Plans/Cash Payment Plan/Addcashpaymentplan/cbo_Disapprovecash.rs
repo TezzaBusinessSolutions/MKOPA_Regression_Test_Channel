@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>cbo_Disapprovecash</name>
+   <tag></tag>
+   <elementGuidId>a4fb7d5c-d793-48bf-9ddd-cecd6a59488d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>html/body/div[5]/div/ul/li[text()='Declined']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>html/body/div[5]/div/ul/li[text()='Declined']</value>
+   </webElementProperties>
+</WebElementEntity>

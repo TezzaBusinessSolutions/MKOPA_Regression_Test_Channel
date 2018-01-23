@@ -21,7 +21,7 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : '', ('Password') : ''], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Products/Approve Payments Plans/mnu_ProductsDropdownMenu'))
+WebUI.mouseOver(findTestObject('Products/Common/mnu_ProductsDropdownMenu'))
 
 WebUI.mouseOver(findTestObject('Products/Approve Payments Plans/mnu_PaymentPlansSubMenu'))
 
