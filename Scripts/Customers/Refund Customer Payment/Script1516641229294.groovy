@@ -19,23 +19,3 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-//This step calls the loadind application class
-WebUI.callTestCase(findTestCase('Common/Loading Application'), [('MKOPA_URL') : findTestData('Test Environments/Test Environment').getValue(
-            1, 1)], FailureHandling.STOP_ON_FAILURE)
-
-//Loads the data repository
-def data = WebUI.callTestCase(findTestCase('Common/DataRepository'), [:], FailureHandling.STOP_ON_FAILURE)
-
-def email = data.Email
-
-def password = data.password
-
-//Fills in the user Email
-WebUI.setText(findTestObject('Login Objects Repo/txt_UserNameOrEmail'), email)
-
-//Fills in the User Password
-WebUI.setText(findTestObject('Login Objects Repo/txt_Password'), password)
-
-//Clicks Sign In Button
-WebUI.click(findTestObject('Login Objects Repo/btn_Sign_In_Button'))
-

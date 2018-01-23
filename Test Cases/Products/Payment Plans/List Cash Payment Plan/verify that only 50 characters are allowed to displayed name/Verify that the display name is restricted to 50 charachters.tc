@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>ID: 35685- verifying the number of charactes allowed in the display name field</description>
+   <name>Verify that the display name is restricted to 50 charachters</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4ac33ae7-f600-495d-b95e-a298a338cb5b</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>82c2379c-8b1b-406f-8359-0abc9abdf0d7</id>
+      <masked>false</masked>
+      <name>dispNameUnrequiredLength</name>
+   </variable>
+   <variable>
+      <defaultValue>'You have exceeded 50 characters.'</defaultValue>
+      <description></description>
+      <id>22aa266f-5347-4389-8db3-8ee4565c0751</id>
+      <masked>false</masked>
+      <name>errorMessage</name>
+   </variable>
+   <variable>
+      <defaultValue>[:]</defaultValue>
+      <description></description>
+      <id>11e815a4-4fed-4a8e-9511-313f90a34be5</id>
+      <masked>false</masked>
+      <name>maketing_name</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>8dd3820b-67f4-4de1-8804-0000f3d57759</id>
+      <masked>false</masked>
+      <name>dispNamerequiredLegnth</name>
+   </variable>
+   <variable>
+      <defaultValue>'The name and Display name has changed'</defaultValue>
+      <description></description>
+      <id>b5e8c0ba-6c50-4bc0-9776-80fcf13657cc</id>
+      <masked>false</masked>
+      <name>requestorNotes</name>
+   </variable>
+</TestCaseEntity>

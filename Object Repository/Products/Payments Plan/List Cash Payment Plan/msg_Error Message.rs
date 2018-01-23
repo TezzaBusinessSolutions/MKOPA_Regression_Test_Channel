@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description></description>
-   <name>Recent Customer Payments</name>
+   <description>error message displayed upon exceeding 50 charachters</description>
+   <name>msg_Error Message</name>
    <tag></tag>
-   <elementGuidId>7a230e81-f744-4092-b82b-898b8d390ed1</elementGuidId>
+   <elementGuidId>0d4f2846-6692-407c-8aef-cc2806d3db46</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//a[contains(text(),'Recent Customer Payments')]</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//a[contains(text(),'Recent Customer Payments')]</value>
+      <value>//span[contains(text(),'You have exceeded 50 characters.')]</value>
    </webElementProperties>
 </WebElementEntity>

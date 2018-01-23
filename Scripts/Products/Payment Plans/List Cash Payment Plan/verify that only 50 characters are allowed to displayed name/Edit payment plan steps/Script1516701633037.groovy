@@ -19,23 +19,15 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-//This step calls the loadind application class
-WebUI.callTestCase(findTestCase('Common/Loading Application'), [('MKOPA_URL') : findTestData('Test Environments/Test Environment').getValue(
-            1, 1)], FailureHandling.STOP_ON_FAILURE)
+WebUI.mouseOver(findTestObject('Products/Common/mnu_ProductsDropdownMenu'))
 
-//Loads the data repository
-def data = WebUI.callTestCase(findTestCase('Common/DataRepository'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.delay(2)
 
-def email = data.Email
+WebUI.mouseOver(findTestObject('Products/Common/sbm-Payments Plan'))
 
-def password = data.password
+WebUI.delay(2)
 
-//Fills in the user Email
-WebUI.setText(findTestObject('Login Objects Repo/txt_UserNameOrEmail'), email)
+WebUI.click(findTestObject('Products/Common/sbm_List Cash Payment Plans'))
 
-//Fills in the User Password
-WebUI.setText(findTestObject('Login Objects Repo/txt_Password'), password)
-
-//Clicks Sign In Button
-WebUI.click(findTestObject('Login Objects Repo/btn_Sign_In_Button'))
+WebUI.click(findTestObject('Products/Payments Plan/List Cash Payment Plan/lnk_Edit Payment Plan', [('editCashPaymentPlan') : editCashPaymentPlan]))
 

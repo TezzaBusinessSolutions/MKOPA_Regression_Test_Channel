@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Recent Customer Payments</name>
+   <name>Display name</name>
    <tag></tag>
-   <elementGuidId>7a230e81-f744-4092-b82b-898b8d390ed1</elementGuidId>
+   <elementGuidId>50603b89-2294-458c-a790-72903287391d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//a[contains(text(),'Recent Customer Payments')]</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//a[contains(text(),'Recent Customer Payments')]</value>
+      <value>.//*[@id='divBodyForm']/table/tbody/tr[2]/td[2]</value>
    </webElementProperties>
 </WebElementEntity>
