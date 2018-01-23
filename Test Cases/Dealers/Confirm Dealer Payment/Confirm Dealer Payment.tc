@@ -13,14 +13,14 @@
       <name>accountNumber</name>
    </variable>
    <variable>
-      <defaultValue>findTestData('File Upload Center/File Upload Center').getValue(2, 4)</defaultValue>
+      <defaultValue>findTestData('File Upload Center/File Upload Payment').getValue(2, 2)</defaultValue>
       <description></description>
       <id>4b78891b-2cec-4ee2-ba8f-b36ce3b89b87</id>
       <masked>false</masked>
       <name>dealersComment</name>
    </variable>
    <variable>
-      <defaultValue>findTestData('File Upload Center/File Upload Center').getValue(1, 4)</defaultValue>
+      <defaultValue>findTestData('File Upload Center/File Upload Payment').getValue(1, 2)</defaultValue>
       <description></description>
       <id>07a1ca47-3a2b-491b-8a2c-71bbc4cad49f</id>
       <masked>false</masked>

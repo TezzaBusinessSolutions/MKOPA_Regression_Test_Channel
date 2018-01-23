@@ -6,7 +6,7 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>071ccbbd-5e2b-4d04-8fea-40547a77a63c</dataFileGUID>
-   <dataSourceUrl>C:\Users\Ruth.Siyoi\git\MKOPA_Regression_Test_Channel\Data Files\MarkerCheckerLogin\Checker.xlsx</dataSourceUrl>
+   <dataSourceUrl>C:\Users\charles.chweyaa\git\MKOPA_Regression_Test_Channel\Data Files\MarkerCheckerLogin\Checker.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>false</isInternalPath>
    <query></query>
