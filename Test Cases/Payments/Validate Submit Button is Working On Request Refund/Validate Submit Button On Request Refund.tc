@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC ID 16640</description>
+   <name>Validate Submit Button On Request Refund</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b90f1355-9235-4f8c-b54e-5410ce1fa679</testCaseGuid>
+   <variable>
+      <defaultValue>'9956512'</defaultValue>
+      <description></description>
+      <id>74f726fb-daf3-4dd9-a9b2-82fc6a4b71ab</id>
+      <masked>false</masked>
+      <name>CustomerRef</name>
+   </variable>
+</TestCaseEntity>

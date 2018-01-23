@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Add Loan Payment Plan</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>62bc1166-1b92-4245-86bc-dfd9f1671ff6</testCaseGuid>
+   <variable>
+      <defaultValue>findTestData('PaymentPlans/Paymentplannames').getValue(1, 1)</defaultValue>
+      <description></description>
+      <id>9903ffb2-0594-4fac-a496-48f6e6e55ecb</id>
+      <masked>false</masked>
+      <name>variable</name>
+   </variable>
+</TestCaseEntity>
