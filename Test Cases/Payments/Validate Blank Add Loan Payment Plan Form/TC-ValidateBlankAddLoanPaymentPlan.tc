@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Validates add payment plan form
-TC ID- 16679</description>
-   <name>TC-ValidateBlankAddLoanPaymentPlan</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>28626b10-aedc-4c42-92c7-979847bd9102</testCaseGuid>
-</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Search for a customer</description>
+   <name>Search For Customer</name>
+   <tag>Payments Suite</tag>
+   <comment></comment>
+   <testCaseGuid>35e96fba-2f28-4f44-8ccf-893600147b1e</testCaseGuid>
+</TestCaseEntity>
