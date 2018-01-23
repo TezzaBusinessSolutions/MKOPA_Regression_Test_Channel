@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description></description>
-   <name>lnk_Approve</name>
+   <description>Transfe aprroval link</description>
+   <name>lnk_ApproveTransfer</name>
    <tag></tag>
-   <elementGuidId>44e48088-ad0e-448f-8447-fa19a4302b0a</elementGuidId>
+   <elementGuidId>d90ebeb5-8f9f-4335-9442-6a4eedf152b3</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>.//*[@id='ApprovalRefundGrid']/table/tbody/tr[ td[text()=${phoneNo}]]/td/a[text()='Approve']</value>
-      </entry>
-      <entry>
-         <key>CSS</key>
+         <value>.//*[@id='PaymentsForTransfers']/table/tbody/tr[ td[text()=&quot;${requestorNotes}&quot;]]/td/a[text()='Approve Transfer']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -23,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='ApprovalRefundGrid']/table/tbody/tr[ td[text()=${phoneNo}]]/td/a[text()='Approve']</value>
+      <value>.//*[@id='PaymentsForTransfers']/table/tbody/tr[ td[text()=&quot;${requestorNotes}&quot;]]/td/a[text()='Approve Transfer']</value>
    </webElementProperties>
 </WebElementEntity>
