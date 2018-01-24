@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DataFileEntity>
-   <description>Search Customer Test Data</description>
-   <name>SearchCustomer Data</name>
+   <description>account numbers for customers</description>
+   <name>Search Customer</name>
    <tag></tag>
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
-   <dataFileGUID>aa11d813-eaf7-4faa-882b-025b489e3442</dataFileGUID>
-   <dataSourceUrl>C:\Users\Admin\git\MKOPA_Regression_Test_Channel\Data Files\Customer Payment\searchCustomerPayment.xlsx</dataSourceUrl>
+   <dataFileGUID>7759c81a-2537-44a1-bdb9-ef98d290a458</dataFileGUID>
+   <dataSourceUrl>Data Files/Search For Customer/Search customer file.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
-   <isInternalPath>false</isInternalPath>
+   <isInternalPath>true</isInternalPath>
    <query></query>
    <secureUserAccount>false</secureUserAccount>
    <sheetName>Sheet1</sheetName>

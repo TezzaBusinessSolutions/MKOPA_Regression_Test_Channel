@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Negative scenario</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>61e73b8c-e8d5-4fce-a98d-b542b4600564</testCaseGuid>
+   <variable>
+      <defaultValue>'Please select an approval status'</defaultValue>
+      <description></description>
+      <id>690e5589-cbcc-41bf-bd74-e776711f2d18</id>
+      <masked>false</masked>
+      <name>ErroMsg</name>
+   </variable>
+</TestCaseEntity>

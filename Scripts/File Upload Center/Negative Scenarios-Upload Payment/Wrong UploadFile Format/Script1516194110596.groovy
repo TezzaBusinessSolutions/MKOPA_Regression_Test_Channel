@@ -9,6 +9,7 @@ import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testcase.TestCaseFactory as TestCaseFactory
+import com.kms.katalon.core.testcase.Variable
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 import com.kms.katalon.core.testobject.ObjectRepository as ObjectRepository
@@ -33,24 +34,16 @@ WebUI.setText(findTestObject('File Upload Center/File Upload Center Page/txtTag'
 
 WebUI.click(findTestObject('File Upload Center/File Upload Center Page/btnUPLOADButton'))
 
-String errorwrongformat = WebUI.getText(findTestObject('File Upload Center/File Upload Error Messages/msgFileUploadedShouldBeInCSVFormat'))
+if (findTestObject('Object Repository/File Upload Center/File Upload Error Messages/msgPleaseEnterNotes')== true) {
+    WebUI.closeBrowser()
+} 
 
-String errorEntertag = WebUI.getText(findTestObject('File Upload Center/File Upload Error Messages/msgPleaseEnterTag'))
-
-String errorEnternotes = WebUI.getText(findTestObject('File Upload Center/File Upload Error Messages/msgPleaseEnterNotes'))
-
-String errorTagUnique = WebUI.getText(findTestObject('File Upload Center/File Upload Error Messages/msgTAGMustBeUnique'))
-
-if (errorEnternotes == true) {
-    WebUI.click(findTestObject('File Upload Center/File Upload Center Page/btnClosePopUpWindow'))
-} else if (errorEntertag == true) {
-    WebUI.click(findTestObject('File Upload Center/File Upload Center Page/btnClosePopUpWindow'))
-} else if (errorEnternotes == true) {
-    WebUI.click(findTestObject('File Upload Center/File Upload Center Page/btnClosePopUpWindow'))
-} else if (errorTagUnique == true) {
-    WebUI.click(findTestObject('File Upload Center/File Upload Center Page/btnClosePopUpWindow'))
-} else {
+else if (findTestObject('/File Upload Center/File Upload Error Messages/msgFileUploadedShouldBeInCSVFormat')== true)
+{
+	WebUI.closeBrowser()
+}
+else {
     WebUI.callTestCase(findTestCase('File Upload Center/Common/TC-UploadPaymentFile'), [('mpesaPayment') : findTestData('File Upload Center/File Upload Payment').getValue(1, 1)
-            , ('comment') : findTestData('File Upload Center/File Upload Payment').getValue(2, 1), ('tagged') : ''])
+            , ('comment') : findTestData('File Upload Center/File Upload Payment').getValue(2, 1), ('tagged') : ''], FailureHandling.STOP_ON_FAILURE)
 }
 

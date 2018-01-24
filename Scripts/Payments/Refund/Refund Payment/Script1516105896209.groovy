@@ -21,19 +21,33 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : '', ('Password') : ''], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Products/Common/mnu_ProductsDropdownMenu'))
+WebUI.delay(2)
 
-WebUI.mouseOver(findTestObject('Products/Approve Payments Plans/mnu_PaymentPlansSubMenu'))
+WebUI.mouseOver(findTestObject('Payments/Common Payments Objects/OR-PaymentsDropdownMenu'))
 
-WebUI.click(findTestObject('Products/Approve Payments Plans/mod_PaymentsPlanApprovalsModule'))
+WebUI.delay(2)
 
-WebUI.waitForPageLoad(10)
+WebUI.mouseOver(findTestObject('Payments/Refund/mnu_Refund'))
 
-WebUI.click(findTestObject('Products/Approve Payments Plans/lnk_PaymentPlanPendingApproval'))
+WebUI.delay(2)
 
-WebUI.comment('Loading Approve Loan Payment Plan Update Page')
+WebUI.click(findTestObject('Payments/Refund/Customer Approval Refunds/lnk_Approve Customer Refunds'))
 
-WebUI.sendKeys(findTestObject('Products/Approve Payments Plans/Approve Loan Payment Plan/txtarea_ApproverNotes'), 'Testing')
+WebUI.delay(2)
 
-WebUI.check(findTestObject('Products/Approve Payments Plans/Approve Loan Payment Plan/chk_IsApproved'))
+WebUI.click(findTestObject('Payments/Refund/Customer Approval Refunds/lnk_Approve'))
+
+WebUI.comment('filling  in the refund form')
+
+WebUI.click(findTestObject('Payments/Refund/Customer Approval Refunds/drpdwn approvalstatus'))
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Payments/Refund/Customer Approval Refunds/aprrovalstatus'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.setText(findTestObject('Payments/Refund/Customer Approval Refunds/txt_notes'), notes)
+
+WebUI.click(findTestObject('Payments/Refund/Customer Approval Refunds/btn_save'))
+
+WebUI.verifyElementPresent(findTestObject('Payments/Refund/Customer Approval Refunds/msg_ReundDetails'), 2)
 

@@ -33,3 +33,13 @@ WebUI.setText(findTestObject('Payments/Search For Payment/txt_PaymentDate'), '20
 
 WebUI.click(findTestObject('Payments/Search For Payment/btn_SubmitButton'))
 
+
+
+int totalRecords=15;
+String pickAccount(totalRecords) {
+	Random random=new Random()
+	int randomRowId = 1 + random.nextInt(totalRecords); // Random integer between 1 and totalRecords (both inclusive).
+	//testRunner.testCase.setPropertyValue('departureAirportId', DataTable[randomRowId][0]);
+
+}
+

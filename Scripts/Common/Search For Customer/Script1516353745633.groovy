@@ -18,22 +18,15 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import java.lang.String as String
+import java.lang.StringCoding as StringCoding
+import java.util.Random as Random
+
+int rownum = new Random().nextInt(248 - 1) + 1
 
 WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : '', ('Password') : ''], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Products/Common/mnu_ProductsDropdownMenu'))
+WebUI.setText(findTestObject('Customers/Common/Search Customer'), findTestData('Search For Customer/Search Customer').getValue(1, rownum))
 
-WebUI.mouseOver(findTestObject('Products/Approve Payments Plans/mnu_PaymentPlansSubMenu'))
-
-WebUI.click(findTestObject('Products/Approve Payments Plans/mod_PaymentsPlanApprovalsModule'))
-
-WebUI.waitForPageLoad(10)
-
-WebUI.click(findTestObject('Products/Approve Payments Plans/lnk_PaymentPlanPendingApproval'))
-
-WebUI.comment('Loading Approve Loan Payment Plan Update Page')
-
-WebUI.sendKeys(findTestObject('Products/Approve Payments Plans/Approve Loan Payment Plan/txtarea_ApproverNotes'), 'Testing')
-
-WebUI.check(findTestObject('Products/Approve Payments Plans/Approve Loan Payment Plan/chk_IsApproved'))
+WebUI.click(findTestObject('Customers/Common/Search Icon'))
 
