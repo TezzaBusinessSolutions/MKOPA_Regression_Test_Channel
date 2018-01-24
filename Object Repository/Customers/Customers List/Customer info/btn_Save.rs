@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>cbo_loantype</name>
+   <name>btn_Save</name>
    <tag></tag>
-   <elementGuidId>29f1ed36-1827-4a7b-b67b-daa57733f268</elementGuidId>
+   <elementGuidId>2dc88f4c-f14a-44a5-a845-92d6fab29c15</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='divBodyMain']/form/table/tbody/tr[10]/td[2]/div/div/span[1]</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='divBodyMain']/form/table/tbody/tr[10]/td[2]/div/div/span[1]</value>
+      <value>//input[contains(@id,'btnTransferToCust')]</value>
    </webElementProperties>
 </WebElementEntity>

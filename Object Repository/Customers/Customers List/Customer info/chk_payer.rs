@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description></description>
-   <name>cbo_loantype</name>
+   <description>payer</description>
+   <name>chk_payer</name>
    <tag></tag>
-   <elementGuidId>29f1ed36-1827-4a7b-b67b-daa57733f268</elementGuidId>
+   <elementGuidId>8ae0ec34-981d-4eb3-bbb8-04153cca5ed4</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='divBodyMain']/form/table/tbody/tr[10]/td[2]/div/div/span[1]</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='divBodyMain']/form/table/tbody/tr[10]/td[2]/div/div/span[1]</value>
+      <value>.//*[@id='customer-input']</value>
    </webElementProperties>
 </WebElementEntity>

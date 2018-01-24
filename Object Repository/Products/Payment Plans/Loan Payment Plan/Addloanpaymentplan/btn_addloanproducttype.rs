@@ -7,6 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value>.//*[@id='add-product-type']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -16,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='ProductTypesToAdd']</value>
+      <value>.//*[@id='add-product-type']</value>
    </webElementProperties>
 </WebElementEntity>

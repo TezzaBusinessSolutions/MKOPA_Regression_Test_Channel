@@ -33,7 +33,7 @@ WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Disapprovel
 WebUI.verifyElementPresent(findTestObject('Products/Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/grd_PaymentPlansApprovalsPage'), 
     0)
 
-WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/lnk_Approveloanpaymentplan'))
+WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/lnk_disapproveloanpaymentplan'))
 
 WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/btn_ApprovalsSaveButton'))
 
@@ -50,7 +50,7 @@ WebUI.scrollToElement(findTestObject('Products/Payment Plans/Loan Payment Plan/D
 WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/cbo_Disapproveloan'))
 
 WebUI.setText(findTestObject('Products/Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/txt_LoanApproverNotes'), 
-    findTestData('Payments/PaymentsModule').getValue(9, 1))
+    'Test')
 
 WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/btn_ApprovalsSaveButton'))
 

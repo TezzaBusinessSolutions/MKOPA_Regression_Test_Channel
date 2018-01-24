@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description></description>
-   <name>cbo_loantype</name>
+   <description>transfer comments</description>
+   <name>txt_Comment</name>
    <tag></tag>
-   <elementGuidId>29f1ed36-1827-4a7b-b67b-daa57733f268</elementGuidId>
+   <elementGuidId>9ba39870-2cef-4f8b-bc1e-b4c23776af57</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='divBodyMain']/form/table/tbody/tr[10]/td[2]/div/div/span[1]</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='divBodyMain']/form/table/tbody/tr[10]/td[2]/div/div/span[1]</value>
+      <value>.//*[@id='Comment']</value>
    </webElementProperties>
 </WebElementEntity>

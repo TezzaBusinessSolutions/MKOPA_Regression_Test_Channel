@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>cbo_loantype</name>
+   <name>msg_dupliacatecashpaymentplanname</name>
    <tag></tag>
-   <elementGuidId>29f1ed36-1827-4a7b-b67b-daa57733f268</elementGuidId>
+   <elementGuidId>3928871c-0860-46f1-87ac-86246b07c6cd</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='divBodyMain']/form/table/tbody/tr[10]/td[2]/div/div/span[1]</value>
+         <value>.//*[@id='divBodyMain']/div[3]/ul/li[text()='The payment plan entered, M-kopa test da, already exists']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='divBodyMain']/form/table/tbody/tr[10]/td[2]/div/div/span[1]</value>
+      <value>.//*[@id='divBodyMain']/div[3]/ul/li[text()='The payment plan entered, M-kopa test da, already exists']</value>
    </webElementProperties>
 </WebElementEntity>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lnk_Approveloanpaymentplan</name>
+   <name>cusomerRef</name>
    <tag></tag>
-   <elementGuidId>fd703eea-f111-449c-b6ac-0b8e675bc7e5</elementGuidId>
+   <elementGuidId>47c0eee0-c681-4138-9062-bd2077f0f3a9</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='PaymentPlansForApprovalGrid']/table/tbody/tr[td[text()=&quot;testafte&quot;]]/td/a[text()='Approve']</value>
+         <value>html/body/div[16]/div/ul/li[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='PaymentPlansForApprovalGrid']/table/tbody/tr[td[text()=&quot;testafte&quot;]]/td/a[text()='Approve']</value>
+      <value>html/body/div[16]/div/ul/li[1]</value>
    </webElementProperties>
 </WebElementEntity>

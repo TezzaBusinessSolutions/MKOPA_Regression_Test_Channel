@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>cbo_loantype</name>
+   <name>lnk_Approveloanpaymentplan</name>
    <tag></tag>
-   <elementGuidId>29f1ed36-1827-4a7b-b67b-daa57733f268</elementGuidId>
+   <elementGuidId>8ba38bc5-d3f1-4854-829b-2223e135d2f6</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='divBodyMain']/form/table/tbody/tr[10]/td[2]/div/div/span[1]</value>
+         <value>.//*[@id='PaymentPlansForApprovalGrid']/table/tbody/tr[td[text()=&quot;Loan test 5&quot;]]/td/a[text()='Approve']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='divBodyMain']/form/table/tbody/tr[10]/td[2]/div/div/span[1]</value>
+      <value>.//*[@id='PaymentPlansForApprovalGrid']/table/tbody/tr[td[text()=&quot;Loan test 5&quot;]]/td/a[text()='Approve']</value>
    </webElementProperties>
 </WebElementEntity>

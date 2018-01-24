@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='PaymentPlansForApprovalGrid']/table/tbody/tr[26]/td[text()='M-kopa  test 2']</value>
+         <value>.//*[@id='PaymentPlansForApprovalGrid']/table/tbody/tr[td[text()='Loan test 5']]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='PaymentPlansForApprovalGrid']/table/tbody/tr[26]/td[text()='M-kopa  test 2']</value>
+      <value>.//*[@id='PaymentPlansForApprovalGrid']/table/tbody/tr[td[text()='Loan test 5']]</value>
    </webElementProperties>
 </WebElementEntity>
