@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>msg_dupliacatepaymentplanname</name>
+   <name>VerifyCashpaymentplanslist</name>
    <tag></tag>
-   <elementGuidId>3928871c-0860-46f1-87ac-86246b07c6cd</elementGuidId>
+   <elementGuidId>f144effd-8942-46ea-8224-dc1ae3e3cac5</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='divBodyMain']/div[3]/ul/li[text()='The payment plan entered, M-kopa test bb, already exists']</value>
+         <value>.//*[@id='ListCashPaymentPlans']/table/tbody/tr[td[text()='M-kopa test dc']]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='divBodyMain']/div[3]/ul/li[text()='The payment plan entered, M-kopa test bb, already exists']</value>
+      <value>.//*[@id='ListCashPaymentPlans']/table/tbody/tr[td[text()='M-kopa test dc']]</value>
    </webElementProperties>
 </WebElementEntity>

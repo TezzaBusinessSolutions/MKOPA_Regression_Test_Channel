@@ -19,7 +19,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : '', ('Password') : ''], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common/MarkerCheckerLogin'), [('Email') : findTestData('MarkerCheckerLogin/CheckerLogin').getValue(1, 1)
+        , ('Password') : findTestData('MarkerCheckerLogin/CheckerLogin').getValue(2, 1)], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.mouseOver(findTestObject('Products/Payment Plans/common/mnuProductMenu'))
 
@@ -32,7 +33,7 @@ WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Disapprovel
 WebUI.verifyElementPresent(findTestObject('Products/Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/grd_PaymentPlansApprovalsPage'), 
     0)
 
-WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/lnk_Approveloanpaymentplan'))
+WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/lnk_Approveloanpaymentplan'))
 
 WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/cbo_ApprovalStatus'))
 
@@ -41,7 +42,7 @@ WebUI.delay(2)
 WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/cbo_approveloan'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.setText(findTestObject('Products/Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/txt_LoanApproverNotes'), 
-    findTestData('Payments/PaymentsModule').getValue(9, 1))
+    'Test')
 
 WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/btn_ApprovalsSaveButton'))
 

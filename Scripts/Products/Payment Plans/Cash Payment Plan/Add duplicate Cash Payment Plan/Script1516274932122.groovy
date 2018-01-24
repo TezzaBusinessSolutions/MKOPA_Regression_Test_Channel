@@ -43,29 +43,26 @@ WebUI.click(findTestObject('Products/Payment Plans/Cash Payment Plan/Addcashpaym
 
 WebUI.verifyElementVisible(findTestObject('Products/Payment Plans/Cash Payment Plan/Addcashpaymentplan/grd_addcashpaymentplanpage'))
 
-WebUI.setText(findTestObject('Products/Payment Plans/Cash Payment Plan/Addcashpaymentplan/txt_cashname'), findTestData('Payments/PaymentsModule').getValue(
-        1, 2))
+WebUI.setText(findTestObject('Products/Payment Plans/Cash Payment Plan/Addcashpaymentplan/txt_cashname'), 'M-kopa test dc')
 
 WebUI.setText(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/txt_displayname(marketing)'), 
-    findTestData('Payments/PaymentsModule').getValue(2, 2))
+    'M-kopa test dc')
 
 WebUI.click(findTestObject('Products/Payment Plans/Cash Payment Plan/Addcashpaymentplan/cashproducttypestoselect'))
 
 WebUI.click(findTestObject('Products/Payment Plans/Cash Payment Plan/Addcashpaymentplan/btn_addcashproducttype'))
 
-WebUI.setText(findTestObject('Products/Payment Plans/Cash Payment Plan/Addcashpaymentplan/txt_cashprice'), findTestData(
-        'Payments/PaymentsModule').getValue(3, 1))
+WebUI.setText(findTestObject('Products/Payment Plans/Cash Payment Plan/Addcashpaymentplan/txt_cashprice'), '63000')
 
-WebUI.setText(findTestObject('Products/Payment Plans/Cash Payment Plan/Addcashpaymentplan/txt_approvernotes'), findTestData(
-        'Payments/PaymentsModule').getValue(9, 1))
+WebUI.setText(findTestObject('Products/Payment Plans/Cash Payment Plan/Addcashpaymentplan/txt_approvernotes'), 'Test')
 
 WebUI.click(findTestObject('Products/Payment Plans/Cash Payment Plan/Addcashpaymentplan/btn_cashpaymentplansavebutton'))
 
-String errduplicate = WebUI.getText(findTestObject('Products/Payment Plans/Cash Payment Plan/Addcashpaymentplan/msg_dupliacatepaymentplanname'))
+String errduplicate = WebUI.getText(findTestObject('Products/Payment Plans/Cash Payment Plan/Addcashpaymentplan/msg_dupliacatecashpaymentplanname'))
 
 System.out.println(errduplicate)
 
-WebUI.verifyElementText(findTestObject('Products/Payment Plans/Cash Payment Plan/Addcashpaymentplan/msg_dupliacatepaymentplanname'), 
+WebUI.verifyElementText(findTestObject('Products/Payment Plans/Cash Payment Plan/Addcashpaymentplan/msg_dupliacatecashpaymentplanname'), 
     errduplicate)
 
 WebUI.closeBrowser()

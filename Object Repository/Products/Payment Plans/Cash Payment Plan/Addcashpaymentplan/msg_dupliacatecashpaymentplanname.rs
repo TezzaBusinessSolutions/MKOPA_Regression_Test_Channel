@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lnk_Approveloanpaymentplan</name>
+   <name>msg_dupliacatecashpaymentplanname</name>
    <tag></tag>
-   <elementGuidId>fd703eea-f111-449c-b6ac-0b8e675bc7e5</elementGuidId>
+   <elementGuidId>3928871c-0860-46f1-87ac-86246b07c6cd</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='PaymentPlansForApprovalGrid']/table/tbody/tr[td[text()=&quot;testafte&quot;]]/td/a[text()='Approve']</value>
+         <value>.//*[@id='divBodyMain']/div[3]/ul/li[text()='The payment plan entered, M-kopa test da, already exists']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='PaymentPlansForApprovalGrid']/table/tbody/tr[td[text()=&quot;testafte&quot;]]/td/a[text()='Approve']</value>
+      <value>.//*[@id='divBodyMain']/div[3]/ul/li[text()='The payment plan entered, M-kopa test da, already exists']</value>
    </webElementProperties>
 </WebElementEntity>
