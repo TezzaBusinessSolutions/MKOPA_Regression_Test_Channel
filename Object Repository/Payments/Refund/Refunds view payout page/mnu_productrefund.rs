@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>Link of the customer account to refund</description>
-   <name>lnk_ToAccountLink</name>
+   <description></description>
+   <name>mnu_productrefund</name>
    <tag></tag>
-   <elementGuidId>afb308ca-315d-4daa-a467-03888a5c7389</elementGuidId>
+   <elementGuidId>ab352692-130b-47bd-9a64-b1a26629ae4b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='Customers']/table/tbody/tr[td[text()=${phoneno}]]/td/a[text()='To Account>>']</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='Customers']/table/tbody/tr[td[text()=${phoneno}]]/td/a[text()='To Account>>']</value>
+      <value>.//*[@id='Menu']/li[4]/div/ul/li[7]/div/ul/li[5]/a[text()='Product Refunds']</value>
    </webElementProperties>
 </WebElementEntity>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Refunds create payout view</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>57c603d8-2b11-4dda-9e01-02e3b682c5f9</testCaseGuid>
+   <variable>
+      <defaultValue>'0711438682'</defaultValue>
+      <description></description>
+      <id>c95794a4-f3f6-4fbb-92bf-816bd3257062</id>
+      <masked>false</masked>
+      <name>phoneNumber</name>
+   </variable>
+   <variable>
+      <defaultValue>'FABIRSA201237M'</defaultValue>
+      <description></description>
+      <id>7c6dfe1c-7dd1-4b75-9efe-f09263e0dfc3</id>
+      <masked>false</masked>
+      <name>depositReceipt</name>
+   </variable>
+   <variable>
+      <defaultValue>'26324678'</defaultValue>
+      <description></description>
+      <id>b02427c3-7257-47cd-a99b-4eec237e85f6</id>
+      <masked>false</masked>
+      <name>ApproveNumber</name>
+   </variable>
+</TestCaseEntity>

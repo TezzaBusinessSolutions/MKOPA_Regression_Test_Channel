@@ -6,14 +6,14 @@
    <comment></comment>
    <testCaseGuid>25b5b74c-dc55-4b1d-a5c5-204056035f03</testCaseGuid>
    <variable>
-      <defaultValue>findTestData('File Upload Center/File Upload Payment').getValue(1, 1)</defaultValue>
+      <defaultValue>'C:\\Users\\Ruth.Siyoi\\git\\MKOPA_Regression_Test_Channel\\FilesToUpload\\payments.csv'</defaultValue>
       <description></description>
       <id>eff80fd4-b282-4a89-8252-0a7dafa40daf</id>
       <masked>false</masked>
-      <name>mpesaPayment</name>
+      <name>filePath</name>
    </variable>
    <variable>
-      <defaultValue>findTestData('File Upload Center/File Upload Payment').getValue(2, 1)</defaultValue>
+      <defaultValue>'Am a Keyword Guru'</defaultValue>
       <description></description>
       <id>9dd7bb30-2659-4c8c-996e-f99257d7acdf</id>
       <masked>false</masked>

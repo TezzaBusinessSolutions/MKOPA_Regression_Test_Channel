@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>Link of the customer account to refund</description>
-   <name>lnk_ToAccountLink</name>
+   <description></description>
+   <name>txt_refundapprovernotes</name>
    <tag></tag>
-   <elementGuidId>afb308ca-315d-4daa-a467-03888a5c7389</elementGuidId>
+   <elementGuidId>a8ceac1d-c8fa-48ab-a1ad-67618aee2801</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='Customers']/table/tbody/tr[td[text()=${phoneno}]]/td/a[text()='To Account>>']</value>
+         <value>.//*[@id='notes']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='Customers']/table/tbody/tr[td[text()=${phoneno}]]/td/a[text()='To Account>>']</value>
+      <value>.//*[@id='notes']</value>
    </webElementProperties>
 </WebElementEntity>

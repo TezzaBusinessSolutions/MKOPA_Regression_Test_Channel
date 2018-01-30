@@ -19,6 +19,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+CustomKeywords.'filegeneratorpkg.csvfilegenerator.csvfilegenerator'('26324678', '254711438682', '100')
+
+WebUI.delay(3)
+
 tagged = generateRandom('abcdefghijklmnop123456789', 5)
 
 WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : '', ('Password') : ''], FailureHandling.STOP_ON_FAILURE)
@@ -27,7 +31,7 @@ WebUI.click(findTestObject('File Upload Center/Common/mnuFileUploadCenterLink'))
 
 WebUI.click(findTestObject('File Upload Center/File Upload Center Page/btnMpesaButton'))
 
-WebUI.uploadFile(findTestObject('File Upload Center/File Upload Center Page/btnSELECTFiles'), mpesaPayment)
+WebUI.uploadFile(findTestObject('File Upload Center/File Upload Center Page/btnSELECTFiles'), filePath)
 
 WebUI.setText(findTestObject('File Upload Center/File Upload Center Page/txtCommentTextArea'), comment)
 
