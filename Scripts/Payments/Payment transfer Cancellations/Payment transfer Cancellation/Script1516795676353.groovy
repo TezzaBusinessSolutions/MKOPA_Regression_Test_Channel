@@ -56,3 +56,33 @@ WebUI.verifyAlertPresent(0)
 
 WebUI.acceptAlert()
 
+WebUI.verifyElementNotPresent(findTestObject('Payments/Payment transfer Cancellation/grd_approve payment transfers'), 0)
+
+WebUI.click(findTestObject('Payments/Payment transfer Cancellation/lnk_cancel transfer'))
+
+WebUI.verifyElementVisible(findTestObject('Payments/Payment transfer Cancellation/txt_cancel payment transfer '), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('Payments/Payment transfer Cancellation/btn_save(approve transfer)'))
+
+WebUI.delay(5)
+
+WebUI.verifyAlertPresent(0)
+
+WebUI.delay(5)
+
+WebUI.acceptAlert()
+
+WebUI.delay(5)
+
+WebUI.setText(findTestObject('Payments/Payment transfer Cancellation/txt-Comment'), 'Test')
+
+WebUI.click(findTestObject('Payments/Payment transfer Cancellation/btn_save(approve transfer)'))
+
+WebUI.verifyAlertPresent(0)
+
+WebUI.acceptAlert()
+
+WebUI.verifyElementNotPresent(findTestObject('Payments/Payment transfer Cancellation/grd_approve payment transfers'), 0)
+
+WebUI.closeBrowser()
+

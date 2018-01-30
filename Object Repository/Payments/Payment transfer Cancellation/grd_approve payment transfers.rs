@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>lnk_approve transfer </name>
+   <name>grd_approve payment transfers</name>
    <tag></tag>
-   <elementGuidId>b255b871-2979-41b2-88fe-e123edadd33d</elementGuidId>
+   <elementGuidId>e4c0817f-282b-4ebf-9b75-20917571f294</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>.//*[@id='PaymentsForTransfers']/table/tbody/tr[ td[text()=&quot;vbnm&quot;]]/td/a[text()='Approve Transfer']</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>.//*[@id='PaymentsForTransfers']/table/tbody/tr[ td[text()=&quot;vbnm&quot;]]/td/a[text()='Approve Transfer']</value>
+      <value>.//*[@id='PaymentsForTransfers']/table/tbody/tr/td[text()='vbnm']</value>
    </webElementProperties>
 </WebElementEntity>
