@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>verify_Payment Transfer Updates Status</name>
+   <tag></tag>
+   <comment>Approving payment transfer</comment>
+   <testCaseGuid>4077e0ec-4167-4c43-9932-5c1aaff41812</testCaseGuid>
+</TestCaseEntity>
