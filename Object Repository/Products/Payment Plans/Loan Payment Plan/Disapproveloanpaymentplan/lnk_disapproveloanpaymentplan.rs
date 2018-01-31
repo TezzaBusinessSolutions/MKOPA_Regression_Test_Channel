@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lnk_disapproveloanpaymentplan</name>
+   <tag></tag>
+   <elementGuidId>f21d8dad-7583-4f47-a638-7f6a120e3d94</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>.//*[@id='PaymentPlansForApprovalGrid']/table/tbody/tr[td[text()=&quot;gggpp&quot;]]/td/a[text()='Approve']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>.//*[@id='PaymentPlansForApprovalGrid']/table/tbody/tr[td[text()=&quot;gggpp&quot;]]/td/a[text()='Approve']</value>
+   </webElementProperties>
+</WebElementEntity>

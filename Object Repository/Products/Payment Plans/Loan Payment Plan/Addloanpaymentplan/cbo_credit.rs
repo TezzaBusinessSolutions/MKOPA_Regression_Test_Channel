@@ -3,11 +3,11 @@
    <description></description>
    <name>cbo_credit</name>
    <tag></tag>
-   <elementGuidId>d8937d8f-db02-4a65-a3de-a3f82f23458e</elementGuidId>
+   <elementGuidId>7eff02d9-178f-4f94-b5c9-e511b7972322</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>html/body/div[5]/div/ul/li[text()='Credit']</value>
+         <value>html/body//li[text()=&quot;Credit&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>html/body/div[5]/div/ul/li[text()='Credit']</value>
+      <value>html/body//li[text()=&quot;Credit&quot;]</value>
    </webElementProperties>
 </WebElementEntity>
