@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>step_PaymentDetailsInformation</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3b5c027a-5669-4c89-be72-6ecc774a65ee</testCaseGuid>
+   <variable>
+      <defaultValue>'50'</defaultValue>
+      <description></description>
+      <id>8e1a57c6-53f7-46c0-981b-f7c79ca53dff</id>
+      <masked>false</masked>
+      <name>amount</name>
+   </variable>
+   <variable>
+      <defaultValue>'Test'</defaultValue>
+      <description></description>
+      <id>a02d4644-14e0-4652-9562-75b100c698d6</id>
+      <masked>false</masked>
+      <name>notes</name>
+   </variable>
+</TestCaseEntity>

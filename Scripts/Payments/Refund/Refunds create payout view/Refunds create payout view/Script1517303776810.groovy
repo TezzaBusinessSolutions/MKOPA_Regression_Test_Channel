@@ -26,7 +26,7 @@ WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : '', ('Password') :
 
 WebUI.delay(5)
 
-WebUI.setText(findTestObject('Customers/Common/Search Customer'), '26324678')
+WebUI.setText(findTestObject('Customers/Common/Search Customer', [('customer') : customer]), customer)
 
 WebUI.click(findTestObject('Customers/Common/Search Icon'))
 
@@ -34,19 +34,14 @@ WebUI.delay(5)
 
 WebUI.click(findTestObject('Customers/List Customers/img_MorePaymentInformation'))
 
-WebUI.click(findTestObject('Payments/Refund/Refunds view payout page/lnk_paymentreceipt', [('depositReceipt') : depositReceipt]))
+WebUI.click(findTestObject('Payments/Refund/Refunds view payout page/link_paymentreceipt', [('depositReceipt') : depositReceipt]))
 
-WebUI.verifyElementPresent(findTestObject('Payments/Refund/Refunds view payout page/btn_refundpayment'), 0)
+WebUI.verifyElementPresent(findTestObject('Payments/Refund/Refunds view payout page/button_refundpayment'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Payments/Refund/Refunds view payout page/btn_Transfer Payment'), 0)
+WebUI.verifyElementPresent(findTestObject('Payments/Refund/Refunds view payout page/button_Transfer Payment'), 0)
 
-WebUI.click(findTestObject('Payments/Refund/Refunds view payout page/btn_refundpayment'))
-
-WebUI.setText(findTestObject('Payments/Refund/Refunds view payout page/txt_amount'), '50')
-
-WebUI.setText(findTestObject('Payments/Refund/Refunds view payout page/txt_notes'), 'Test')
-
-WebUI.click(findTestObject('Payments/Refund/Refunds view payout page/btn_submit'))
+WebUI.callTestCase(findTestCase('Payments/Refund/Refunds create payout view/step_PaymentDetailsInformation'), [('amount') : '50'
+        , ('notes') : 'Test'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Common/MarkerCheckerLogin'), [('Email') : findTestData('MarkerCheckerLogin/CheckerLogin').getValue(
             1, 1), ('Password') : findTestData('MarkerCheckerLogin/CheckerLogin').getValue(2, 1)], FailureHandling.STOP_ON_FAILURE)
@@ -55,27 +50,28 @@ WebUI.mouseOver(findTestObject('Payments/Common Payments Objects/mnu_PaymentsDro
 
 WebUI.delay(3)
 
-WebUI.mouseOver(findTestObject('Payments/Refund/mnu_Refund'))
+WebUI.mouseOver(findTestObject('Payments/Refund/menu_Refund'))
 
 WebUI.delay(5)
 
-WebUI.scrollToElement(findTestObject('Payments/Refund/Refunds view payout page/mnu_approvecustomerrefund'), 0)
+WebUI.scrollToElement(findTestObject('Payments/Refund/Refunds view payout page/menu_approvecustomerrefund'), 0)
 
-WebUI.click(findTestObject('Payments/Refund/Refunds view payout page/mnu_approvecustomerrefund'))
+WebUI.click(findTestObject('Payments/Refund/Refunds view payout page/menu_approvecustomerrefund'))
 
-WebUI.click(findTestObject('Payments/Refund/Refunds view payout page/lnk_approverefunds', [('ApproveNumber') : ApproveNumber]))
+WebUI.click(findTestObject('Payments/Refund/Refunds view payout page/link_approverefunds', [('ApproveNumber') : ApproveNumber]))
 
-WebUI.verifyElementVisible(findTestObject('Payments/Refund/Refunds view payout page/grd_approverefundpage'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('Payments/Refund/Refunds view payout page/grid_approverefundpage'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Payments/Refund/Customer Approval Refunds/drpdwn approvalstatus'))
 
 WebUI.click(findTestObject('Payments/Refund/Customer Approval Refunds/aprrovalstatus'))
 
-WebUI.setText(findTestObject('Payments/Refund/Refunds view payout page/txt_refundapprovernotes'), 'Test')
+WebUI.setText(findTestObject('Payments/Refund/Refunds view payout page/text_refundapprovernotes', [('notes') : notes]), 
+    'Test')
 
-WebUI.click(findTestObject('Payments/Refund/Refunds view payout page/btn_save'))
+WebUI.click(findTestObject('Payments/Refund/Refunds view payout page/button_save'))
 
-WebUI.verifyElementVisible(findTestObject('Payments/Refund/Refunds view payout page/grd_refunddetailspage'))
+WebUI.verifyElementVisible(findTestObject('Payments/Refund/Refunds view payout page/grid_refunddetailspage'))
 
 WebUI.delay(3)
 
@@ -87,9 +83,9 @@ WebUI.mouseOver(findTestObject('Payments/Payouts/Payouts'))
 
 WebUI.delay(3)
 
-WebUI.click(findTestObject('Payments/Refund/Refunds view payout page/mnu_productrefund'))
+WebUI.click(findTestObject('Payments/Refund/Refunds view payout page/menu_productrefund'))
 
-verify = WebUI.getText(findTestObject('Payments/Refund/Refunds view payout page/grd_productrefundscreatepayout'), FailureHandling.STOP_ON_FAILURE)
+verify = WebUI.getText(findTestObject('Payments/Refund/Refunds view payout page/grid_productrefundscreatepayout'), FailureHandling.STOP_ON_FAILURE)
 
 System.out.println(verify)
 

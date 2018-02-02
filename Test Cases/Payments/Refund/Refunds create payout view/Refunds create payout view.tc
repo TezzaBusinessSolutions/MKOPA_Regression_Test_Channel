@@ -24,6 +24,13 @@
       <description></description>
       <id>b02427c3-7257-47cd-a99b-4eec237e85f6</id>
       <masked>false</masked>
-      <name>ApproveNumber</name>
+      <name>customer</name>
+   </variable>
+   <variable>
+      <defaultValue>'Test'</defaultValue>
+      <description></description>
+      <id>4c49f103-4112-4a8c-ba33-fe79e285fd12</id>
+      <masked>false</masked>
+      <name>notes</name>
    </variable>
 </TestCaseEntity>

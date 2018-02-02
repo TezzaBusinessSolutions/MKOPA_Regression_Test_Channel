@@ -19,21 +19,21 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common/MarkerCheckerLogin'), [('Email') : findTestData('MarkerCheckerLogin/CheckerLogin').getValue(1, 1)
-        , ('Password') : findTestData('MarkerCheckerLogin/CheckerLogin').getValue(2, 1)], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common/MarkerCheckerLogin'), [('Email') : findTestData('MarkerCheckerLogin/CheckerLogin').getValue(
+            1, 1), ('Password') : findTestData('MarkerCheckerLogin/CheckerLogin').getValue(2, 1)], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Products/Payment Plans/common/mnuProductMenu'))
+WebUI.mouseOver(findTestObject('Products/Payment Plans/Menu/menu_ProductMenu'))
 
 WebUI.delay(2)
 
-WebUI.mouseOver(findTestObject('Products/Payment Plans/common/mnu_PaymentPlans'))
+WebUI.mouseOver(findTestObject('Products/Payment Plans/Menu/menu_PaymentPlans'))
 
-WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/mnu_PaymentPlansApprovals'))
+WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/menu_PaymentPlansApprovals'))
 
-WebUI.verifyElementPresent(findTestObject('Products/Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/grd_PaymentPlansApprovalsPage'), 
+WebUI.verifyElementPresent(findTestObject('Products/Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/grid_PaymentPlansApprovalsPage'), 
     0)
 
-WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/lnk_Approveloanpaymentplan'))
+WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/link_Approveloanpaymentplan'))
 
 WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/cbo_ApprovalStatus'))
 
@@ -41,12 +41,12 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/cbo_approveloan'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Products/Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/txt_LoanApproverNotes'), 
-    'Test')
+WebUI.setText(findTestObject('Products/Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/text_LoanApproverNotes', 
+        [('notes') : notes]), notes)
 
-WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/btn_ApprovalsSaveButton'))
+WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/button_ApprovalsSaveButton'))
 
-WebUI.verifyElementPresent(findTestObject('Products/Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/grd_loanpaymentplanslist'), 
+WebUI.verifyElementPresent(findTestObject('Products/Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/grid_loanpaymentplanslist'), 
     0)
 
 String verify = WebUI.getText(findTestObject('Products/Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/Verifyloanpaymentlist'))

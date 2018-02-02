@@ -27,7 +27,7 @@ WebUI.mouseOver(findTestObject('Payments/Common Payments Objects/OR-PaymentsDrop
 
 WebUI.delay(2)
 
-WebUI.mouseOver(findTestObject('Payments/Refund/mnu_Refund'))
+WebUI.mouseOver(findTestObject('Payments/Refund/menu_Refund'))
 
 WebUI.delay(2)
 

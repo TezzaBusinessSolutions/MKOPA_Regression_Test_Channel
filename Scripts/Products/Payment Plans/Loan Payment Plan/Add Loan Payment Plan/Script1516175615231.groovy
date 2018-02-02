@@ -21,92 +21,99 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : '', ('Password') : ''], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Products/Payment Plans/common/mnuProductMenu'))
+WebUI.mouseOver(findTestObject('Products/Payment Plans/Menu/menu_ProductMenu'))
 
 WebUI.delay(2)
 
-WebUI.mouseOver(findTestObject('Products/Payment Plans/common/mnu_PaymentPlans'))
+WebUI.mouseOver(findTestObject('Products/Payment Plans/Menu/menu_PaymentPlans'))
 
-WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/mnu_AddLoanPaymentPlan'))
+WebUI.click(findTestObject('null'))
 
-WebUI.verifyElementVisible(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/grd_addloanpaymentplanpage'))
+WebUI.verifyElementVisible(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/grid_addloanpaymentplanpage'))
 
-WebUI.setText(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/txt_loanname'), 'Loan test 1')
+WebUI.setText(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/text_loanname', [('name') : name]), 
+    name)
 
-WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/btn_loanpaymentplansavebutton'))
+WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/button_loanpaymentplansavebutton'))
 
 WebUI.callTestCase(findTestCase('Common/LogOut'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Common/MarkerCheckerLogin'), [('Email') : findTestData('MarkerCheckerLogin/CheckerLogin').getValue(
             1, 1), ('Password') : findTestData('MarkerCheckerLogin/CheckerLogin').getValue(2, 1)], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Products/Payment Plans/common/mnuProductMenu'))
+WebUI.mouseOver(findTestObject('Products/Payment Plans/Menu/menu_ProductMenu'))
 
-WebUI.mouseOver(findTestObject('Products/Payment Plans/common/mnu_PaymentPlans'))
+WebUI.mouseOver(findTestObject('Products/Payment Plans/Menu/menu_PaymentPlans'))
 
-WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/mnu_PaymentPlansApprovals'))
+WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/menu_PaymentPlansApprovals'))
 
-WebUI.verifyElementNotPresent(findTestObject('Products/Payment Plans/Cash Payment Plan/Addcashpaymentplan/grd_verifynotinapprovallist'), 
+WebUI.verifyElementNotPresent(findTestObject('Products/Payment Plans/Cash Payment Plan/Approve Cash Payment Plan/grid_verifynotinapprovallist'), 
     0)
 
 WebUI.callTestCase(findTestCase('Common/LogOut'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Common/Login'), [('Email') : '', ('Password') : ''], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Products/Payment Plans/common/mnuProductMenu'))
+WebUI.mouseOver(findTestObject('Products/Payment Plans/Menu/menu_ProductMenu'))
 
 WebUI.delay(2)
 
-WebUI.mouseOver(findTestObject('Products/Payment Plans/common/mnu_PaymentPlans'))
+WebUI.mouseOver(findTestObject('Products/Payment Plans/Menu/menu_PaymentPlans'))
 
-WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/mnu_AddLoanPaymentPlan'))
+WebUI.click(findTestObject('null'))
 
-WebUI.verifyElementVisible(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/grd_addloanpaymentplanpage'))
+WebUI.verifyElementVisible(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/grid_addloanpaymentplanpage'))
 
-WebUI.setText(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/txt_loanname'), 'Loan test 5')
+WebUI.setText(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/text_loanname', [('name') : name]), 
+    name)
 
-WebUI.setText(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/txt_displayname(marketing)'), 
-    'Loan test 5')
+WebUI.setText(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/text_displayname(marketing)', 
+        [('displayname') : displayname]), displayname)
 
 WebUI.verifyElementChecked(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/chk_checkcanbeprimary'), 
     0)
 
-WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/loanproducttypestoselect'))
+WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/select_loanproducttype'))
 
-WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/btn_addloanproducttype'))
+WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/button_addloanproducttype'))
 
-WebUI.setText(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/txt_Deposit'), '2999')
+WebUI.setText(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/text_Deposit', [('deposit') : deposit]), 
+    deposit)
 
-WebUI.setText(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/txt_freeusageonactivation'), '5')
+WebUI.setText(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/text_freeusageonactivation', [
+            ('freeusage') : freeusage]), freeusage)
 
-WebUI.setText(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/txt_costpercredit'), '55')
+WebUI.setText(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/text_costpercredit', [('costpercredit') : costpercredit]), 
+    costpercredit)
 
-WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/cbo_creditsystem'))
-
-WebUI.delay(5)
-
-WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/cbo_dailycountdown'))
-
-WebUI.setText(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/txt_optimalloanuration(days)'), 
-    '365')
-
-WebUI.setText(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/txt_totalprice'), '65000')
-
-WebUI.setText(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/txt_notes'), 'Test')
-
-WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/cbo_loantype'))
+WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/dropdown_creditsystem'))
 
 WebUI.delay(5)
 
-WebUI.scrollToElement(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/cbo_credit'), 0)
+WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/select_dailycountdown'))
 
-WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/cbo_credit'))
+WebUI.setText(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/text_optimalloanuration(days)', 
+        [('days') : days]), days)
 
-WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/btn_loanpaymentplansavebutton'))
+WebUI.setText(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/text_totalprice', [('price') : price]), 
+    price)
 
-not_run: WebUI.verifyElementVisible(findTestObject('Products/Payment Plans/Cash Payment Plan/Addcashpaymentplan/grd_cashpaymentplan'))
+WebUI.setText(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/text_notes', [('notes') : notes]), 
+    notes)
 
-not_run: WebUI.verifyElementNotPresent(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/grd_errorpage'), 
+WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/dropdown_loantype'))
+
+WebUI.delay(5)
+
+WebUI.scrollToElement(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/select_credit'), 0)
+
+WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/select_credit'))
+
+WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/button_loanpaymentplansavebutton'))
+
+not_run: WebUI.verifyElementVisible(findTestObject('Products/Payment Plans/Cash Payment Plan/Approve Cash Payment Plan/grid_cashpaymentplan'))
+
+not_run: WebUI.verifyElementNotPresent(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/grid_errorpage'), 
     0)
 
 WebUI.callTestCase(findTestCase('Common/LogOut'), [:], FailureHandling.STOP_ON_FAILURE)
@@ -114,13 +121,13 @@ WebUI.callTestCase(findTestCase('Common/LogOut'), [:], FailureHandling.STOP_ON_F
 WebUI.callTestCase(findTestCase('Common/MarkerCheckerLogin'), [('Email') : findTestData('MarkerCheckerLogin/CheckerLogin').getValue(
             1, 1), ('Password') : findTestData('MarkerCheckerLogin/CheckerLogin').getValue(2, 1)], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Products/Payment Plans/common/mnuProductMenu'))
+WebUI.mouseOver(findTestObject('Products/Payment Plans/Menu/menu_ProductMenu'))
 
-WebUI.mouseOver(findTestObject('Products/Payment Plans/common/mnu_PaymentPlans'))
+WebUI.mouseOver(findTestObject('Products/Payment Plans/Menu/menu_PaymentPlans'))
 
-WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/mnu_PaymentPlansApprovals'))
+WebUI.click(findTestObject('Products/Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/menu_PaymentPlansApprovals'))
 
-String verify = WebUI.getText(findTestObject('Products/Payment Plans/Loan Payment Plan/Addloanpaymentplan/VerifyPaymentloan'))
+String verify = WebUI.getText(findTestObject('Products/Payment Plans/Loan Payment Plan/Disapproveloanpaymentplan/VerifyPaymentloan'))
 
 System.out.println(verify)
 

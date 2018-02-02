@@ -5,4 +5,32 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>b606ae94-0aba-4373-a186-70efeb95b60a</testCaseGuid>
+   <variable>
+      <defaultValue>'M-kopa test da'</defaultValue>
+      <description></description>
+      <id>870055a4-4242-49c4-a92e-387b84acaed1</id>
+      <masked>false</masked>
+      <name>name</name>
+   </variable>
+   <variable>
+      <defaultValue>'M-kopa test da'</defaultValue>
+      <description></description>
+      <id>8a2c7295-411c-4173-a302-62bb638dd74e</id>
+      <masked>false</masked>
+      <name>displayname</name>
+   </variable>
+   <variable>
+      <defaultValue>'63000'</defaultValue>
+      <description></description>
+      <id>e53a94e5-c24d-4ece-b833-315ca9e0c5cb</id>
+      <masked>false</masked>
+      <name>price</name>
+   </variable>
+   <variable>
+      <defaultValue>'Test'</defaultValue>
+      <description></description>
+      <id>0e46832a-bcdb-41de-b3ed-848b67107a81</id>
+      <masked>false</masked>
+      <name>notes</name>
+   </variable>
 </TestCaseEntity>

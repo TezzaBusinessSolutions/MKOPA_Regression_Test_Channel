@@ -6,10 +6,31 @@
    <comment></comment>
    <testCaseGuid>ce4dd015-a9e6-4a05-bbef-553fe460a0a3</testCaseGuid>
    <variable>
-      <defaultValue>findTestData('PaymentPlans/Paymentplannames').getValue(1, 1)</defaultValue>
+      <defaultValue>'M-kopa test dc'</defaultValue>
       <description></description>
-      <id>cfc8ed6d-2494-448e-a3ee-215c43fa3345</id>
+      <id>af1a73b0-89a3-48b6-87be-23b15504e5a8</id>
       <masked>false</masked>
-      <name>variable</name>
+      <name>name</name>
+   </variable>
+   <variable>
+      <defaultValue>'M-kopa test dc'</defaultValue>
+      <description></description>
+      <id>9ef8befc-1f2e-4bc8-ad7d-d2e2cd9e6de4</id>
+      <masked>false</masked>
+      <name>displayname</name>
+   </variable>
+   <variable>
+      <defaultValue>'63000'</defaultValue>
+      <description></description>
+      <id>fcb19e7d-def5-486c-bf51-6b8dbde50d26</id>
+      <masked>false</masked>
+      <name>price</name>
+   </variable>
+   <variable>
+      <defaultValue>'Test'</defaultValue>
+      <description></description>
+      <id>52686aaf-0aa7-45b9-b7af-7630b54c12b7</id>
+      <masked>false</masked>
+      <name>notes</name>
    </variable>
 </TestCaseEntity>

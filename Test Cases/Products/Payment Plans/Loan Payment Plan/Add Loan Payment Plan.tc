@@ -5,4 +5,60 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>62bc1166-1b92-4245-86bc-dfd9f1671ff6</testCaseGuid>
+   <variable>
+      <defaultValue>'Loan test 5'</defaultValue>
+      <description></description>
+      <id>6dd7d06f-8359-4416-b79d-f540ea77c375</id>
+      <masked>false</masked>
+      <name>name</name>
+   </variable>
+   <variable>
+      <defaultValue>'Loan test 5'</defaultValue>
+      <description></description>
+      <id>809a4cd0-90f7-43da-a157-19a7b31f5250</id>
+      <masked>false</masked>
+      <name>displayname</name>
+   </variable>
+   <variable>
+      <defaultValue>'2999'</defaultValue>
+      <description></description>
+      <id>a4cf5857-da6d-434c-bcb1-2dc997b860ee</id>
+      <masked>false</masked>
+      <name>deposit</name>
+   </variable>
+   <variable>
+      <defaultValue>'5'</defaultValue>
+      <description></description>
+      <id>4cf74102-0b85-4b1c-915a-b372a67e58e1</id>
+      <masked>false</masked>
+      <name>freeusage</name>
+   </variable>
+   <variable>
+      <defaultValue>'50'</defaultValue>
+      <description></description>
+      <id>d3de21c7-fa64-4fd7-ae64-c4c24ae9fc17</id>
+      <masked>false</masked>
+      <name>costpercredit</name>
+   </variable>
+   <variable>
+      <defaultValue>'5'</defaultValue>
+      <description></description>
+      <id>4183bb94-34a9-4c30-ba57-0dd514d8eb7f</id>
+      <masked>false</masked>
+      <name>days</name>
+   </variable>
+   <variable>
+      <defaultValue>'Test'</defaultValue>
+      <description></description>
+      <id>13ff1662-4073-43ba-bb59-ffd9168625ad</id>
+      <masked>false</masked>
+      <name>notes</name>
+   </variable>
+   <variable>
+      <defaultValue>'75000'</defaultValue>
+      <description></description>
+      <id>1c7171a9-17b8-4728-a064-a7ffcf47c74f</id>
+      <masked>false</masked>
+      <name>price</name>
+   </variable>
 </TestCaseEntity>
