@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>confirm sms sent to the customer after payment</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>dcd45bbe-ec1d-417b-837d-54f15f3124b6</testCaseGuid>
+</TestCaseEntity>
